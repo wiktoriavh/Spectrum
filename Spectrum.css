@@ -5,7 +5,7 @@
 /** Name: xxxx */
 /** Licence: MIT */
 /** GitHub Repo: xxxxx */
-/** Version: 0.4.0 */
+/** Version: 0.5.0 */
 
 :root {
   --default-font: "JetBrains Mono";
@@ -340,4 +340,9 @@ ul li::marker {
 /*** Footnote Reference */
 .footnote-ref {
   font-size: 0.7rem;
+}
+
+/** Workspace Mod Active */
+.workspace-leaf.mod-active .view-header {
+  border-bottom: 2px solid var(--main-node);
 }
