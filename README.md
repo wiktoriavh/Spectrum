@@ -18,25 +18,41 @@ Just like a Spectrum, the way you take notes can expand everywhere. And looking 
 
 The tables were styled, so that **you** have a better time looking at your data, instead of _searching_ for your data. And with just a quick mouse hover, you see what row you're on.
 
+![](./SpectrumTables.gif)
+
 ## Search Navigation
 
 The Search Navigation Bar was fixed with this styling. Before it was possible to hide icons when shrinking the sidebar, but not anymore! Now the Icons will just wrap to the next row and still be visible to you.
+
+![](./SpectrumNavbar.gif)
 
 ## Query
 
 The Query search got the same improvement as the table. Each row has a different colour, so you can easily distinguish between them.
 
+![](./SpectrumQuery.gif)
+
 ## Scrollbar
 
 The Scrollbar has decreased in size, so it doesn't stand as promiment as before.
 
-## Line Height
+## Body
+
+### Line Height
 
 The Line Height was increased, for better readability of your notes.
+
+### Preview Text
+
+The body text for the preview was widened, so you can see more at once when reading.
 
 ## Font
 
 I recommened to use the [JetBrains Mono Font](https://www.jetbrains.com/lp/mono/), which was developed as a typeface for developers. But that is highly Optional. Your System Default monospace font will be used instead.
+
+## Folder Icons
+
+The folders in the sidebar now have an open and closed folder icon, depending on their state!
 
 ## Style Preview
 
