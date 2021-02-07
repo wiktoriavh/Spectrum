@@ -42,7 +42,6 @@ I recommened to use the [JetBrains Mono Font](https://www.jetbrains.com/lp/mono/
 
 ![](./SpectrumPreview.gif)
 
-
 ### Additional Notes
 
 The Stylesheet is still under development and being improved over time. Don't hesitate to send an issue, if you have suggestions.
