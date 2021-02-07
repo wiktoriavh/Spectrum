@@ -1,0 +1,343 @@
+/**********************************/
+/** Tested with Obsidian v0.10.11 */
+/**********************************/
+/** Author: Wiktoria Mielcarek (Braweria) */
+/** Name: xxxx */
+/** Licence: MIT */
+/** GitHub Repo: xxxxx */
+/** Version: 0.4.0 */
+
+:root {
+  --default-font: "JetBrains Mono";
+  --font-monospace: var(--default-font);
+
+  --light-red: #f18b74;
+  --internal-link: #ec7d99;
+  --internal-link-hover: #e2417f;
+
+  --main-node: #ffbe00;
+  --main-node-hover: #fe6a26;
+  --tags: #f19eee;
+  --external-link: #82d2e8;
+  --external-link-hidden: rgba(131, 197, 235, 0.3);
+  --main-background: #242424;
+  --attachments: #69bceb;
+}
+
+/** Background */
+.theme-dark {
+  --background-primary: var(--main-background);
+}
+
+/** Line Height */
+.cm-s-obsidian,
+body {
+  line-height: 1.7rem;
+}
+
+/** Links */
+/*** Standard Link */
+a {
+  color: var(--main-node);
+}
+
+/*** Internal */
+.cm-s-obsidian span.cm-hmd-internal-link.cm-overlay {
+  color: var(--main-node);
+  font-weight: 900;
+}
+
+/*** Internal Bracket */
+.cm-s-obsidian span.cm-formatting-link {
+  color: var(--main-node);
+  font-weight: 500;
+}
+
+/*** Internal Hover */
+a:hover {
+  color: var(--main-node-hover);
+}
+
+/*** External URL and Text Brackets */
+.cm-s-obsidian span.cm-url,
+.cm-s-obsidian span.cm-formatting-link.cm-link {
+  color: var(--external-link-hidden);
+}
+
+/*** External Brackets and Text */
+.cm-s-obsidian span.cm-link,
+.cm-s-obsidian span.cm-hmd-internal-link,
+.cm-s-obsidian span.cm-formatting.cm-url,
+.external-link {
+  color: var(--external-link);
+}
+
+/** Tags */
+.cm-s-obsidian span.cm-hashtag,
+.tag {
+  color: var(--tags);
+}
+
+/** ??? Can't figure it out */
+.nav-folder.is-collapsed .nav-folder-title .nav-folder-title-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/** Closed Folder for closed folders */
+.nav-folder.is-collapsed .nav-folder-title .nav-folder-title-content::before {
+  content: "🗀";
+  display: inline-block;
+  width: 1.5rem;
+}
+
+/** Open FOlder for open folders */
+.nav-folder .nav-folder-title .nav-folder-title-content::before {
+  content: "🗁";
+  display: inline-block;
+  width: 1.5rem;
+}
+
+/** Heading 1 - 6 */
+.cm-header-1,
+h1 {
+  color: #f5704c;
+}
+
+.cm-header-2,
+h2 {
+  color: #f5a14c;
+}
+
+.cm-header-3,
+h3 {
+  color: #ede482;
+}
+
+.cm-header-4,
+h4 {
+  color: #aade62;
+}
+
+.cm-header-5,
+h5 {
+  color: #62deac;
+}
+
+.markdown-preview-view h6,
+.cm-header-6 {
+  color: #62b7de;
+}
+
+/** Checklist */
+/*** Preview Text for Checked Item */
+.markdown-preview-view ul > li.task-list-item.is-checked {
+  text-decoration: none;
+}
+
+/*** Preview Checkbox */
+.markdown-preview-view .task-list-item-checkbox {
+  -webkit-appearance: none;
+  box-sizing: border-box;
+  border: 1px solid var(--text-muted);
+  border-radius: 2px;
+  position: relative;
+  width: 1.3em;
+  height: 1.3em;
+  margin: 0;
+  outline: none;
+  margin-right: 4px;
+  margin-bottom: 2px;
+  cursor: pointer;
+  vertical-align: baseline;
+  margin-right: 1rem;
+}
+
+/*** Preview Checked Checkbox */
+.markdown-preview-view .task-list-item-checkbox:checked::before {
+  content: "✔";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 150%;
+  height: 160%;
+  line-height: 0;
+  font-size: 1.5rem;
+  color: var(--main-node);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/** Strong/Bold */
+.cm-s-obsidian .cm-strong,
+strong {
+  color: rgb(87, 226, 141);
+  font-weight: 900;
+}
+
+/** Emphasis/Italic */
+.cm-em,
+em {
+  color: rgb(241, 236, 165);
+}
+
+/** Table */
+/*** Head Row */
+table thead tr {
+  background: #00000034;
+}
+
+/*** Body Row Even */
+table tbody tr:nth-child(even) {
+  background: #00000034;
+}
+
+/*** Body Row Hover */
+table tbody tr:hover {
+  background: #afafaf10;
+}
+
+/** Highlight */
+.cm-s-obsidian span.cm-formatting-highlight,
+.cm-s-obsidian span.cm-highlight,
+.markdown-preview-view mark {
+  background: rgb(230, 114, 204);
+  color: var(--background-primary);
+  font-weight: 600;
+}
+
+.markdown-preview-view mark {
+  padding: 0 0.5rem;
+}
+
+/*! Makes the Navbar Flexible, so it doesn't hide items */
+.nav-buttons-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/** Blockquote */
+.markdown-preview-view blockquote {
+  border-color: rgb(143, 96, 230);
+}
+
+/** Query Match */
+.search-result-file-matched-text {
+  background: rgb(212, 69, 33);
+}
+
+.tree-item-self .tree-item-inner .search-result-file-matched-text {
+  background: none;
+}
+
+.internal-query .internal-query-header {
+  background: #00000034;
+}
+
+.internal-query
+  .search-results-children
+  .tree-item.search-result:nth-child(odd) {
+  background: #00000034;
+}
+
+/** Preview */
+.markdown-preview-view.is-readable-line-width .markdown-preview-sizer {
+  max-width: 900px;
+}
+
+/** GRAPH */
+/*** Main Nodes */
+.graph-view.color-fill {
+  color: var(--main-node);
+}
+
+/*** Unresolved Nodes */
+.theme-dark .graph-view.color-fill-unresolved {
+  color: var(--main-node);
+  opacity: 0.5;
+}
+*
+
+/*** Tags */
+.theme-dark .graph-view.color-fill-tag {
+  color: var(--tags);
+}
+
+/*** Attachments */
+.theme-dark .graph-view.color-fill-attachment {
+  color: var(--attachments);
+}
+
+/*** Connection Line */
+.graph-view.color-line {
+  color: #676767;
+}
+
+/*** Hover Effect */
+.graph-view.color-line-highlight,
+.graph-view.color-fill-highlight {
+  color: #fe6a26;
+}
+
+/** List */
+/*** List inside List */
+.cm-hmd-list-indent .cm-tab,
+ul ul {
+  position: relative;
+}
+
+/*** Border Before List inside List */
+.cm-hmd-list-indent .cm-tab::before,
+ul ul::before {
+  content: "";
+  border-left: 1px solid var(--main-node);
+  /* border-left: 1px solid white; */
+  position: absolute;
+  left: -15px;
+  top: 0;
+  bottom: 0;
+}
+
+/*** List Item Marker */
+ul li::marker {
+  color: white;
+}
+
+/** Scrollbars */
+::-webkit-scrollbar {
+  width: 2px;
+  background-color: var(--main-background);
+}
+
+/** Attachment Tags */
+.nav-file-tag {
+  background: none;
+  border: 1px solid var(--attachments);
+  color: var(--attachments);
+  font-weight: 400;
+}
+
+/** Footnote */
+/*** Back Reference */
+.footnote-backref {
+  color: var(--main-node);
+}
+
+/*** Back Reference Hover */
+.footnote-backref:hover {
+  color: var(--main-node-hover);
+}
+
+/*** Footnote List Marker */
+.footnotes li::marker {
+  color: var(--main-node);
+}
+
+/*** Footnote Reference */
+.footnote-ref {
+  font-size: 0.7rem;
+}
