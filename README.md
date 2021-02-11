@@ -70,4 +70,4 @@ The Stylesheet is still under development and being improved over time. Don't he
 
 Codeblocks have been updated, they now have a softer colour and are easier on the eyes, while writing. Also a border was added as well as what language the type of code represents at the bottom right.
 
-![]("./codeblocks.gif")
+![](./codeblocks.gif)
