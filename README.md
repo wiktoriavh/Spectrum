@@ -61,3 +61,13 @@ The folders in the sidebar now have an open and closed folder icon, depending on
 ### Additional Notes
 
 The Stylesheet is still under development and being improved over time. Don't hesitate to send an issue, if you have suggestions.
+
+---
+
+## Changelog v0.6.0
+
+### Codeblocks
+
+Codeblocks have been updated, they now have a softer colour and are easier on the eyes, while writing. Also a border was added as well as what language the type of code represents at the bottom right.
+
+![]("./codeblocks.gif")
