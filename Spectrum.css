@@ -2,10 +2,10 @@
 /** Tested with Obsidian v0.10.11 */
 /**********************************/
 /** Author: Wiktoria Mielcarek (Braweria) */
-/** Name: xxxx */
+/** Name: Spectrum */
 /** Licence: MIT */
-/** GitHub Repo: xxxxx */
-/** Version: 0.5.0 */
+/** GitHub Repo: https://github.com/Braweria/Spectrum */
+/** Version: 0.6.0 */
 
 :root {
   --default-font: "JetBrains Mono";
@@ -21,6 +21,7 @@
   --external-link: #82d2e8;
   --external-link-hidden: rgba(131, 197, 235, 0.3);
   --main-background: #242424;
+  --secondary-background: #1b1b1b;
   --attachments: #69bceb;
 }
 
@@ -345,4 +346,49 @@ ul li::marker {
 /** Workspace Mod Active */
 .workspace-leaf.mod-active .view-header {
   border-bottom: 2px solid var(--main-node);
+}
+
+/** Codeblock */
+/*** Markdown Block Background/Border Colour */
+.cm-s-obsidian div.HyperMD-codeblock-begin-bg,
+.cm-s-obsidian div.HyperMD-codeblock-end-bg,
+.cm-s-obsidian div.HyperMD-codeblock-bg,
+.cm-s-obsidian span.cm-inline-code {
+  background: var(--secondary-background);
+  border-color: black;
+}
+
+/*** First Markdown Code Line */
+.cm-s-obsidian pre.HyperMD-codeblock-begin {
+  padding-top: .5rem;
+}
+
+/*** Last Markdown Code Line */
+.cm-s-obsidian div.HyperMD-codeblock-end-bg {
+  border-bottom: 1px solid black;
+}
+
+/*** Markdown Code Font Colour */
+.cm-s-obsidian pre.HyperMD-codeblock,
+.cm-s-obsidian span.cm-inline-code {
+  color: #928b78;
+}
+
+/*** Preview Single Code Font Colour */
+.markdown-preview-view code {
+  color: #C1B594;
+}
+
+/*** Preview Codeblock */
+.theme-dark pre[class*="language-"] {
+  background: var(--secondary-background);
+  border: 1px solid black;
+}
+
+/*** Preview Codeblock After */
+.theme-dark pre[class*="language-"]::after {
+  content: attr(class);
+  position: absolute;
+  right: 1rem;
+  bottom: .5rem;
 }
