@@ -64,10 +64,24 @@ The Stylesheet is still under development and being improved over time. Don't he
 
 ---
 
-## Changelog v0.6.0
+## Changelog v0.6.0 - 2021.02.11
 
 ### Codeblocks
 
 Codeblocks have been updated, they now have a softer colour and are easier on the eyes, while writing. Also a border was added as well as what language the type of code represents at the bottom right.
 
 ![]("./codeblocks.gif")
+
+## Changelog v0.7.0 - 2021.02.12
+
+### Workspace Sidebars
+
+The Workspace banners and ribbons both have now the same colour, to create lease friction. Also the icons for them have been updated as well.
+
+![](./workspaceSidebars.jpg)
+
+### Tables
+
+The tables have gotten a small update, they are now at full width of the Note. No more different sized tables in the same note, creating a weird balance.
+
+![](./tablesWidth.gif)
