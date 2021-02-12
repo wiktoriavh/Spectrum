@@ -5,7 +5,7 @@
 /** Name: Spectrum */
 /** Licence: MIT */
 /** GitHub Repo: https://github.com/Braweria/Spectrum */
-/** Version: 0.6.0 */
+/** Version: 0.7.0 */
 
 :root {
   --default-font: "JetBrains Mono";
@@ -22,6 +22,7 @@
   --external-link-hidden: rgba(131, 197, 235, 0.3);
   --main-background: #242424;
   --secondary-background: #1b1b1b;
+  --bacground-secondary: var(--secondary-background);
   --attachments: #69bceb;
 }
 
@@ -187,6 +188,11 @@ em {
 }
 
 /** Table */
+/*** Table Width */
+table {
+  width: 100%;
+}
+
 /*** Head Row */
 table thead tr {
   background: #00000034;
@@ -360,7 +366,7 @@ ul li::marker {
 
 /*** First Markdown Code Line */
 .cm-s-obsidian pre.HyperMD-codeblock-begin {
-  padding-top: .5rem;
+  padding-top: 0.5rem;
 }
 
 /*** Last Markdown Code Line */
@@ -376,7 +382,7 @@ ul li::marker {
 
 /*** Preview Single Code Font Colour */
 .markdown-preview-view code {
-  color: #C1B594;
+  color: #c1b594;
 }
 
 /*** Preview Codeblock */
@@ -390,5 +396,79 @@ ul li::marker {
   content: attr(class);
   position: absolute;
   right: 1rem;
-  bottom: .5rem;
+  bottom: 0.5rem;
+}
+
+/** Handle Bar */
+.workspace-split.mod-left-split > .workspace-leaf-resize-handle,
+.workspace-split.mod-right-split > .workspace-leaf-resize-handle {
+  background: var(--background-secondary);
+}
+
+.workspace-split.mod-left-split > .workspace-leaf-resize-handle:hover,
+.workspace-split.mod-right-split > .workspace-leaf-resize-handle:hover,
+.workspace-split.mod-horizontal > * > .workspace-leaf-resize-handle:hover {
+  background: var(--main-node);
+}
+
+/** Note Header */
+.workspace-split.mod-root
+  > .workspace-leaf:first-of-type:last-of-type
+  .view-header,
+.view-header {
+  border-bottom: 0px;
+}
+
+/** Workspace Bars */
+/*** Ribbon */
+.workspace-ribbon {
+  background: var(--background-secondary);
+}
+
+/*** Header */
+.workspace-tab-header-container,
+.workspace-tab-container-before.is-before-active,
+.workspace-tab-container-after.is-after-active,
+.workspace-tab-header.is-before-active,
+.workspace-tab-header.is-after-active,
+.workspace-tab-container-before.is-before-active .workspace-tab-header-inner,
+.workspace-tab-container-after.is-after-active .workspace-tab-header-inner,
+.workspace-tab-header.is-before-active .workspace-tab-header-inner,
+.workspace-tab-header.is-after-active .workspace-tab-header-inner {
+  background: var(--background-secondary);
+}
+
+.workspace-tab-header-container {
+  padding-top: 10px;
+  height: auto;
+}
+
+.workspace-tab-header.is-active
+  .workspace-tab-header-inner
+  .workspace-tab-header-inner-icon
+  svg
+  path {
+  stroke: var(--main-node);
+}
+
+.workspace-split.mod-left-split .workspace-tabs .workspace-leaf {
+  border-top-left-radius: 0;
+}
+
+.nav-action-button.is-active,
+.nav-action-button.is-active .widget-icon {
+  background-color: var(--main-node);
+  color: var(--background-secondary);
+  fill: var(--background-secondary);
+}
+
+.nav-action-button.is-active:hover {
+  color: var(--secondary-background);
+  background: var(--main-node-hover);
+}
+
+.nav-action-button:hover,
+.nav-action-button:hover .widget-icon {
+  color: var(--main-node-hover);
+  fill: var(--main-node-hover);
 }
