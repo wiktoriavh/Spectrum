@@ -5,7 +5,7 @@
 /** Name: Spectrum */
 /** Licence: MIT */
 /** GitHub Repo: https://github.com/Braweria/Spectrum */
-/** Version: 0.7.0 */
+/** Version: 0.8.0 */
 
 :root {
   --default-font: "JetBrains Mono";
@@ -29,12 +29,19 @@
 /** Background */
 .theme-dark {
   --background-primary: var(--main-background);
+  --text-normal: #c9c9c9;
 }
 
 /** Line Height */
 .cm-s-obsidian,
 body {
   line-height: 1.7rem;
+}
+
+/** Paragraph */
+.markdown-preview-view div p {
+  text-indent: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 /** Links */
@@ -309,6 +316,11 @@ ul ul::before {
   bottom: 0;
 }
 
+/*** List Item */
+ul li {
+  margin-bottom: 10px;
+}
+
 /*** List Item Marker */
 ul li::marker {
   color: white;
@@ -471,4 +483,27 @@ ul li::marker {
 .nav-action-button:hover .widget-icon {
   color: var(--main-node-hover);
   fill: var(--main-node-hover);
+}
+
+/** Mermaid */
+.mermaid {
+  display: flex;
+  width: calc(100% + 900px);
+  justify-content: center;
+  position: relative;
+  left: -50%;
+}
+
+.nodes {
+  transform: translate(0px, 10px);
+}
+
+/** Embed Notes */
+.internal-embed.is-loaded {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.internal-embed.is-loaded .markdown-embed {
+  border: 0px solid black;
 }
