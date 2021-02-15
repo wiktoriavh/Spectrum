@@ -85,3 +85,21 @@ The Workspace banners and ribbons both have now the same colour, to create lease
 The tables have gotten a small update, they are now at full width of the Note. No more different sized tables in the same note, creating a weird balance.
 
 ![](./tablesWidth.gif)
+
+## Changelog v0.8.0 - 2021.02.15
+
+### Paragraphs
+
+The text colour of the text was updated to a more calmer colour, with less contrast to the background. The first line of a paragraph now has a text identation, so you can more easily identify where a paragraph starts!
+
+### Lists
+
+The list items now are no longer so close to each other.
+
+### Mermaid
+
+A Mermaid Chart is now displayed at the center of your note, giving you the information you need!
+
+### Embed Notes
+
+Embed Notes are now more easily recognised with a border around them.
