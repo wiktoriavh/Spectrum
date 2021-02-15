@@ -5,7 +5,7 @@
 /** Name: Spectrum */
 /** Licence: MIT */
 /** GitHub Repo: https://github.com/Braweria/Spectrum */
-/** Version: 0.8.0 */
+/** Version: 0.8.1 */
 
 :root {
   --default-font: "JetBrains Mono";
@@ -260,7 +260,7 @@ table tbody tr:hover {
 
 /** Preview */
 .markdown-preview-view.is-readable-line-width .markdown-preview-sizer {
-  max-width: 900px;
+  max-width: 750px;
 }
 
 /** GRAPH */
