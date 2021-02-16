@@ -258,8 +258,9 @@ table tbody tr:hover {
   background: #00000034;
 }
 
-/** Preview */
-.markdown-preview-view.is-readable-line-width .markdown-preview-sizer {
+/** Text Width */
+.markdown-preview-view.is-readable-line-width .markdown-preview-sizer,
+.markdown-source-view.is-readable-line-width .CodeMirror {
   max-width: 750px;
 }
 
