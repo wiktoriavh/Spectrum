@@ -235,6 +235,7 @@ table tbody tr:hover {
 .cm-s-obsidian span.cm-highlight,
 .markdown-preview-view mark {
   background: rgb(230, 114, 204);
+  background: rgb(245, 161, 227);
   color: var(--background-primary);
   font-weight: 600;
 }
