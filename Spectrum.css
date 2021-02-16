@@ -526,3 +526,22 @@ ul li::marker {
 .internal-embed.is-loaded .markdown-embed {
   border: 0px solid black;
 }
+
+/** Text Cursor Indicator */
+.CodeMirror-cursor,
+.CodeMirror div.CodeMirror-secondarycursor {
+  border-color: var(--main-node);
+}
+
+/*******************/
+/*******************/
+/*******************/
+
+/** Day Planner */
+/*** Progress Bar */
+.day-planner .day-planner-progress-bar {
+  background: var(--secondary-background);
+  background: #cfcfcf;
+}
+
+
