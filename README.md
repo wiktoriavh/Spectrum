@@ -103,3 +103,17 @@ A Mermaid Chart is now displayed at the center of your note, giving you the info
 ### Embed Notes
 
 Embed Notes are now more easily recognised with a border around them.
+
+## Changelog v0.9.0 - 2021.02.16
+
+### Highlight
+
+Fixed the highlight colour to be a bit brighter. Fixed also, that the colour for Strong and Emphasis was not being seen correctly within a highlight. Those two now have better colours.
+
+### Blockquote
+
+The blockquote now has a width of 1px all around it.
+
+### Text Cursor Indicator
+
+The Text Cursor Indicator is now yellow, fitting for the theme!
