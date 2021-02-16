@@ -188,10 +188,25 @@ strong {
   font-weight: 900;
 }
 
+/** Highlight > Strong/Bold */
+mark .cm-s-obsidian .cm-strong,
+mark strong {
+  color: var(--background-primary);
+  color: rgb(61, 7, 49);
+  /* color: rgb(29, 53, 14); */
+  font-weight: 900;
+}
+
 /** Emphasis/Italic */
 .cm-em,
 em {
   color: rgb(241, 236, 165);
+}
+
+/** Highlight > Emphasis/Italic */
+mark .cm-em,
+mark em {
+  color: rgb(138, 19, 112);
 }
 
 /** Table */
