@@ -253,6 +253,8 @@ table tbody tr:hover {
 /** Blockquote */
 .markdown-preview-view blockquote {
   border-color: rgb(143, 96, 230);
+  border-width: 1px;
+  border-radius: 5px;
 }
 
 /** Query Match */
