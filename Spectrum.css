@@ -441,6 +441,10 @@ ul li::marker {
   background: var(--background-secondary);
 }
 
+.workspace-split.mod-horizontal > * > .workspace-leaf-resize-handle {
+  background: var(--main-background);
+}
+
 .workspace-split.mod-left-split > .workspace-leaf-resize-handle:hover,
 .workspace-split.mod-right-split > .workspace-leaf-resize-handle:hover,
 .workspace-split.mod-horizontal > * > .workspace-leaf-resize-handle:hover {
