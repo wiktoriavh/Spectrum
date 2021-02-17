@@ -453,6 +453,14 @@ ul li::marker {
   border: 0;
 }
 
+.workspace-ribbon-collapse-btn {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 /** Workspace Note Header */
 .workspace-split.mod-root
   > .workspace-leaf:last-of-type
@@ -475,6 +483,22 @@ ul li::marker {
 /*** Ribbon */
 .workspace-ribbon {
   background: var(--background-secondary);
+}
+
+.workspace-ribbon.mod-left {
+  display: flex;
+}
+
+.workspace-ribbon.mod-left .side-dock-actions {
+  order: 1;
+}
+
+.workspace-ribbon.mod-left .workspace-ribbon-collapse-btn {
+  order: 2;
+}
+
+.workspace-ribbon.mod-left .side-dock-settings {
+  order: 3;
 }
 
 /*** Header */
