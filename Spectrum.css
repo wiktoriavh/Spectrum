@@ -442,6 +442,22 @@ ul li::marker {
   background: var(--main-node);
 }
 
+/** Workspace Ribbon Left && Right */
+.workspace-ribbon.mod-left.is-collapsed,
+.workspace-ribbon.mod-right.is-collapsed {
+  border: 0;
+}
+
+/** Workspace Note Header */
+.workspace-split.mod-root
+  > .workspace-leaf:last-of-type
+  .workspace-leaf-content,
+.workspace-split.mod-root
+  > .workspace-leaf:first-of-type
+  .workspace-leaf-content {
+  border-radius: 0;
+}
+
 /** Note Header */
 .workspace-split.mod-root
   > .workspace-leaf:first-of-type:last-of-type
