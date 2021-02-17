@@ -380,7 +380,7 @@ ul li::marker {
   font-size: 0.7rem;
 }
 
-/** Workspace Mod Active */
+/** Workspace Note Active */
 .workspace-leaf.mod-active .view-header {
   border-bottom: 2px solid var(--main-node);
 }
