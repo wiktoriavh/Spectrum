@@ -7,7 +7,8 @@
 /** GitHub Repo: https://github.com/Braweria/Spectrum */
 /** Version: 0.9.0 */
 
-:root {
+:root,
+.theme-dark {
   --default-font: "JetBrains Mono";
   --font-monospace: var(--default-font);
 
@@ -22,7 +23,7 @@
   --external-link-hidden: rgba(131, 197, 235, 0.3);
   --main-background: #242424;
   --secondary-background: #1b1b1b;
-  --bacground-secondary: var(--secondary-background);
+  --background-secondary: var(--secondary-background);
   --attachments: #69bceb;
 }
 
@@ -40,7 +41,7 @@ body {
 
 /** Paragraph */
 .markdown-preview-view div p {
-  text-indent: 1.5rem;
+  /* text-indent: 1.5rem; */
   margin-bottom: 1.5rem;
 }
 
@@ -616,5 +617,3 @@ ul li::marker {
   background: var(--secondary-background);
   background: #cfcfcf;
 }
-
-
