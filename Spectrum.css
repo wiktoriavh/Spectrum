@@ -533,6 +533,26 @@ ul li::marker {
   border-color: var(--main-node);
 }
 
+/** CodeMirror Code */
+.cm-s-obsidian .CodeMirror-code {
+  padding-right: 0;
+}
+
+/** Vault launch progress bar*/
+.progress-bar-subline {
+  position: absolute;
+  background-color: var(--main-node);
+  height: 8px;
+}
+
+.progress-bar-line {
+  position: absolute;
+  opacity: 0.4;
+  background-color: #ffbf007c;
+  width: 150%;
+  height: 8px;
+}
+
 /*******************/
 /*******************/
 /*******************/
