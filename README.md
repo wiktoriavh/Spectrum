@@ -117,3 +117,17 @@ The blockquote now has a width of 1px all around it.
 ### Text Cursor Indicator
 
 The Text Cursor Indicator is now yellow, fitting for the theme!
+
+## Changelog v0.10.00 - 2021.02.17
+
+### Graph View
+
+Now with coloured groups, the background of the Graph should be something where a ton of different colours can work together. That's why I made it darker.
+
+### Workspace
+
+The Note Header now has hard corners, instead of rounded corners. And the Ribbons left and right no longer have the bright border. Everything is more seemless.
+
+The Ribbons left and right, have been updated. Now the Collapse Button is in the center of the ribbon and takes 100% of the available room. This makes it clicking easier from every point.
+
+![](./RibbonCollapseBars.gif)
