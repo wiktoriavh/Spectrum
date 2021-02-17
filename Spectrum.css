@@ -283,6 +283,11 @@ table tbody tr:hover {
 }
 
 /** GRAPH */
+/*** Background */
+.view-content iframe {
+  background: var(--secondary-background);
+}
+
 /*** Main Nodes */
 .graph-view.color-fill {
   color: var(--main-node);
