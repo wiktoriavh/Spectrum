@@ -1,0 +1,15 @@
+.footnote-backref {
+  color: var(--main-node);
+}
+
+.footnote-backref:hover {
+  color: var(--main-node-hover);
+}
+
+.footnotes li::marker {
+  color: var(--main-node);
+}
+
+.footnote-ref {
+  font-size: 0.7rem;
+}

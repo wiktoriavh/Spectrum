@@ -1,0 +1,17 @@
+.nav-action-button.is-active,
+.nav-action-button.is-active .widget-icon {
+  background-color: var(--main-node);
+  color: var(--background-secondary);
+  fill: var(--background-secondary);
+}
+
+.nav-action-button.is-active:hover {
+  color: var(--secondary-background);
+  background: var(--main-node-hover);
+}
+
+.nav-action-button:hover,
+.nav-action-button:hover .widget-icon {
+  color: var(--main-node-hover);
+  fill: var(--main-node-hover);
+}

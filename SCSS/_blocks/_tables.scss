@@ -1,0 +1,17 @@
+table {
+  width: 100%;
+
+  thead tr {
+    background: #00000034;
+  }
+
+  tbody {
+    tr:nth-child(even) {
+      background: #00000034;
+    }
+    
+    tr:hover {
+      background: #afafaf10;
+    }
+  }
+}

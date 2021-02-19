@@ -1,0 +1,24 @@
+.cm-s-obsidian span.cm-formatting-highlight,
+.cm-s-obsidian span.cm-highlight,
+.markdown-preview-view mark {
+  background: rgb(230, 114, 204);
+  background: rgb(245, 161, 227);
+  color: var(--background-primary);
+  font-weight: 600;
+}
+
+.markdown-preview-view mark {
+  padding: 0 0.5rem;
+}
+
+mark .cm-s-obsidian .cm-strong,
+mark strong {
+  color: var(--background-primary);
+  color: rgb(61, 7, 49);
+  font-weight: 900;
+}
+
+mark .cm-em,
+mark em {
+  color: rgb(138, 19, 112);
+}

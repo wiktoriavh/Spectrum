@@ -1,0 +1,28 @@
+.view-content iframe {
+  background: var(--secondary-background);
+}
+
+.graph-view.color-fill {
+  color: var(--main-node);
+}
+
+.theme-dark .graph-view.color-fill-unresolved {
+  color: var(--main-node);
+  opacity: 0.5;
+}
+* .theme-dark .graph-view.color-fill-tag {
+  color: var(--tags);
+}
+
+.theme-dark .graph-view.color-fill-attachment {
+  color: var(--attachments);
+}
+
+.graph-view.color-line {
+  color: #676767;
+}
+
+.graph-view.color-line-highlight,
+.graph-view.color-fill-highlight {
+  color: #fe6a26;
+}

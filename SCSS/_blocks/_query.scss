@@ -1,0 +1,17 @@
+.search-result-file-matched-text {
+  background: rgb(212, 69, 33);
+}
+
+.tree-item-self .tree-item-inner .search-result-file-matched-text {
+  background: none;
+}
+
+.internal-query .internal-query-header {
+  background: #00000034;
+}
+
+.internal-query
+  .search-results-children
+  .tree-item.search-result:nth-child(odd) {
+  background: #00000034;
+}

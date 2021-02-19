@@ -1,0 +1,40 @@
+.cm-s-obsidian div.HyperMD-codeblock-begin-bg,
+.cm-s-obsidian div.HyperMD-codeblock-end-bg,
+.cm-s-obsidian div.HyperMD-codeblock-bg,
+.cm-s-obsidian span.cm-inline-code {
+  background: var(--secondary-background);
+  border-color: black;
+}
+
+.cm-s-obsidian pre.HyperMD-codeblock-begin {
+  padding-top: 0.5rem;
+}
+
+.cm-s-obsidian div.HyperMD-codeblock-end-bg {
+  border-bottom: 1px solid black;
+}
+
+.cm-s-obsidian pre.HyperMD-codeblock,
+.cm-s-obsidian span.cm-inline-code {
+  color: #928b78;
+}
+
+.markdown-preview-view code {
+  color: #c1b594;
+}
+
+.theme-dark pre[class*='language-'] {
+  background: var(--secondary-background);
+  border: 1px solid black;
+}
+
+.theme-dark pre[class*='language-']::after {
+  content: attr(class);
+  position: absolute;
+  right: 1rem;
+  bottom: 0.5rem;
+}
+
+.cm-s-obsidian .CodeMirror-code {
+  padding-right: 0;
+}

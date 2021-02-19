@@ -1,0 +1,121 @@
+/*
+* Tested with Obsidian v0.10.11 
+*
+* Author: Wiktoria Mielcarek (Braweria) 
+* Name: Spectrum 
+* Licence: MIT 
+* GitHub Repo: https://github.com/Braweria/Spectrum 
+* Version: 0.10.0
+
+! CONTENT
+*.............1. Variables
+*.............2. Textarea
+*................. Body
+*................. Paragraph
+*.............3. Text Decorations
+*................. Bold
+*................. Emphasis
+*................. Highlight
+*................. Links
+*................. Headings
+*................. Text Cursor Indicator
+*................. Tags
+*................. Attachments
+*.............4. Workspace
+*................. Ribbon
+*................. Handle Bars
+*................. Nav
+*................. Header Container
+*................. Scrollbar
+*................. Folders
+*.............5. Tables
+*.............6. Codeblocks
+*................. Mermaid
+*................. Codingblocks
+*.............7. Embed Notes
+*.............8. Vault Launch Progress Bar
+*.............9. Footnotes
+*............10. Listings
+*................. List
+*................. Task List
+*............11. Graph
+*............12. Query
+*............13. Blockquotes
+
+*............100. Other People's Plugins
+*................. Daily Planner
+
+*/
+
+/*
+*..........................1. Variables */
+
+@import '_blocks/variables';
+
+/*
+*..........................2. Textarea */
+
+@import '_blocks/_textarea/body';
+@import '_blocks/_textarea/paragraph';
+
+/* 
+*..........................3. Text Decorations */
+@import '_blocks/_textdecoration/bold';
+@import '_blocks/_textdecoration/emphasis';
+@import '_blocks/_textdecoration/highlight';
+@import '_blocks/_textdecoration/links';
+@import '_blocks/_textdecoration/headings';
+@import '_blocks/_textdecoration/text-cursor-indicator';
+@import '_blocks/_textdecoration/tags';
+@import '_blocks/_textdecoration/attachments';
+
+/* 
+*..........................4. Workspace */
+@import '_blocks/_workspace/ribbon';
+@import '_blocks/_workspace/handle-bars';
+@import '_blocks/_workspace/nav';
+@import '_blocks/_workspace/header-container';
+@import '_blocks/_workspace/scrollbar';
+@import '_blocks/_workspace/folders';
+
+/*
+*..........................5. Tables */
+@import '_blocks/tables';
+
+/*
+*..........................6. Codeblocks */
+@import '_blocks/_codeblocks/mermaid';
+@import '_blocks/_codeblocks/codingblock';
+
+/*
+*..........................7. Embed Notes */
+@import '_blocks/embed-note';
+
+/*
+*..........................8. Vault Launch Progress Bar */
+@import '_blocks/vault-launch-progress-bar';
+
+/*
+*..........................9. Footnotes */
+@import '_blocks/footnotes';
+
+/*
+*..........................10. Listings */
+@import '_blocks/_listings/list';
+@import '_blocks/_listings/task-list';
+
+/*
+*..........................11. Graph */
+@import '_blocks/graph';
+
+/*
+*..........................12. Query */
+@import '_blocks/query';
+
+/*
+*..........................13. Blockquotes */
+@import '_blocks/blockquotes';
+
+/*
+*..........................100. Other People's Plugins */
+@import '_blocks/_other-peoples-plugins/day-planner';

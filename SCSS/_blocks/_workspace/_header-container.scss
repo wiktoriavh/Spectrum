@@ -1,0 +1,52 @@
+.workspace-split.mod-root
+  > .workspace-leaf:last-of-type
+  .workspace-leaf-content,
+.workspace-split.mod-root
+  > .workspace-leaf:first-of-type
+  .workspace-leaf-content {
+  border-radius: 0;
+}
+
+.workspace-split.mod-right-split .workspace-tabs .workspace-leaf {
+  border-radius: 0;
+}
+
+.workspace-split.mod-root
+  > .workspace-leaf:first-of-type:last-of-type
+  .view-header,
+.view-header {
+  border-bottom: 0px;
+}
+
+.workspace-tab-header-container,
+.workspace-tab-container-before.is-before-active,
+.workspace-tab-container-after.is-after-active,
+.workspace-tab-header.is-before-active,
+.workspace-tab-header.is-after-active,
+.workspace-tab-container-before.is-before-active .workspace-tab-header-inner,
+.workspace-tab-container-after.is-after-active .workspace-tab-header-inner,
+.workspace-tab-header.is-before-active .workspace-tab-header-inner,
+.workspace-tab-header.is-after-active .workspace-tab-header-inner {
+  background: var(--background-secondary);
+}
+
+.workspace-tab-header-container {
+  padding-top: 10px;
+  height: auto;
+}
+
+.workspace-tab-header.is-active
+  .workspace-tab-header-inner
+  .workspace-tab-header-inner-icon
+  svg
+  path {
+  stroke: var(--main-node);
+}
+
+.workspace-split.mod-left-split .workspace-tabs .workspace-leaf {
+  border-top-left-radius: 0;
+}
+
+.workspace-leaf.mod-active .view-header {
+  border-bottom: 2px solid var(--main-node);
+}

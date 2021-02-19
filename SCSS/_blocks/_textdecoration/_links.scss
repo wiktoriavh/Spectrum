@@ -1,0 +1,29 @@
+a {
+  color: var(--main-node);
+}
+
+.cm-s-obsidian span.cm-hmd-internal-link.cm-overlay {
+  color: var(--main-node);
+  font-weight: 900;
+}
+
+.cm-s-obsidian span.cm-formatting-link {
+  color: var(--main-node);
+  font-weight: 500;
+}
+
+.cm-s-obsidian span.cm-url,
+.cm-s-obsidian span.cm-formatting-link.cm-link {
+  color: var(--external-link-hidden);
+}
+
+.cm-s-obsidian span.cm-link,
+.cm-s-obsidian span.cm-hmd-internal-link,
+.cm-s-obsidian span.cm-formatting.cm-url,
+.external-link {
+  color: var(--external-link);
+}
+
+a:hover {
+  color: var(--main-node-hover);
+}

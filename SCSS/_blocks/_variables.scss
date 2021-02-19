@@ -1,0 +1,26 @@
+:root,
+.theme-dark {
+  --main-node: #ffbe00;
+  --main-node-hover: #fe6a26;
+  --tags: #f19eee;
+  --external-link: #82d2e8;
+  --external-link-hidden: rgba(131, 197, 235, 0.3);
+  --main-background: #242424;
+  --secondary-background: #1b1b1b;
+  --attachments: #69bceb;
+
+  --accent-1: #f5704c;
+  --accent-2: #f5a14c;
+  --accent-3: #ede482;
+  --accent-4: #aade62;
+  --accent-5: #62deac;
+  --accent-6: #62b7de;
+
+  /* Overriding Obsidian Variables */
+  --default-font: 'JetBrains Mono', monospace;
+  --font-monospace: var(--default-font);
+  --text-normal: #c9c9c9;
+
+  --background-primary: var(--main-background);
+  --background-secondary: var(--secondary-background);
+}

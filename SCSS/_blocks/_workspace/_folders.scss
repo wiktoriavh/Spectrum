@@ -1,0 +1,17 @@
+.nav-folder.is-collapsed .nav-folder-title .nav-folder-title-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav-folder.is-collapsed .nav-folder-title .nav-folder-title-content::before {
+  content: '🗀';
+  display: inline-block;
+  width: 1.5rem;
+}
+
+.nav-folder .nav-folder-title .nav-folder-title-content::before {
+  content: '🗁';
+  display: inline-block;
+  width: 1.5rem;
+}

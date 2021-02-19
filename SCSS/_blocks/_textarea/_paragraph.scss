@@ -1,0 +1,7 @@
+.markdown-preview-view div p {
+  margin-bottom: 1.5rem;
+}
+.markdown-preview-view.is-readable-line-width .markdown-preview-sizer,
+.markdown-source-view.is-readable-line-width .CodeMirror {
+  max-width: 750px;
+}

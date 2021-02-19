@@ -1,0 +1,38 @@
+.markdown-preview-view ul > li.task-list-item.is-checked {
+  text-decoration: none;
+}
+
+.markdown-preview-view .task-list-item-checkbox {
+  -webkit-appearance: none;
+  box-sizing: border-box;
+  border: 1px solid var(--text-muted);
+  border-radius: 2px;
+  position: relative;
+  width: 1.3em;
+  height: 1.3em;
+  margin: 0;
+  outline: none;
+  margin-right: 4px;
+  margin-bottom: 2px;
+  cursor: pointer;
+  vertical-align: baseline;
+  margin-right: 1rem;
+  filter: none;
+}
+
+.markdown-preview-view .task-list-item-checkbox:checked::before {
+  content: '✔';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 150%;
+  height: 160%;
+  line-height: 0;
+  font-size: 1.5rem;
+  color: var(--main-node);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

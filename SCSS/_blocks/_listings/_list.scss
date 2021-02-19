@@ -1,0 +1,22 @@
+.cm-hmd-list-indent .cm-tab,
+ul ul {
+  position: relative;
+}
+
+.cm-hmd-list-indent .cm-tab::before,
+ul ul::before {
+  content: '';
+  border-left: 1px solid var(--main-node);
+  position: absolute;
+  left: -15px;
+  top: 0;
+  bottom: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+ul li::marker {
+  color: white;
+}
