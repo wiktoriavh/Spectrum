@@ -1,3 +1,5 @@
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+
 # Spectrum
 
 _/ˈspɛktrəm/_
@@ -18,19 +20,19 @@ Just like a Spectrum, the way you take notes can expand everywhere. And looking 
 
 The tables were styled, so that **you** have a better time looking at your data, instead of _searching_ for your data. And with just a quick mouse hover, you see what row you're on.
 
-![](./SpectrumTables.gif)
+![](./images/SpectrumTables.gif)
 
 ## Search Navigation
 
 The Search Navigation Bar was fixed with this styling. Before it was possible to hide icons when shrinking the sidebar, but not anymore! Now the Icons will just wrap to the next row and still be visible to you.
 
-![](./SpectrumNavbar.gif)
+![](./images/SpectrumNavbar.gif)
 
 ## Query
 
 The Query search got the same improvement as the table. Each row has a different colour, so you can easily distinguish between them.
 
-![](./SpectrumQuery.gif)
+![](./images/SpectrumQuery.gif)
 
 ## Scrollbar
 
@@ -56,7 +58,7 @@ The folders in the sidebar now have an open and closed folder icon, depending on
 
 ## Style Preview
 
-![](./SpectrumPreview.gif)
+![](./images/SpectrumPreview.gif)
 
 ### Additional Notes
 
@@ -70,7 +72,7 @@ The Stylesheet is still under development and being improved over time. Don't he
 
 Codeblocks have been updated, they now have a softer colour and are easier on the eyes, while writing. Also a border was added as well as what language the type of code represents at the bottom right.
 
-![](./codeblocks.gif)
+![](./images/codeblocks.gif)
 
 ## Changelog v0.7.0 - 2021.02.12
 
@@ -78,13 +80,13 @@ Codeblocks have been updated, they now have a softer colour and are easier on th
 
 The Workspace banners and ribbons both have now the same colour, to create lease friction. Also the icons for them have been updated as well.
 
-![](./workspaceSidebars.jpg)
+![](./images/workspaceSidebars.jpg)
 
 ### Tables
 
 The tables have gotten a small update, they are now at full width of the Note. No more different sized tables in the same note, creating a weird balance.
 
-![](./tablesWidth.gif)
+![](./images/tablesWidth.gif)
 
 ## Changelog v0.8.0 - 2021.02.15
 
@@ -130,4 +132,4 @@ The Note Header now has hard corners, instead of rounded corners. And the Ribbon
 
 The Ribbons left and right, have been updated. Now the Collapse Button is in the center of the ribbon and takes 100% of the available room. This makes it clicking easier from every point.
 
-![](./RibbonCollapseBars.gif)
+![](./images/RibbonCollapseBars.gif)
