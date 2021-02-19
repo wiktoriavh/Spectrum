@@ -1,0 +1,25 @@
+{
+  "name": "spectrumobsidianstylesheet",
+  "version": "1.0.0",
+  "private": true,
+  "description": "An Obsidian Theme",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "npx node-sass --output-style expanded SCSS/Spectrum.scss > development/Spectrum.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Braweria/Spectrum.git"
+  },
+  "author": "Wiktoria Mielcarek",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Braweria/Spectrum/issues"
+  },
+  "homepage": "https://github.com/Braweria/Spectrum#readme",
+  "dependencies": {
+    "node-sass": "^5.0.0",
+    "prettier": "^2.2.1"
+  }
+}

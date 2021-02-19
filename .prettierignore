@@ -1,0 +1,7 @@
+# Ignore node Modules
+
+/node_modules
+
+# Ignore images
+
+/images
