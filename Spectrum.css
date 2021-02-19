@@ -9,7 +9,7 @@
 
 :root,
 .theme-dark {
-  --default-font: "JetBrains Mono";
+  --default-font: 'JetBrains Mono';
   --font-monospace: var(--default-font);
 
   --light-red: #f18b74;
@@ -97,14 +97,14 @@ a:hover {
 
 /** Closed Folder for closed folders */
 .nav-folder.is-collapsed .nav-folder-title .nav-folder-title-content::before {
-  content: "🗀";
+  content: '🗀';
   display: inline-block;
   width: 1.5rem;
 }
 
 /** Open FOlder for open folders */
 .nav-folder .nav-folder-title .nav-folder-title-content::before {
-  content: "🗁";
+  content: '🗁';
   display: inline-block;
   width: 1.5rem;
 }
@@ -166,7 +166,7 @@ h5 {
 
 /*** Preview Checked Checkbox */
 .markdown-preview-view .task-list-item-checkbox:checked::before {
-  content: "✔";
+  content: '✔';
   position: absolute;
   bottom: 0;
   left: 0;
@@ -332,7 +332,7 @@ ul ul {
 /*** Border Before List inside List */
 .cm-hmd-list-indent .cm-tab::before,
 ul ul::before {
-  content: "";
+  content: '';
   border-left: 1px solid var(--main-node);
   /* border-left: 1px solid white; */
   position: absolute;
@@ -423,13 +423,13 @@ ul li::marker {
 }
 
 /*** Preview Codeblock */
-.theme-dark pre[class*="language-"] {
+.theme-dark pre[class*='language-'] {
   background: var(--secondary-background);
   border: 1px solid black;
 }
 
 /*** Preview Codeblock After */
-.theme-dark pre[class*="language-"]::after {
+.theme-dark pre[class*='language-']::after {
   content: attr(class);
   position: absolute;
   right: 1rem;
