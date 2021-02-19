@@ -1,21 +1,56 @@
-/**********************************/
-/** Tested with Obsidian v0.10.11 */
-/**********************************/
-/** Author: Wiktoria Mielcarek (Braweria) */
-/** Name: Spectrum */
-/** Licence: MIT */
-/** GitHub Repo: https://github.com/Braweria/Spectrum */
-/** Version: 0.10.0 */
+@charset "UTF-8";
+/*
+* Tested with Obsidian v0.10.11 
+*
+* Author: Wiktoria Mielcarek (Braweria) 
+* Name: Spectrum 
+* Licence: MIT 
+* GitHub Repo: https://github.com/Braweria/Spectrum 
+* Version: 0.11.0
 
+! CONTENT
+*.............1. Variables
+*.............2. Textarea
+*................. Body
+*................. Paragraph
+*.............3. Text Decorations
+*................. Bold
+*................. Emphasis
+*................. Highlight
+*................. Links
+*................. Headings
+*................. Text Cursor Indicator
+*................. Tags
+*................. Attachments
+*.............4. Workspace
+*................. Ribbon
+*................. Handle Bars
+*................. Nav
+*................. Header Container
+*................. Scrollbar
+*................. Folders
+*.............5. Tables
+*.............6. Codeblocks
+*................. Mermaid
+*................. Codingblocks
+*.............7. Embed Notes
+*.............8. Vault Launch Progress Bar
+*.............9. Footnotes
+*............10. Listings
+*................. List
+*................. Task List
+*............11. Graph
+*............12. Query
+*............13. Blockquotes
+
+*............100. Other People's Plugins
+*................. Daily Planner
+
+*/
+/*
+*..........................1. Variables */
 :root,
 .theme-dark {
-  --default-font: 'JetBrains Mono';
-  --font-monospace: var(--default-font);
-
-  --light-red: #f18b74;
-  --internal-link: #ec7d99;
-  --internal-link-hover: #e2417f;
-
   --main-node: #ffbe00;
   --main-node-hover: #fe6a26;
   --tags: #f19eee;
@@ -23,220 +58,57 @@
   --external-link-hidden: rgba(131, 197, 235, 0.3);
   --main-background: #242424;
   --secondary-background: #1b1b1b;
-  --background-secondary: var(--secondary-background);
   --attachments: #69bceb;
-}
-
-/** Background */
-.theme-dark {
-  --background-primary: var(--main-background);
+  --accent-1: #f5704c;
+  --accent-2: #f5a14c;
+  --accent-3: #ede482;
+  --accent-4: #aade62;
+  --accent-5: #62deac;
+  --accent-6: #62b7de;
+  /* Overriding Obsidian Variables */
+  --default-font: 'JetBrains Mono', monospace;
+  --font-monospace: var(--default-font);
   --text-normal: #c9c9c9;
+  --background-primary: var(--main-background);
+  --background-secondary: var(--secondary-background);
 }
 
-/** Line Height */
+/*
+*..........................2. Textarea */
 .cm-s-obsidian,
 body {
   line-height: 1.7rem;
 }
 
-/** Paragraph */
 .markdown-preview-view div p {
-  /* text-indent: 1.5rem; */
   margin-bottom: 1.5rem;
 }
 
-/** Links */
-/*** Standard Link */
-a {
-  color: var(--main-node);
+.markdown-preview-view.is-readable-line-width .markdown-preview-sizer,
+.markdown-source-view.is-readable-line-width .CodeMirror {
+  max-width: 750px;
 }
 
-/*** Internal */
-.cm-s-obsidian span.cm-hmd-internal-link.cm-overlay {
-  color: var(--main-node);
-  font-weight: 900;
-}
-
-/*** Internal Bracket */
-.cm-s-obsidian span.cm-formatting-link {
-  color: var(--main-node);
-  font-weight: 500;
-}
-
-/*** Internal Hover */
-a:hover {
-  color: var(--main-node-hover);
-}
-
-/*** External URL and Text Brackets */
-.cm-s-obsidian span.cm-url,
-.cm-s-obsidian span.cm-formatting-link.cm-link {
-  color: var(--external-link-hidden);
-}
-
-/*** External Brackets and Text */
-.cm-s-obsidian span.cm-link,
-.cm-s-obsidian span.cm-hmd-internal-link,
-.cm-s-obsidian span.cm-formatting.cm-url,
-.external-link {
-  color: var(--external-link);
-}
-
-/** Tags */
-.cm-s-obsidian span.cm-hashtag,
-.tag {
-  color: var(--tags);
-}
-
-/** ??? Can't figure it out */
-.nav-folder.is-collapsed .nav-folder-title .nav-folder-title-content {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-/** Closed Folder for closed folders */
-.nav-folder.is-collapsed .nav-folder-title .nav-folder-title-content::before {
-  content: '🗀';
-  display: inline-block;
-  width: 1.5rem;
-}
-
-/** Open FOlder for open folders */
-.nav-folder .nav-folder-title .nav-folder-title-content::before {
-  content: '🗁';
-  display: inline-block;
-  width: 1.5rem;
-}
-
-/** Heading 1 - 6 */
-.cm-header-1,
-h1 {
-  color: #f5704c;
-}
-
-.cm-header-2,
-h2 {
-  color: #f5a14c;
-}
-
-.cm-header-3,
-h3 {
-  color: #ede482;
-}
-
-.cm-header-4,
-h4 {
-  color: #aade62;
-}
-
-.cm-header-5,
-h5 {
-  color: #62deac;
-}
-
-.markdown-preview-view h6,
-.cm-header-6 {
-  color: #62b7de;
-}
-
-/** Checklist */
-/*** Preview Text for Checked Item */
-.markdown-preview-view ul > li.task-list-item.is-checked {
-  text-decoration: none;
-}
-
-/*** Preview Checkbox */
-.markdown-preview-view .task-list-item-checkbox {
-  -webkit-appearance: none;
-  box-sizing: border-box;
-  border: 1px solid var(--text-muted);
-  border-radius: 2px;
-  position: relative;
-  width: 1.3em;
-  height: 1.3em;
-  margin: 0;
-  outline: none;
-  margin-right: 4px;
-  margin-bottom: 2px;
-  cursor: pointer;
-  vertical-align: baseline;
-  margin-right: 1rem;
-}
-
-/*** Preview Checked Checkbox */
-.markdown-preview-view .task-list-item-checkbox:checked::before {
-  content: '✔';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-
-  width: 150%;
-  height: 160%;
-  line-height: 0;
-  font-size: 1.5rem;
-  color: var(--main-node);
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/** Strong/Bold */
+/* 
+*..........................3. Text Decorations */
 .cm-s-obsidian .cm-strong,
 strong {
-  color: rgb(87, 226, 141);
+  color: #57e28d;
+  color: var(--accent-4);
   font-weight: 900;
 }
 
-/** Highlight > Strong/Bold */
-mark .cm-s-obsidian .cm-strong,
-mark strong {
-  color: var(--background-primary);
-  color: rgb(61, 7, 49);
-  /* color: rgb(29, 53, 14); */
-  font-weight: 900;
-}
-
-/** Emphasis/Italic */
 .cm-em,
 em {
-  color: rgb(241, 236, 165);
+  color: #f1eca5;
+  color: var(--accent-3);
 }
 
-/** Highlight > Emphasis/Italic */
-mark .cm-em,
-mark em {
-  color: rgb(138, 19, 112);
-}
-
-/** Table */
-/*** Table Width */
-table {
-  width: 100%;
-}
-
-/*** Head Row */
-table thead tr {
-  background: #00000034;
-}
-
-/*** Body Row Even */
-table tbody tr:nth-child(even) {
-  background: #00000034;
-}
-
-/*** Body Row Hover */
-table tbody tr:hover {
-  background: #afafaf10;
-}
-
-/** Highlight */
 .cm-s-obsidian span.cm-formatting-highlight,
 .cm-s-obsidian span.cm-highlight,
 .markdown-preview-view mark {
-  background: rgb(230, 114, 204);
-  background: rgb(245, 161, 227);
+  background: #e672cc;
+  background: #f5a1e3;
   color: var(--background-primary);
   font-weight: 600;
 }
@@ -245,119 +117,88 @@ table tbody tr:hover {
   padding: 0 0.5rem;
 }
 
-/*! Makes the Navbar Flexible, so it doesn't hide items */
-.nav-buttons-container {
-  display: flex;
-  flex-wrap: wrap;
+mark .cm-s-obsidian .cm-strong,
+mark strong {
+  color: var(--background-primary);
+  color: #3d0731;
+  font-weight: 900;
 }
 
-/** Blockquote */
-.markdown-preview-view blockquote {
-  border-color: rgb(143, 96, 230);
-  border-width: 1px;
-  border-radius: 5px;
+mark .cm-em,
+mark em {
+  color: #8a1370;
 }
 
-/** Query Match */
-.search-result-file-matched-text {
-  background: rgb(212, 69, 33);
-}
-
-.tree-item-self .tree-item-inner .search-result-file-matched-text {
-  background: none;
-}
-
-.internal-query .internal-query-header {
-  background: #00000034;
-}
-
-.internal-query
-  .search-results-children
-  .tree-item.search-result:nth-child(odd) {
-  background: #00000034;
-}
-
-/** Text Width */
-.markdown-preview-view.is-readable-line-width .markdown-preview-sizer,
-.markdown-source-view.is-readable-line-width .CodeMirror {
-  max-width: 750px;
-}
-
-/** GRAPH */
-/*** Background */
-.view-content iframe {
-  background: var(--secondary-background);
-}
-
-/*** Main Nodes */
-.graph-view.color-fill {
+a {
   color: var(--main-node);
 }
 
-/*** Unresolved Nodes */
-.theme-dark .graph-view.color-fill-unresolved {
+.cm-s-obsidian span.cm-hmd-internal-link.cm-overlay {
   color: var(--main-node);
-  opacity: 0.5;
+  font-weight: 900;
 }
-*
 
-/*** Tags */
-.theme-dark .graph-view.color-fill-tag {
+.cm-s-obsidian span.cm-formatting-link {
+  color: var(--main-node);
+  font-weight: 500;
+}
+
+.cm-s-obsidian span.cm-url,
+.cm-s-obsidian span.cm-formatting-link.cm-link {
+  color: var(--external-link-hidden);
+}
+
+.cm-s-obsidian span.cm-link,
+.cm-s-obsidian span.cm-hmd-internal-link,
+.cm-s-obsidian span.cm-formatting.cm-url,
+.external-link {
+  color: var(--external-link);
+}
+
+a:hover {
+  color: var(--main-node-hover);
+}
+
+.cm-header-1,
+h1 {
+  color: var(--accent-1);
+}
+
+.cm-header-2,
+h2 {
+  color: var(--accent-2);
+}
+
+.cm-header-3,
+h3 {
+  color: var(--accent-3);
+}
+
+.cm-header-4,
+h4 {
+  color: var(--accent-4);
+}
+
+.cm-header-5,
+h5 {
+  color: var(--accent-5);
+}
+
+.cm-header-6,
+h6 {
+  color: var(--accent-6);
+}
+
+.CodeMirror-cursor,
+.CodeMirror div.CodeMirror-secondarycursor {
+  border-color: var(--main-node);
+}
+
+.cm-s-obsidian span.cm-hashtag,
+.tag {
   color: var(--tags);
 }
 
-/*** Attachments */
-.theme-dark .graph-view.color-fill-attachment {
-  color: var(--attachments);
-}
-
-/*** Connection Line */
-.graph-view.color-line {
-  color: #676767;
-}
-
-/*** Hover Effect */
-.graph-view.color-line-highlight,
-.graph-view.color-fill-highlight {
-  color: #fe6a26;
-}
-
-/** List */
-/*** List inside List */
-.cm-hmd-list-indent .cm-tab,
-ul ul {
-  position: relative;
-}
-
-/*** Border Before List inside List */
-.cm-hmd-list-indent .cm-tab::before,
-ul ul::before {
-  content: '';
-  border-left: 1px solid var(--main-node);
-  /* border-left: 1px solid white; */
-  position: absolute;
-  left: -15px;
-  top: 0;
-  bottom: 0;
-}
-
-/*** List Item */
-ul li {
-  margin-bottom: 10px;
-}
-
-/*** List Item Marker */
-ul li::marker {
-  color: white;
-}
-
-/** Scrollbars */
-::-webkit-scrollbar {
-  width: 2px;
-  background-color: var(--main-background);
-}
-
-/** Attachment Tags */
 .nav-file-tag {
   background: none;
   border: 1px solid var(--attachments);
@@ -365,94 +206,8 @@ ul li::marker {
   font-weight: 400;
 }
 
-/** Footnote */
-/*** Back Reference */
-.footnote-backref {
-  color: var(--main-node);
-}
-
-/*** Back Reference Hover */
-.footnote-backref:hover {
-  color: var(--main-node-hover);
-}
-
-/*** Footnote List Marker */
-.footnotes li::marker {
-  color: var(--main-node);
-}
-
-/*** Footnote Reference */
-.footnote-ref {
-  font-size: 0.7rem;
-}
-
-/** Workspace Note Active */
-.workspace-leaf.mod-active .view-header {
-  border-bottom: 2px solid var(--main-node);
-}
-
-/** Codeblock */
-/*** Markdown Block Background/Border Colour */
-.cm-s-obsidian div.HyperMD-codeblock-begin-bg,
-.cm-s-obsidian div.HyperMD-codeblock-end-bg,
-.cm-s-obsidian div.HyperMD-codeblock-bg,
-.cm-s-obsidian span.cm-inline-code {
-  background: var(--secondary-background);
-  border-color: black;
-}
-
-/*** First Markdown Code Line */
-.cm-s-obsidian pre.HyperMD-codeblock-begin {
-  padding-top: 0.5rem;
-}
-
-/*** Last Markdown Code Line */
-.cm-s-obsidian div.HyperMD-codeblock-end-bg {
-  border-bottom: 1px solid black;
-}
-
-/*** Markdown Code Font Colour */
-.cm-s-obsidian pre.HyperMD-codeblock,
-.cm-s-obsidian span.cm-inline-code {
-  color: #928b78;
-}
-
-/*** Preview Single Code Font Colour */
-.markdown-preview-view code {
-  color: #c1b594;
-}
-
-/*** Preview Codeblock */
-.theme-dark pre[class*='language-'] {
-  background: var(--secondary-background);
-  border: 1px solid black;
-}
-
-/*** Preview Codeblock After */
-.theme-dark pre[class*='language-']::after {
-  content: attr(class);
-  position: absolute;
-  right: 1rem;
-  bottom: 0.5rem;
-}
-
-/** Handle Bar */
-.workspace-split.mod-left-split > .workspace-leaf-resize-handle,
-.workspace-split.mod-right-split > .workspace-leaf-resize-handle {
-  background: var(--background-secondary);
-}
-
-.workspace-split.mod-horizontal > * > .workspace-leaf-resize-handle {
-  background: var(--main-background);
-}
-
-.workspace-split.mod-left-split > .workspace-leaf-resize-handle:hover,
-.workspace-split.mod-right-split > .workspace-leaf-resize-handle:hover,
-.workspace-split.mod-horizontal > * > .workspace-leaf-resize-handle:hover {
-  background: var(--main-node);
-}
-
-/** Workspace Ribbon Left && Right */
+/* 
+*..........................4. Workspace */
 .workspace-ribbon.mod-left.is-collapsed,
 .workspace-ribbon.mod-right.is-collapsed {
   border: 0;
@@ -466,30 +221,6 @@ ul li::marker {
   align-items: center;
 }
 
-/** Workspace Note Header */
-.workspace-split.mod-root
-  > .workspace-leaf:last-of-type
-  .workspace-leaf-content,
-.workspace-split.mod-root
-  > .workspace-leaf:first-of-type
-  .workspace-leaf-content {
-  border-radius: 0;
-}
-
-.workspace-split.mod-right-split .workspace-tabs .workspace-leaf {
-  border-radius: 0;
-}
-
-/** Note Header */
-.workspace-split.mod-root
-  > .workspace-leaf:first-of-type:last-of-type
-  .view-header,
-.view-header {
-  border-bottom: 0px;
-}
-
-/** Workspace Bars */
-/*** Ribbon */
 .workspace-ribbon {
   background: var(--background-secondary);
 }
@@ -510,34 +241,19 @@ ul li::marker {
   order: 3;
 }
 
-/*** Header */
-.workspace-tab-header-container,
-.workspace-tab-container-before.is-before-active,
-.workspace-tab-container-after.is-after-active,
-.workspace-tab-header.is-before-active,
-.workspace-tab-header.is-after-active,
-.workspace-tab-container-before.is-before-active .workspace-tab-header-inner,
-.workspace-tab-container-after.is-after-active .workspace-tab-header-inner,
-.workspace-tab-header.is-before-active .workspace-tab-header-inner,
-.workspace-tab-header.is-after-active .workspace-tab-header-inner {
+.workspace-split.mod-left-split > .workspace-leaf-resize-handle,
+.workspace-split.mod-right-split > .workspace-leaf-resize-handle {
   background: var(--background-secondary);
 }
 
-.workspace-tab-header-container {
-  padding-top: 10px;
-  height: auto;
+.workspace-split.mod-horizontal > * > .workspace-leaf-resize-handle {
+  background: var(--main-background);
 }
 
-.workspace-tab-header.is-active
-  .workspace-tab-header-inner
-  .workspace-tab-header-inner-icon
-  svg
-  path {
-  stroke: var(--main-node);
-}
-
-.workspace-split.mod-left-split .workspace-tabs .workspace-leaf {
-  border-top-left-radius: 0;
+.workspace-split.mod-left-split > .workspace-leaf-resize-handle:hover,
+.workspace-split.mod-right-split > .workspace-leaf-resize-handle:hover,
+.workspace-split.mod-horizontal > * > .workspace-leaf-resize-handle:hover {
+  background: var(--main-node);
 }
 
 .nav-action-button.is-active,
@@ -558,7 +274,102 @@ ul li::marker {
   fill: var(--main-node-hover);
 }
 
-/** Mermaid */
+.workspace-split.mod-root
+> .workspace-leaf:last-of-type
+.workspace-leaf-content,
+.workspace-split.mod-root
+> .workspace-leaf:first-of-type
+.workspace-leaf-content {
+  border-radius: 0;
+}
+
+.workspace-split.mod-right-split .workspace-tabs .workspace-leaf {
+  border-radius: 0;
+}
+
+.workspace-split.mod-root
+> .workspace-leaf:first-of-type:last-of-type
+.view-header,
+.view-header {
+  border-bottom: 0px;
+}
+
+.workspace-tab-header-container,
+.workspace-tab-container-before.is-before-active,
+.workspace-tab-container-after.is-after-active,
+.workspace-tab-header.is-before-active,
+.workspace-tab-header.is-after-active,
+.workspace-tab-container-before.is-before-active .workspace-tab-header-inner,
+.workspace-tab-container-after.is-after-active .workspace-tab-header-inner,
+.workspace-tab-header.is-before-active .workspace-tab-header-inner,
+.workspace-tab-header.is-after-active .workspace-tab-header-inner {
+  background: var(--background-secondary);
+}
+
+.workspace-tab-header-container {
+  padding-top: 10px;
+  height: auto;
+}
+
+.workspace-tab-header.is-active
+.workspace-tab-header-inner
+.workspace-tab-header-inner-icon
+svg
+path {
+  stroke: var(--main-node);
+}
+
+.workspace-split.mod-left-split .workspace-tabs .workspace-leaf {
+  border-top-left-radius: 0;
+}
+
+.workspace-leaf.mod-active .view-header {
+  border-bottom: 2px solid var(--main-node);
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+  background-color: var(--main-background);
+}
+
+.nav-folder.is-collapsed .nav-folder-title .nav-folder-title-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav-folder.is-collapsed .nav-folder-title .nav-folder-title-content::before {
+  content: '🗀';
+  display: inline-block;
+  width: 1.5rem;
+}
+
+.nav-folder .nav-folder-title .nav-folder-title-content::before {
+  content: '🗁';
+  display: inline-block;
+  width: 1.5rem;
+}
+
+/*
+*..........................5. Tables */
+table {
+  width: 100%;
+}
+
+table thead tr {
+  background: #00000034;
+}
+
+table tbody tr:nth-child(even) {
+  background: #00000034;
+}
+
+table tbody tr:hover {
+  background: #afafaf10;
+}
+
+/*
+*..........................6. Codeblocks */
 .mermaid {
   display: flex;
   width: calc(100% + 900px);
@@ -571,7 +382,49 @@ ul li::marker {
   transform: translate(0px, 10px);
 }
 
-/** Embed Notes */
+.cm-s-obsidian div.HyperMD-codeblock-begin-bg,
+.cm-s-obsidian div.HyperMD-codeblock-end-bg,
+.cm-s-obsidian div.HyperMD-codeblock-bg,
+.cm-s-obsidian span.cm-inline-code {
+  background: var(--secondary-background);
+  border-color: black;
+}
+
+.cm-s-obsidian pre.HyperMD-codeblock-begin {
+  padding-top: 0.5rem;
+}
+
+.cm-s-obsidian div.HyperMD-codeblock-end-bg {
+  border-bottom: 1px solid black;
+}
+
+.cm-s-obsidian pre.HyperMD-codeblock,
+.cm-s-obsidian span.cm-inline-code {
+  color: #928b78;
+}
+
+.markdown-preview-view code {
+  color: #c1b594;
+}
+
+.theme-dark pre[class*='language-'] {
+  background: var(--secondary-background);
+  border: 1px solid black;
+}
+
+.theme-dark pre[class*='language-']::after {
+  content: attr(class);
+  position: absolute;
+  right: 1rem;
+  bottom: 0.5rem;
+}
+
+.cm-s-obsidian .CodeMirror-code {
+  padding-right: 0;
+}
+
+/*
+*..........................7. Embed Notes */
 .internal-embed.is-loaded {
   border: 1px solid black;
   border-radius: 10px;
@@ -581,18 +434,8 @@ ul li::marker {
   border: 0px solid black;
 }
 
-/** Text Cursor Indicator */
-.CodeMirror-cursor,
-.CodeMirror div.CodeMirror-secondarycursor {
-  border-color: var(--main-node);
-}
-
-/** CodeMirror Code */
-.cm-s-obsidian .CodeMirror-code {
-  padding-right: 0;
-}
-
-/** Vault launch progress bar*/
+/*
+*..........................8. Vault Launch Progress Bar */
 .progress-bar-subline {
   position: absolute;
   background-color: var(--main-node);
@@ -607,10 +450,148 @@ ul li::marker {
   height: 8px;
 }
 
-/*******************/
-/*******************/
-/*******************/
+/*
+*..........................9. Footnotes */
+.footnote-backref {
+  color: var(--main-node);
+}
 
+.footnote-backref:hover {
+  color: var(--main-node-hover);
+}
+
+.footnotes li::marker {
+  color: var(--main-node);
+}
+
+.footnote-ref {
+  font-size: 0.7rem;
+}
+
+/*
+*..........................10. Listings */
+.cm-hmd-list-indent .cm-tab,
+ul ul {
+  position: relative;
+}
+
+.cm-hmd-list-indent .cm-tab::before,
+ul ul::before {
+  content: '';
+  border-left: 1px solid var(--main-node);
+  position: absolute;
+  left: -15px;
+  top: 0;
+  bottom: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+ul li::marker {
+  color: white;
+}
+
+.markdown-preview-view ul > li.task-list-item.is-checked {
+  text-decoration: none;
+}
+
+.markdown-preview-view .task-list-item-checkbox {
+  -webkit-appearance: none;
+  box-sizing: border-box;
+  border: 1px solid var(--text-muted);
+  border-radius: 2px;
+  position: relative;
+  width: 1.3em;
+  height: 1.3em;
+  margin: 0;
+  outline: none;
+  margin-right: 4px;
+  margin-bottom: 2px;
+  cursor: pointer;
+  vertical-align: baseline;
+  margin-right: 1rem;
+  filter: none;
+}
+
+.markdown-preview-view .task-list-item-checkbox:checked::before {
+  content: '✔';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 150%;
+  height: 160%;
+  line-height: 0;
+  font-size: 1.5rem;
+  color: var(--main-node);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*
+*..........................11. Graph */
+.view-content iframe {
+  background: var(--secondary-background);
+}
+
+.graph-view.color-fill {
+  color: var(--main-node);
+}
+
+.theme-dark .graph-view.color-fill-unresolved {
+  color: var(--main-node);
+  opacity: 0.5;
+}
+
+* .theme-dark .graph-view.color-fill-tag {
+  color: var(--tags);
+}
+
+.theme-dark .graph-view.color-fill-attachment {
+  color: var(--attachments);
+}
+
+.graph-view.color-line {
+  color: #676767;
+}
+
+.graph-view.color-line-highlight,
+.graph-view.color-fill-highlight {
+  color: #fe6a26;
+}
+
+/*
+*..........................12. Query */
+.search-result-file-matched-text {
+  background: #d44521;
+}
+
+.tree-item-self .tree-item-inner .search-result-file-matched-text {
+  background: none;
+}
+
+.internal-query .internal-query-header {
+  background: #00000034;
+}
+
+.internal-query
+.search-results-children
+.tree-item.search-result:nth-child(odd) {
+  background: #00000034;
+}
+
+/*
+*..........................13. Blockquotes */
+.markdown-preview-view blockquote {
+  border-color: #8f60e6;
+  border-width: 1px;
+  border-radius: 5px;
+}
+
+/*
+*..........................100. Other People's Plugins */
 /** Day Planner */
 /*** Progress Bar */
 .day-planner .day-planner-progress-bar {
