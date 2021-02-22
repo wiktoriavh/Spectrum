@@ -1,0 +1,50 @@
+.kanban {
+  ul {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid var(--secondary-background);
+    background-color: #1b1b1b54;
+    padding: 1rem;
+    border-radius: 1rem;
+
+    li {
+      flex: 1;
+  list-style: none;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0rem;
+      margin-right: 2.5rem;
+      margin-top: 1rem;
+      border-radius: 0;
+      border: 0;
+
+      li {
+        width: 100%;
+        display: block;
+        background: var(--secondary-background);
+        margin-bottom: 0;
+        padding: 10px;
+
+        &:nth-child(even) {
+          background: var(--main-background);
+        }
+
+        &:hover {
+          background: #afafaf10;
+        }
+      }
+
+      ul {
+        margin-right: 0;
+      }
+
+      &::before {
+        border-left: 0;
+      }
+    }
+  }
+}

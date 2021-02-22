@@ -41,6 +41,7 @@
 *............11. Graph
 *............12. Query
 *............13. Blockquotes
+*............14. Kanban
 
 *............100. Other People's Plugins
 *................. Daily Planner
@@ -115,6 +116,10 @@
 /*
 *..........................13. Blockquotes */
 @import '_blocks/blockquotes';
+
+/*
+*..........................14. Kanban */
+@import '_blocks/kanban';
 
 /*
 *..........................100. Other People's Plugins */
