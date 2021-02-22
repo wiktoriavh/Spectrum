@@ -6,7 +6,7 @@
 * Name: Spectrum 
 * Licence: MIT 
 * GitHub Repo: https://github.com/Braweria/Spectrum 
-* Version: 0.11.0
+* Version: 0.12.0
 
 ! CONTENT
 *.............1. Variables
@@ -42,6 +42,7 @@
 *............11. Graph
 *............12. Query
 *............13. Blockquotes
+*............14. Kanban
 
 *............100. Other People's Plugins
 *................. Daily Planner
@@ -588,6 +589,57 @@ ul li::marker {
   border-color: #8f60e6;
   border-width: 1px;
   border-radius: 5px;
+}
+
+/*
+*..........................14. Kanban */
+.kanban ul {
+  display: flex;
+  flex-direction: row;
+  border: 2px solid var(--secondary-background);
+  background-color: #1b1b1b54;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.kanban ul li {
+  flex: 1;
+  list-style: none;
+}
+
+.kanban ul ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0rem;
+  margin-right: 2.5rem;
+  margin-top: 1rem;
+  border-radius: 0;
+  border: 0;
+}
+
+.kanban ul ul li {
+  width: 100%;
+  display: block;
+  background: var(--secondary-background);
+  margin-bottom: 0;
+  padding: 10px;
+}
+
+.kanban ul ul li:nth-child(even) {
+  background: var(--main-background);
+}
+
+.kanban ul ul li:hover {
+  background: #afafaf10;
+}
+
+.kanban ul ul ul {
+  margin-right: 0;
+}
+
+.kanban ul ul::before {
+  border-left: 0;
 }
 
 /*
