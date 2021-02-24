@@ -13,7 +13,7 @@
 
 ## Content
 
-- [Contributing](#🤝 Contributing)
+- [Contributing](#-Contributing)
   - [Get Started](#Get-Started)
   - [How to compile](#How-to-compile)
 - [Author](#Author)
