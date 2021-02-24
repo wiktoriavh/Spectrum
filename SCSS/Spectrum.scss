@@ -42,6 +42,7 @@
 *............12. Query
 *............13. Blockquotes
 *............14. Kanban
+*............15. Floating Images
 
 *............100. Other People's Plugins
 *................. Daily Planner
@@ -120,6 +121,10 @@
 /*
 *..........................14. Kanban */
 @import '_blocks/kanban';
+
+/*
+*..........................15. Floating Images */
+@import '_blocks/floating-images';
 
 /*
 *..........................100. Other People's Plugins */
