@@ -5,7 +5,7 @@
 [![License: MIT](https://img.shields.io/github/license/Braweria/Spectrum)](https://github.com/Braweria/Spectrum/blob/master/LICENSE)
 [![Twitter: braweria](https://img.shields.io/twitter/follow/braweria.svg?style=social)](https://twitter.com/braweria)
 
-> An Obsidian Theme
+> Spectrum is a theme for Obsidian.md, a note taking app. Spectrum is meant to be easy on the eyes and boost productivity, but also to not bore your mind with colours here and there.
 
 - 🏠 [My Homepage](https://braweria.de)
 
@@ -32,14 +32,15 @@ Feel free to check [issues page](https://github.com/Braweria/Spectrum/issues). Y
 
 ### Get started 
 
-```node
+```sh
 git clone https://github.com/Braweria/Spectrum.git
+cs Spectrum
 npm install
 ```
 
 ### How to compile
 
-```node
+```sh
 npm run scss
 ```
 
