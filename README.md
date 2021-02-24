@@ -2,25 +2,31 @@
 ![Version](https://img.shields.io/badge/version-0.13.0-blue.svg?cacheSeconds=2592000)
 [![Documentation](https://img.shields.io/badge/documentation-yes-brightgreen.svg)](https://github.com/Braweria/Spectrum#readme)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/Braweria/Spectrum/graphs/commit-activity)
-[![License: MIT](https://img.shields.io/github/license/Braweria/Spectrum Obsidian Theme)](https://github.com/Braweria/Spectrum/blob/master/LICENSE)
+[![License: MIT](https://img.shields.io/github/license/Braweria/Spectrum)](https://github.com/Braweria/Spectrum/blob/master/LICENSE)
 [![Twitter: braweria](https://img.shields.io/twitter/follow/braweria.svg?style=social)](https://twitter.com/braweria)
 
 > An Obsidian Theme
 
-### 🏠 [Homepage](https://braweria.de)
+### 🏠 [My Homepage](https://braweria.de)
 
 ### ✨ [Forum Thread with Changelogs](https://forum.obsidian.md/t/spectrum-an-obsidian-theme-new-feat-floating-images/12688https://forum.obsidian.md/t/12688)
 
-## Install
+## 🤝 Contributing
 
-```sh
+Contributions, issues and feature requests are welcome!
+
+Feel free to check [issues page](https://github.com/Braweria/Spectrum/issues). You can also take a look at the [forum thread](https://forum.obsidian.md/t/12688).
+
+### Get started 
+
+```node
 git clone https://github.com/Braweria/Spectrum.git
 npm install
 ```
 
-## How to compile
+### How to compile
 
-```sh
+```node
 npm run scss
 ```
 
@@ -33,11 +39,6 @@ npm run scss
 * Github: [@Braweria](https://github.com/Braweria)
 * LinkedIn: [Wiktoria Mielcarek](https://linkedin.com/in/wiktoria-mielcarek)
 
-## 🤝 Contributing
-
-Contributions, issues and feature requests are welcome!
-
-Feel free to check [issues page](https://github.com/Braweria/Spectrum/issues). You can also take a look at the [forum thread](https://forum.obsidian.md/t/12688).
 
 ## Show your support
 
