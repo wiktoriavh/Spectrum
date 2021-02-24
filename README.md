@@ -20,6 +20,7 @@
 - [Show your support](#Show-your-support)
 - [License](#-License)
 - [Features of this Theme](#Features-of-this-Theme)
+  - [Font](#Font)
   - [Kanban](#Kanban)
   - [Floating Images](#Floating-Images)
 
@@ -66,6 +67,11 @@ This project is [MIT](https://github.com/Braweria/Spectrum/blob/master/LICENSE) 
 ## Features of this Theme
 
 Some features for this theme are not self-explanatory. Seeing a different colour for the heading is one thing, but what about the hidden features you wouldn't know unless someone told you about it? That's what this section is for.
+
+### Font
+
+This Theme is build with the [JetBrains Mono](https://www.jetbrains.com/lp/mono/) font in mind. I recommend installing it. If you do not want to install the font, the next best monospace font will be used.
+
 
 ### Kanban
 
