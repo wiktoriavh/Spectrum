@@ -43,6 +43,7 @@
 *............12. Query
 *............13. Blockquotes
 *............14. Kanban
+*............15. Floating Images
 
 *............100. Other People's Plugins
 *................. Daily Planner
@@ -640,6 +641,20 @@ ul li::marker {
 
 .kanban ul ul::before {
   border-left: 0;
+}
+
+/*
+*..........................15. Floating Images */
+img[alt~='float-right'] {
+  float: right;
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+
+img[alt~='float-left'] {
+  float: left;
+  margin-left: 1rem;
+  margin-top: 1rem;
 }
 
 /*
