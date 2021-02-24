@@ -14,14 +14,14 @@
 ## Content
 
 - [Contributing](#🤝 Contributing)
-  - [Get Started](#Get Started)
-  - [How to compile](#How to compile)
+  - [Get Started](#Get-Started)
+  - [How to compile](#How-to-compile)
 - [Author](#Author)
-- [Show your support](#Show your support)
-- [License](#📝 License)
-- [Features of this Theme](#Features of this Theme)
+- [Show your support](#Show-your-support)
+- [License](#-License)
+- [Features of this Theme](#Features-of-this-Theme)
   - [Kanban](#Kanban)
-  - [Floating Images](#Floating Images)
+  - [Floating Images](#Floating-Images)
 
 ## 🤝 Contributing
 
