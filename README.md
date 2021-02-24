@@ -104,7 +104,7 @@ Then you can start creating an unordered list, which will represent your kanban 
 
 ### Floating Images
 
-When writing a lot of text, someone images have to be inserted to break up the paragraphs. Sometimes those images should be on the left or right of the text, with the text wrapping around it. Now it is possible! All you have to do is to give it the alternative text.
+When writing a lot of text, some images have to be inserted to break up the paragraphs. Sometimes those images should be on the left or right of the text, with the text wrapping around it. Now it is possible! All you have to do is to give it the alternative text.
 
 ```md
 ![float-right](./images/kanban.jpg)
