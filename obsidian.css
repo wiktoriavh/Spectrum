@@ -6,7 +6,7 @@
 * Name: Spectrum 
 * Licence: MIT 
 * GitHub Repo: https://github.com/Braweria/Spectrum 
-* Version: 0.13.0
+* Version: 0.13.1
 
 ! CONTENT
 *.............1. Variables
@@ -427,7 +427,7 @@ table tbody tr:hover {
 
 /*
 *..........................7. Embed Notes */
-.internal-embed.is-loaded {
+.internal-embed.is-loaded:not(.image-embed) {
   border: 1px solid black;
   border-radius: 10px;
 }

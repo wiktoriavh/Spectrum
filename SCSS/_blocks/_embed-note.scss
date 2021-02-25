@@ -1,4 +1,4 @@
-.internal-embed.is-loaded {
+.internal-embed.is-loaded:not(.image-embed) {
   border: 1px solid black;
   border-radius: 10px;
 }
