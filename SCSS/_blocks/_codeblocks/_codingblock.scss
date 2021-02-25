@@ -23,6 +23,10 @@
   color: #c1b594;
 }
 
+.theme-dark pre {
+  position: relative;
+}
+
 .theme-dark pre[class*='language-'] {
   background: var(--secondary-background);
   border: 1px solid black;

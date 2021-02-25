@@ -6,7 +6,7 @@
 * Name: Spectrum 
 * Licence: MIT 
 * GitHub Repo: https://github.com/Braweria/Spectrum 
-* Version: 0.13.2
+* Version: 0.13.3
 
 ! CONTENT
 *.............1. Variables
@@ -413,6 +413,10 @@ table tbody tr:hover {
 
 .markdown-preview-view code {
   color: #c1b594;
+}
+
+.theme-dark pre {
+  position: relative;
 }
 
 .theme-dark pre[class*='language-'] {
