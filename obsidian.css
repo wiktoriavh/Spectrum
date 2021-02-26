@@ -655,15 +655,17 @@ ul li::marker {
 
 /*
 *..........................15. Floating Images */
-img[alt~='float-right'] {
+img[alt~='float-right'],
+div[alt~='float-right'] {
   float: right;
   margin-left: 1rem;
   margin-top: 1rem;
 }
 
-img[alt~='float-left'] {
+img[alt~='float-left'],
+div[alt~='float-left'] {
   float: left;
-  margin-left: 1rem;
+  margin-right: 1rem;
   margin-top: 1rem;
 }
 
