@@ -123,5 +123,28 @@ This is also possible with wikilinks of images that are already inside your vaul
 
 *Note: If your image is wider than the note itself, you will have to give it a smaller width for the floating to work. You might also have to either refresh Obsidian or just switch notes real quick, to see the changes. Sometimes Obsidian doesn't live-reload the alternative text.*
 
+### Eisenhower Matrix
+
+You can create your very own Eisenhower Matrix, all you have to do is have either notes or headings within the same note of your four sections. That is important, because you're going to embed them into a table!
+
+First you have to include the new CSS Class `matrix` into your frontmatter.
+
+```yaml
+---
+cssclass: [matrix]
+---
+```
+
+Then you'll create a table with two rows and two columns, excluding the table heading. Inside each of the cells you can now embed your sections.
+
+```md
+|                   |             |
+| ----------------- | ----------- |
+| ![[#To-Do]]       | ![[#Doing]] |
+| ![[#Considering]] | ![[#Maybe]] |
+```
+
+![Eisenhower Matrix](./images/eisenhower.png)
+
 ***
 _This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
