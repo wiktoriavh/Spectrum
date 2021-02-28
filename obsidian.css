@@ -277,11 +277,11 @@ h6 {
 }
 
 .workspace-split.mod-root
-> .workspace-leaf:last-of-type
-.workspace-leaf-content,
+  > .workspace-leaf:last-of-type
+  .workspace-leaf-content,
 .workspace-split.mod-root
-> .workspace-leaf:first-of-type
-.workspace-leaf-content {
+  > .workspace-leaf:first-of-type
+  .workspace-leaf-content {
   border-radius: 0;
 }
 
@@ -290,8 +290,8 @@ h6 {
 }
 
 .workspace-split.mod-root
-> .workspace-leaf:first-of-type:last-of-type
-.view-header,
+  > .workspace-leaf:first-of-type:last-of-type
+  .view-header,
 .view-header {
   border-bottom: 0px;
 }
@@ -314,10 +314,10 @@ h6 {
 }
 
 .workspace-tab-header.is-active
-.workspace-tab-header-inner
-.workspace-tab-header-inner-icon
-svg
-path {
+  .workspace-tab-header-inner
+  .workspace-tab-header-inner-icon
+  svg
+  path {
   stroke: var(--main-node);
 }
 
@@ -589,8 +589,8 @@ ul li::marker {
 }
 
 .internal-query
-.search-results-children
-.tree-item.search-result:nth-child(odd) {
+  .search-results-children
+  .tree-item.search-result:nth-child(odd) {
   background: #00000034;
 }
 
@@ -627,6 +627,7 @@ ul li::marker {
   margin-top: 1rem;
   border-radius: 0;
   border: 0;
+  background: none;
 }
 
 .kanban ul ul li {
@@ -635,6 +636,8 @@ ul li::marker {
   background: var(--secondary-background);
   margin-bottom: 0;
   padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
 }
 
 .kanban ul ul li:nth-child(even) {
