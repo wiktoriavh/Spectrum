@@ -23,6 +23,7 @@
   - [Font](#Font)
   - [Kanban](#Kanban)
   - [Floating Images](#Floating-Images)
+  - [Eisenhower Matrix](#Eisenhower Matrix)
 
 ## 🤝 Contributing
 
