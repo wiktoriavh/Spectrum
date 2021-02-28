@@ -6,7 +6,7 @@
 * Name: Spectrum 
 * Licence: MIT 
 * GitHub Repo: https://github.com/Braweria/Spectrum 
-* Version: 0.13.4
+* Version: 0.14.2
 
 ! CONTENT
 *.............1. Variables
@@ -44,6 +44,7 @@
 *............13. Blockquotes
 *............14. Kanban
 *............15. Floating Images
+*............16. Eisenhower Matrix
 
 *............100. Other People's Plugins
 *................. Daily Planner
@@ -277,11 +278,11 @@ h6 {
 }
 
 .workspace-split.mod-root
-  > .workspace-leaf:last-of-type
-  .workspace-leaf-content,
+> .workspace-leaf:last-of-type
+.workspace-leaf-content,
 .workspace-split.mod-root
-  > .workspace-leaf:first-of-type
-  .workspace-leaf-content {
+> .workspace-leaf:first-of-type
+.workspace-leaf-content {
   border-radius: 0;
 }
 
@@ -290,8 +291,8 @@ h6 {
 }
 
 .workspace-split.mod-root
-  > .workspace-leaf:first-of-type:last-of-type
-  .view-header,
+> .workspace-leaf:first-of-type:last-of-type
+.view-header,
 .view-header {
   border-bottom: 0px;
 }
@@ -314,10 +315,10 @@ h6 {
 }
 
 .workspace-tab-header.is-active
-  .workspace-tab-header-inner
-  .workspace-tab-header-inner-icon
-  svg
-  path {
+.workspace-tab-header-inner
+.workspace-tab-header-inner-icon
+svg
+path {
   stroke: var(--main-node);
 }
 
@@ -527,7 +528,7 @@ ul li::marker {
   filter: none;
 }
 
-.markdown-preview-view .task-list-item-checkbox:checked::before {
+.markdown-preview-view li .task-list-item-checkbox:checked::before {
   content: '✔';
   position: absolute;
   bottom: 0;
@@ -540,6 +541,30 @@ ul li::marker {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.markdown-preview-view li li .task-list-item-checkbox:checked::before {
+  color: var(--accent-1);
+}
+
+.markdown-preview-view li li li .task-list-item-checkbox:checked::before {
+  color: var(--accent-2);
+}
+
+.markdown-preview-view li li li li .task-list-item-checkbox:checked::before {
+  color: var(--accent-3);
+}
+
+.markdown-preview-view li li li li li .task-list-item-checkbox:checked::before {
+  color: var(--accent-4);
+}
+
+.markdown-preview-view li li li li li li .task-list-item-checkbox:checked::before {
+  color: var(--accent-5);
+}
+
+.markdown-preview-view li li li li li li li .task-list-item-checkbox:checked::before {
+  color: var(--accent-6);
 }
 
 /*
@@ -589,8 +614,8 @@ ul li::marker {
 }
 
 .internal-query
-  .search-results-children
-  .tree-item.search-result:nth-child(odd) {
+.search-results-children
+.tree-item.search-result:nth-child(odd) {
   background: #00000034;
 }
 
@@ -634,7 +659,7 @@ ul li::marker {
   width: 100%;
   display: block;
   background: var(--secondary-background);
-  margin-bottom: 0;
+  margin-bottom: 5px;
   padding: 10px;
   border: 1px solid black;
   border-radius: 5px;
@@ -646,6 +671,10 @@ ul li::marker {
 
 .kanban ul ul li:hover {
   background: #afafaf10;
+}
+
+.kanban ul ul li .task-list-item-checkbox {
+  margin-left: 1.5rem;
 }
 
 .kanban ul ul ul {
@@ -670,6 +699,64 @@ div[alt~='float-left'] {
   float: left;
   margin-right: 1rem;
   margin-top: 1rem;
+}
+
+/*
+*..........................16. Eisenhower Matrix */
+.markdown-preview-view.matrix table tr {
+  display: flex;
+}
+
+.markdown-preview-view.matrix table tr th,
+.markdown-preview-view.matrix table tr td {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.markdown-preview-view.matrix table tr th > *,
+.markdown-preview-view.matrix table tr td > * {
+  width: 100%;
+  height: 100%;
+  background-color: var(--main-background);
+}
+
+.markdown-preview-view.matrix table tr td {
+  background-color: var(--main-background);
+}
+
+.markdown-preview-view.matrix table tr:nth-child(1) td:nth-child(1) > * {
+  border-color: var(--accent-1);
+}
+
+.markdown-preview-view.matrix table tr:nth-child(1) td:nth-child(1):hover {
+  background-color: var(--accent-1);
+}
+
+.markdown-preview-view.matrix table tr:nth-child(1) td:nth-child(2) > * {
+  border-color: var(--accent-2);
+}
+
+.markdown-preview-view.matrix table tr:nth-child(1) td:nth-child(2):hover {
+  background-color: var(--accent-2);
+}
+
+.markdown-preview-view.matrix table tr:nth-child(2) td:nth-child(1) > * {
+  border-color: var(--accent-4);
+}
+
+.markdown-preview-view.matrix table tr:nth-child(2) td:nth-child(1):hover {
+  background-color: var(--accent-4);
+}
+
+.markdown-preview-view.matrix table tr:nth-child(2) td:nth-child(2) > * {
+  border-color: var(--accent-5);
+}
+
+.markdown-preview-view.matrix table tr:nth-child(2) td:nth-child(2):hover {
+  background-color: var(--accent-5);
 }
 
 /*

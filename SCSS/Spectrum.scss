@@ -5,7 +5,7 @@
 * Name: Spectrum 
 * Licence: MIT 
 * GitHub Repo: https://github.com/Braweria/Spectrum 
-* Version: 0.13.4
+* Version: 0.14.2
 
 ! CONTENT
 *.............1. Variables
@@ -43,6 +43,7 @@
 *............13. Blockquotes
 *............14. Kanban
 *............15. Floating Images
+*............16. Eisenhower Matrix
 
 *............100. Other People's Plugins
 *................. Daily Planner
@@ -125,6 +126,10 @@
 /*
 *..........................15. Floating Images */
 @import '_blocks/floating-images';
+
+/*
+*..........................16. Eisenhower Matrix */
+@import '_blocks/eisenhower';
 
 /*
 *..........................100. Other People's Plugins */
