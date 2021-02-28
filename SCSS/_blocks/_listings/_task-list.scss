@@ -20,19 +20,57 @@
   filter: none;
 }
 
-.markdown-preview-view .task-list-item-checkbox:checked::before {
-  content: '✔';
-  position: absolute;
-  bottom: 0;
-  left: 0;
+.markdown-preview-view li {
+  .task-list-item-checkbox:checked::before {
+    content: '✔';
+    position: absolute;
+    bottom: 0;
+    left: 0;
 
-  width: 150%;
-  height: 160%;
-  line-height: 0;
-  font-size: 1.5rem;
-  color: var(--main-node);
+    width: 150%;
+    height: 160%;
+    line-height: 0;
+    font-size: 1.5rem;
+    color: var(--main-node);
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  li {
+    .task-list-item-checkbox:checked::before {
+      color: var(--accent-1);
+    }
+
+    li {
+      .task-list-item-checkbox:checked::before {
+        color: var(--accent-2);
+      }
+
+      li {
+        .task-list-item-checkbox:checked::before {
+          color: var(--accent-3);
+        }
+
+        li {
+          .task-list-item-checkbox:checked::before {
+            color: var(--accent-4);
+          }
+
+          li {
+            .task-list-item-checkbox:checked::before {
+              color: var(--accent-5);
+            }
+
+            li {
+              .task-list-item-checkbox:checked::before {
+                color: var(--accent-6);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
