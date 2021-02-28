@@ -35,7 +35,7 @@ Feel free to check [issues page](https://github.com/Braweria/Spectrum/issues). Y
 
 ```sh
 git clone https://github.com/Braweria/Spectrum.git
-cs Spectrum
+cd Spectrum
 npm install
 ```
 
