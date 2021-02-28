@@ -1,0 +1,69 @@
+.markdown-preview-view.matrix table {
+  tr {
+    display: flex;
+
+    th,
+    td {
+      width: 50%;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      & > * {
+        width: 100%;
+        height: 100%;
+        background-color: var(--main-background);
+      }
+    }
+
+    td {
+      background-color: var(--main-background);
+    }
+  }
+
+  tr:nth-child(1) {
+    td:nth-child(1) {
+      & > * {
+        border-color: var(--accent-1);
+      }
+
+      &:hover {
+        background-color: var(--accent-1);
+      }
+    }
+
+    td:nth-child(2) {
+      & > * {
+        border-color: var(--accent-2);
+      }
+
+      &:hover {
+        background-color: var(--accent-2);
+      }
+    }
+  }
+
+  tr:nth-child(2) {
+    td:nth-child(1) {
+      & > * {
+        border-color: var(--accent-4);
+      }
+
+      &:hover {
+        background-color: var(--accent-4);
+      }
+    }
+
+    td:nth-child(2) {
+      & > * {
+        border-color: var(--accent-5);
+      }
+
+      &:hover {
+        background-color: var(--accent-5);
+      }
+    }
+  }
+}
