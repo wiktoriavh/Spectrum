@@ -1,4 +1,6 @@
 # Welcome to Spectrum Obsidian Theme 👋
+![Last Commit](https://img.shields.io/github/last-commit/braweria/Spectrum?style=for-the-badge)  
+
 ![Version](https://img.shields.io/badge/version-0.14.2-blue.svg?cacheSeconds=2592000)
 [![Documentation](https://img.shields.io/badge/documentation-yes-brightgreen.svg)](https://github.com/Braweria/Spectrum#readme)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/Braweria/Spectrum/graphs/commit-activity)
