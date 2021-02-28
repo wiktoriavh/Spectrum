@@ -27,7 +27,7 @@
         width: 100%;
         display: block;
         background: var(--secondary-background);
-        margin-bottom: 0;
+        margin-bottom: 5px;
         padding: 10px;
         border: 1px solid black;
         border-radius: 5px;
@@ -38,6 +38,10 @@
 
         &:hover {
           background: #afafaf10;
+        }
+
+        .task-list-item-checkbox {
+          margin-left: 1.5rem;
         }
       }
 
