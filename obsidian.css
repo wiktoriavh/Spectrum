@@ -6,7 +6,7 @@
 * Name: Spectrum 
 * Licence: MIT 
 * GitHub Repo: https://github.com/Braweria/Spectrum 
-* Version: 0.14.3
+* Version: 0.15.1
 
 ! CONTENT
 *.............1. Variables
@@ -87,7 +87,6 @@ body {
   margin-bottom: 1.5rem;
 }
 
-.markdown-preview-view.is-readable-line-width .markdown-preview-sizer,
 .markdown-source-view.is-readable-line-width .CodeMirror {
   max-width: 750px;
 }
@@ -381,14 +380,7 @@ table tbody tr:hover {
 *..........................6. Codeblocks */
 .mermaid {
   display: flex;
-  width: calc(100% + 900px);
   justify-content: center;
-  position: relative;
-  left: -50%;
-}
-
-.nodes {
-  transform: translate(0px, 10px);
 }
 
 .cm-s-obsidian div.HyperMD-codeblock-begin-bg,
@@ -683,6 +675,10 @@ ul li::marker {
 
 .kanban ul ul::before {
   border-left: 0;
+}
+
+.kanban .markdown-preview-view.is-readable-line-width .markdown-preview-sizer > div > ul {
+  max-width: 100%;
 }
 
 /*
