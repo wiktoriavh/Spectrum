@@ -1,0 +1,16 @@
+.markdown-preview-view.is-readable-line-width .markdown-preview-sizer {
+  max-width: 100%;
+
+  > div {
+    > * {
+      max-width: 750px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    > table,
+    > .mermaid {
+      max-width: 100%;
+    }
+  }
+}
