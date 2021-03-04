@@ -693,7 +693,7 @@ ul li::marker {
   border-left: 0;
 }
 
-.kanban .markdown-preview-view.is-readable-line-width .markdown-preview-sizer > div > ul {
+.kanban .markdown-preview-sizer > div > ul {
   max-width: 100%;
 }
 
