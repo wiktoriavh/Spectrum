@@ -54,8 +54,11 @@
       }
     }
   }
+}
 
-  .markdown-preview-sizer > div > ul {
-    max-width: 100%;
-  }
+.markdown-preview-view.is-readable-line-width.kanban
+  .markdown-preview-sizer
+  > div
+  > ul {
+  max-width: 100%;
 }
