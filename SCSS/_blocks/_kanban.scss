@@ -6,9 +6,10 @@
     background-color: #1b1b1b54;
     padding: 1rem;
     border-radius: 1rem;
+    flex-wrap: wrap;
 
     li {
-      flex: 1;
+      flex: 1 1 20%;
       list-style: none;
     }
 
