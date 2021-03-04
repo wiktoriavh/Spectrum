@@ -13,6 +13,7 @@
 *.............2. Textarea
 *................. Body
 *................. Paragraph
+*................. Preview
 *.............3. Text Decorations
 *................. Bold
 *................. Emphasis
@@ -89,6 +90,21 @@ body {
 
 .markdown-source-view.is-readable-line-width .CodeMirror {
   max-width: 750px;
+}
+
+.markdown-preview-view.is-readable-line-width .markdown-preview-sizer {
+  max-width: 100%;
+}
+
+.markdown-preview-view.is-readable-line-width .markdown-preview-sizer > div > * {
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.markdown-preview-view.is-readable-line-width .markdown-preview-sizer > div > table,
+.markdown-preview-view.is-readable-line-width .markdown-preview-sizer > div > .mermaid {
+  max-width: 100%;
 }
 
 /* 

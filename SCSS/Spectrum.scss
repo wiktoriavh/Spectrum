@@ -12,6 +12,7 @@
 *.............2. Textarea
 *................. Body
 *................. Paragraph
+*................. Preview
 *.............3. Text Decorations
 *................. Bold
 *................. Emphasis
@@ -60,6 +61,7 @@
 
 @import '_blocks/_textarea/body';
 @import '_blocks/_textarea/paragraph';
+@import '_blocks/_textarea/preview';
 
 /* 
 *..........................3. Text Decorations */
