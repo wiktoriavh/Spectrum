@@ -6,7 +6,7 @@
 * Name: Spectrum 
 * Licence: MIT 
 * GitHub Repo: https://github.com/Braweria/Spectrum 
-* Version: 0.15.4
+* Version: 0.15.5
 
 ! CONTENT
 *.............1. Variables
@@ -62,6 +62,7 @@
   --external-link-hidden: rgba(131, 197, 235, 0.3);
   --main-background: #242424;
   --secondary-background: #1b1b1b;
+  --secondary-background-low-opacity: #1b1b1b54;
   --attachments: #69bceb;
   --accent-1: #f5704c;
   --accent-2: #f5a14c;
@@ -75,6 +76,17 @@
   --text-normal: #c9c9c9;
   --background-primary: var(--main-background);
   --background-secondary: var(--secondary-background);
+}
+
+:root,
+.theme-light {
+  --main-background: #f5f5f5;
+  --secondary-background: #e2e2e2;
+  --secondary-background-low-opacity: #e2e2e254;
+  --main-node: #dea500;
+  --accent-3: #b7ad3a;
+  --accent-4: #8ac536;
+  --accent-5: #3cad7f;
 }
 
 /*
@@ -401,6 +413,10 @@ table tbody tr:hover {
   background: #afafaf10;
 }
 
+.theme-light table tbody tr:hover {
+  background: white;
+}
+
 /*
 *..........................6. Codeblocks */
 .mermaid {
@@ -650,7 +666,7 @@ ul li::marker {
   display: flex;
   flex-direction: row;
   border: 2px solid var(--secondary-background);
-  background-color: #1b1b1b54;
+  background-color: var(--secondary-background-low-opacity);
   padding: 1rem;
   border-radius: 1rem;
   flex-wrap: wrap;
@@ -708,6 +724,14 @@ ul li::marker {
 > div
 > ul {
   max-width: 100%;
+}
+
+.theme-light .kanban ul {
+  background-color: #dadada2b;
+}
+
+.theme-light .kanban ul li ul li:hover {
+  background: white;
 }
 
 /*

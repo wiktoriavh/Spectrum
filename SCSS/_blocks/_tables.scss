@@ -9,9 +9,13 @@ table {
     tr:nth-child(even) {
       background: #00000034;
     }
-    
+
     tr:hover {
       background: #afafaf10;
     }
   }
+}
+
+.theme-light table tbody tr:hover {
+  background: white;
 }
