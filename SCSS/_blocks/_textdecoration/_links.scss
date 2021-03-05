@@ -14,6 +14,10 @@ a {
 
 .cm-s-obsidian span.cm-url,
 .cm-s-obsidian span.cm-formatting-link.cm-link {
+  color: var(--external-link);
+}
+
+span.cm-formatting.cm-url + span.cm-url {
   color: var(--external-link-hidden);
 }
 
