@@ -2,10 +2,13 @@
   max-width: 100%;
 
   > div {
-    > * {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    > *:not(iframe) {
       max-width: 750px;
-      margin-left: auto;
-      margin-right: auto;
+      width: 100%;
     }
 
     > table,

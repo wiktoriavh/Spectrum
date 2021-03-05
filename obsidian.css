@@ -6,7 +6,7 @@
 * Name: Spectrum 
 * Licence: MIT 
 * GitHub Repo: https://github.com/Braweria/Spectrum 
-* Version: 0.15.2
+* Version: 0.15.3
 
 ! CONTENT
 *.............1. Variables
@@ -96,10 +96,15 @@ body {
   max-width: 100%;
 }
 
-.markdown-preview-view.is-readable-line-width .markdown-preview-sizer > div > * {
+.markdown-preview-view.is-readable-line-width .markdown-preview-sizer > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.markdown-preview-view.is-readable-line-width .markdown-preview-sizer > div > *:not(iframe) {
   max-width: 750px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
 }
 
 .markdown-preview-view.is-readable-line-width .markdown-preview-sizer > div > table,
