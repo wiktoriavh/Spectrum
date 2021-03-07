@@ -6,7 +6,7 @@
 * Name: Spectrum 
 * Licence: MIT 
 * GitHub Repo: https://github.com/Braweria/Spectrum 
-* Version: 0.15.5
+* Version: 0.15.6
 
 ! CONTENT
 *.............1. Variables
@@ -87,6 +87,8 @@
   --accent-3: #b7ad3a;
   --accent-4: #8ac536;
   --accent-5: #3cad7f;
+  --external-link: #307a8e;
+  --external-link-hidden: #307a8e99;
 }
 
 /*
