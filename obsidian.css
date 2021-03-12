@@ -6,7 +6,7 @@
 * Name: Spectrum 
 * Licence: MIT 
 * GitHub Repo: https://github.com/Braweria/Spectrum 
-* Version: 0.15.6
+* Version: 0.15.7
 
 ! CONTENT
 *.............1. Variables
@@ -539,6 +539,10 @@ ul li {
 
 ul li::marker {
   color: white;
+}
+
+.theme-ligth ul li::marker {
+  color: black;
 }
 
 .markdown-preview-view ul > li.task-list-item.is-checked {
