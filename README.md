@@ -1,7 +1,7 @@
 # Welcome to Spectrum Obsidian Theme 👋
 ![Last Commit](https://img.shields.io/github/last-commit/braweria/Spectrum?style=for-the-badge)  
 
-![Version](https://img.shields.io/badge/version-0.15.6-blue?style=for-the-badge)
+![Version](https://img.shields.io/badge/version-0.15.7-blue?style=for-the-badge)
 [![Documentation](https://img.shields.io/badge/documentation-yes-brightgreen?style=for-the-badge)](https://github.com/Braweria/Spectrum#readme)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green?style=for-the-badge)](https://github.com/Braweria/Spectrum/graphs/commit-activity)
 [![License: MIT](https://img.shields.io/github/license/Braweria/Spectrum?style=for-the-badge)](https://github.com/Braweria/Spectrum/blob/master/LICENSE)
