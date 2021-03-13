@@ -149,5 +149,11 @@ Then you'll create a table with two rows and two columns, excluding the table he
 
 ![Eisenhower Matrix](./images/eisenhower.png)
 
+## Places where Spectrum was mentioned
+
+Spectrum is slowly starting to become a theme liked by many users of Obsidian. Here are some online places, where Spectrum was being mentioned:
+
+- [Top 8 Beautiful Obsidian Themes](https://www.youtube.com/watch?v=JgtyQeWkXxE) by Filipe Donadio
+
 ***
 _This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
