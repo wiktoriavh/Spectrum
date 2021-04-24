@@ -149,11 +149,26 @@ Then you'll create a table with two rows and two columns, excluding the table he
 
 ![Eisenhower Matrix](./images/eisenhower.png)
 
+### Mermaid Overflow
+
+You work on two notes and have a mermaid graph open? It has a ton of information, but too small to read? Now with this class you will no longer have this problem! The fixed min-width of a mermaid graph is 750px, which is the width of a note. So now you can scroll left and right to view your graph.
+
+```yaml
+___
+cssclass: [mermaid-scroll]
+---
+```
+
+If you want to have the min-width be bigger, you can use this snippet:
+
+```css
+.mermaid-scroll .mermaid {
+  min-width: 750px; /* Your custom size */ 
+}
+```
+
 ## Places where Spectrum was mentioned
 
 Spectrum is slowly starting to become a theme liked by many users of Obsidian. Here are some online places, where Spectrum was being mentioned:
 
 - [Top 8 Beautiful Obsidian Themes](https://www.youtube.com/watch?v=JgtyQeWkXxE) by Filipe Donadio
-
-***
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
