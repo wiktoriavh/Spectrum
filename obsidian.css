@@ -426,6 +426,12 @@ table tbody tr:hover {
   justify-content: center;
 }
 
+.mermaid-scroll .mermaid {
+  overflow: auto;
+  min-width: 750px;
+  align-self: flex-start;
+}
+
 .cm-s-obsidian div.HyperMD-codeblock-begin-bg,
 .cm-s-obsidian div.HyperMD-codeblock-end-bg,
 .cm-s-obsidian div.HyperMD-codeblock-bg,
