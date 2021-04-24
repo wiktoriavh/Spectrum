@@ -2,3 +2,8 @@
   display: flex;
   justify-content: center;
 }
+
+.mermaid-scroll .mermaid {
+  overflow: auto;
+  min-width: 750px;
+}
