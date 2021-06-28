@@ -1,10 +1,12 @@
 .cm-hmd-list-indent .cm-tab,
-ul ul {
+ul ul,
+ol ol {
   position: relative;
 }
 
 .cm-hmd-list-indent .cm-tab::before,
-ul ul::before {
+ul ul::before,
+ol ol::before {
   content: '';
   border-left: 1px solid var(--main-node);
   position: absolute;
@@ -13,7 +15,8 @@ ul ul::before {
   bottom: 0;
 }
 
-ul li {
+ul li,
+ol li {
   margin-bottom: 10px;
 }
 
