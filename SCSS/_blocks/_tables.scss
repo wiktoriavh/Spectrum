@@ -1,5 +1,6 @@
 table {
   width: 100%;
+  min-width: 750px;
 
   thead tr {
     background: #00000034;
@@ -19,3 +20,4 @@ table {
 .theme-light table tbody tr:hover {
   background: white;
 }
+
