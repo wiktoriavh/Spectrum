@@ -773,7 +773,9 @@ table tbody tr:hover {
 *..........................10. Listings */
 .cm-hmd-list-indent .cm-tab,
 ul ul,
-ol ol {
+ol ol,
+ol ul,
+ul ol {
   position: relative;
 }
 
