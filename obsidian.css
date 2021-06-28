@@ -1,12 +1,12 @@
 @charset "UTF-8";
 /*
-* Tested with Obsidian v0.10.11 
+* Tested with Obsidian v0.12.7
 *
 * Author: Wiktoria Mielcarek (Braweria) 
 * Name: Spectrum 
 * Licence: MIT 
 * GitHub Repo: https://github.com/Braweria/Spectrum 
-* Version: 0.16.1
+* Version: 0.16.5
 
 ! CONTENT
 *.............1. Variables
@@ -124,6 +124,7 @@ body {
 .markdown-preview-view.is-readable-line-width .markdown-preview-sizer > div > table,
 .markdown-preview-view.is-readable-line-width .markdown-preview-sizer > div > .mermaid {
   max-width: 100%;
+  min-width: 750px;
 }
 
 /* 
@@ -200,34 +201,34 @@ a:hover {
   color: var(--main-node-hover);
 }
 
-a.external-link[href*='youtube'] {
+a.external-link[href*='youtube.com'] {
   position: relative;
   margin-left: 1.3rem;
 }
 
-a.external-link[href*='youtube']::before {
+a.external-link[href*='youtube.com']::before {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ff3636' viewBox='0 0 24 24'%3E%3Cpath d='M10 9.333l5.333 2.662-5.333 2.672v-5.334zm14-4.333v14c0 2.761-2.238 5-5 5h-14c-2.761 0-5-2.239-5-5v-14c0-2.761 2.239-5 5-5h14c2.762 0 5 2.239 5 5zm-4 7c-.02-4.123-.323-5.7-2.923-5.877-2.403-.164-7.754-.163-10.153 0-2.598.177-2.904 1.747-2.924 5.877.02 4.123.323 5.7 2.923 5.877 2.399.163 7.75.164 10.153 0 2.598-.177 2.904-1.747 2.924-5.877z'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   display: inline-block;
   position: absolute;
-  bottom: 2px;
+  top: 4px;
   left: -1.3rem;
   height: 1rem;
   width: 1rem;
   content: '';
 }
 
-a.external-link[href*='linkedin'] {
+a.external-link[href*='linkedin.com'] {
   position: relative;
   margin-left: 1.3rem;
 }
 
-a.external-link[href*='linkedin']::before {
+a.external-link[href*='linkedin.com']::before {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%232867B2' viewBox='0 0 24 24'%3E%3Cpath d='M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   display: inline-block;
   position: absolute;
-  bottom: 2px;
+  top: 4px;
   left: -1.3rem;
   height: 1rem;
   width: 1rem;
@@ -244,7 +245,7 @@ a.external-link[href*='github'] {
   background-repeat: no-repeat;
   display: inline-block;
   position: absolute;
-  bottom: 2px;
+  top: 4px;
   left: -1.3rem;
   height: 1rem;
   width: 1rem;
@@ -256,7 +257,7 @@ a.external-link[href*='github'] {
   background-repeat: no-repeat;
   display: inline-block;
   position: absolute;
-  bottom: 2px;
+  top: 4px;
   left: -1.3rem;
   height: 1rem;
   width: 1rem;
@@ -273,7 +274,7 @@ a.external-link[href*='twitter']::before {
   background-repeat: no-repeat;
   display: inline-block;
   position: absolute;
-  bottom: 2px;
+  top: 4px;
   left: -1.3rem;
   height: 1rem;
   width: 1rem;
@@ -290,7 +291,7 @@ a.external-link[href*='reddit']::before {
   background-repeat: no-repeat;
   display: inline-block;
   position: absolute;
-  bottom: 2px;
+  top: 4px;
   left: -1.3rem;
   height: 1rem;
   width: 1rem;
@@ -307,7 +308,7 @@ a.external-link[href*='facebook']::before {
   background-repeat: no-repeat;
   display: inline-block;
   position: absolute;
-  bottom: 2px;
+  top: 4px;
   left: -1.3rem;
   height: 1rem;
   width: 1rem;
@@ -324,7 +325,7 @@ a.external-link[href*='patreon']::before {
   background-repeat: no-repeat;
   display: inline-block;
   position: absolute;
-  bottom: 2px;
+  top: 4px;
   left: -1.3rem;
   height: 1rem;
   width: 1rem;
@@ -341,7 +342,7 @@ a.external-link[href*='wikipedia'] {
   background-repeat: no-repeat;
   display: inline-block;
   position: absolute;
-  bottom: 2px;
+  top: 4px;
   left: -1.3rem;
   height: 1rem;
   width: 1rem;
@@ -353,7 +354,7 @@ a.external-link[href*='wikipedia'] {
   background-repeat: no-repeat;
   display: inline-block;
   position: absolute;
-  bottom: 2px;
+  top: 4px;
   left: -1.3rem;
   height: 1rem;
   width: 1rem;
@@ -370,7 +371,7 @@ a.external-link[href*='instagram']::before {
   background-repeat: no-repeat;
   display: inline-block;
   position: absolute;
-  bottom: 2px;
+  top: 4px;
   left: -1.3rem;
   height: 1rem;
   width: 1rem;
@@ -387,7 +388,7 @@ a.external-link[href*='deviantart']::before {
   background-repeat: no-repeat;
   display: inline-block;
   position: absolute;
-  bottom: 2px;
+  top: 4px;
   left: -1.3rem;
   height: 1rem;
   width: 1rem;
@@ -404,7 +405,7 @@ a.external-link[href*='medium'] {
   background-repeat: no-repeat;
   display: inline-block;
   position: absolute;
-  bottom: 2px;
+  top: 4px;
   left: -1.3rem;
   height: 1rem;
   width: 1rem;
@@ -416,7 +417,41 @@ a.external-link[href*='medium'] {
   background-repeat: no-repeat;
   display: inline-block;
   position: absolute;
-  bottom: 2px;
+  top: 4px;
+  left: -1.3rem;
+  height: 1rem;
+  width: 1rem;
+  content: '';
+}
+
+a.external-link[href*='stackoverflow'] {
+  position: relative;
+  margin-left: 1.3rem;
+}
+
+a.external-link[href*='stackoverflow']::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 622 124'%3E%3Cpolygon fill='%23BBBBBB' points='88 80 99 80 99 124 0 124 0 80 11 80 11 113 88 113'/%3E%3Cpath fill='%23F58025' d='M22.9878906,76.73 L77.0128906,88.085 L79.2838906,77.285 L25.2588906,65.925 L22.9878906,76.73 Z M30.1368906,50.861 L80.1828906,74.169 L84.8448906,64.16 L34.7978906,40.852 L30.1368906,50.861 Z M43.9848906,26.308 L86.4128906,61.639 L93.4788906,53.154 L51.0508906,17.824 L43.9848906,26.308 Z M71.3718906,0.192 L62.5118906,6.782 L95.4598906,51.082 L104.319891,44.493 L71.3718906,0.192 Z M22,102 L77,102 L77,91 L22,91 L22,102 Z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  display: inline-block;
+  position: absolute;
+  top: 4px;
+  left: -1.3rem;
+  height: 1rem;
+  width: 1rem;
+  content: '';
+}
+
+a.external-link[href*='steam'] {
+  position: relative;
+  margin-left: 1.3rem;
+}
+
+a.external-link[href*='steam']::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 233 233'%3E%3Cdefs%3E%3ClinearGradient id='a' x2='50%25' x1='50%25' y2='100%25'%3E%3Cstop stop-color='%23111D2E' offset='0'/%3E%3Cstop stop-color='%23051839' offset='.21248'/%3E%3Cstop stop-color='%230A1B48' offset='.40695'/%3E%3Cstop stop-color='%23132E62' offset='.58110'/%3E%3Cstop stop-color='%23144B7E' offset='.73760'/%3E%3Cstop stop-color='%23136497' offset='.87279'/%3E%3Cstop stop-color='%231387B8' offset='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath fill='url(%23a)' d='m4.8911 150.01c14.393 48.01 58.916 82.99 111.61 82.99 64.34 0 116.5-52.16 116.5-116.5 0-64.341-52.16-116.5-116.5-116.5-61.741 0-112.26 48.029-116.25 108.76 7.5391 12.66 10.481 20.49 4.6411 41.25z'/%3E%3Cpath fill='%23fff' d='m110.5 87.322c0 0.196 0 0.392 0.01 0.576l-28.508 41.412c-4.618-0.21-9.252 0.6-13.646 2.41-1.937 0.79-3.752 1.76-5.455 2.88l-62.599-25.77c0.00049 0-1.4485 23.83 4.588 41.59l44.254 18.26c2.222 9.93 9.034 18.64 19.084 22.83 16.443 6.87 35.402-0.96 42.242-17.41 1.78-4.3 2.61-8.81 2.49-13.31l40.79-29.15c0.33 0.01 0.67 0.02 1 0.02 24.41 0 44.25-19.9 44.25-44.338 0-24.44-19.84-44.322-44.25-44.322-24.4 0-44.25 19.882-44.25 44.322zm-6.84 83.918c-5.294 12.71-19.9 18.74-32.596 13.45-5.857-2.44-10.279-6.91-12.83-12.24l14.405 5.97c9.363 3.9 20.105-0.54 23.997-9.9 3.904-9.37-0.525-20.13-9.883-24.03l-14.891-6.17c5.746-2.18 12.278-2.26 18.381 0.28 6.153 2.56 10.927 7.38 13.457 13.54s2.52 12.96-0.04 19.1m51.09-54.38c-16.25 0-29.48-13.25-29.48-29.538 0-16.275 13.23-29.529 29.48-29.529 16.26 0 29.49 13.254 29.49 29.529 0 16.288-13.23 29.538-29.49 29.538m-22.09-29.583c0-12.253 9.92-22.191 22.14-22.191 12.23 0 22.15 9.938 22.15 22.191 0 12.254-9.92 22.183-22.15 22.183-12.22 0-22.14-9.929-22.14-22.183z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  display: inline-block;
+  position: absolute;
+  top: 4px;
   left: -1.3rem;
   height: 1rem;
   width: 1rem;
@@ -624,6 +659,7 @@ path {
 *..........................5. Tables */
 table {
   width: 100%;
+  min-width: 750px;
 }
 
 table thead tr {
@@ -684,18 +720,6 @@ table tbody tr:hover {
   position: relative;
 }
 
-.theme-dark pre[class*='language-'] {
-  background: var(--secondary-background);
-  border: 1px solid black;
-}
-
-.theme-dark pre[class*='language-']::after {
-  content: attr(class);
-  position: absolute;
-  right: 1rem;
-  bottom: 0.5rem;
-}
-
 .cm-s-obsidian .CodeMirror-code {
   padding-right: 0;
 }
@@ -748,12 +772,14 @@ table tbody tr:hover {
 /*
 *..........................10. Listings */
 .cm-hmd-list-indent .cm-tab,
-ul ul {
+ul ul,
+ol ol {
   position: relative;
 }
 
 .cm-hmd-list-indent .cm-tab::before,
-ul ul::before {
+ul ul::before,
+ol ol::before {
   content: '';
   border-left: 1px solid var(--main-node);
   position: absolute;
@@ -762,7 +788,8 @@ ul ul::before {
   bottom: 0;
 }
 
-ul li {
+ul li,
+ol li {
   margin-bottom: 10px;
 }
 
