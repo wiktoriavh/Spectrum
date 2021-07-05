@@ -1,7 +1,7 @@
 # Welcome to Spectrum Obsidian Theme 👋
 ![Last Commit](https://img.shields.io/github/last-commit/braweria/Spectrum?style=for-the-badge)  
 
-![Version](https://img.shields.io/badge/version-0.16.1-blue?style=for-the-badge)
+![Version](https://img.shields.io/badge/version-0.16.6-blue?style=for-the-badge)
 [![Documentation](https://img.shields.io/badge/documentation-yes-brightgreen?style=for-the-badge)](https://github.com/Braweria/Spectrum#readme)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green?style=for-the-badge)](https://github.com/Braweria/Spectrum/graphs/commit-activity)
 [![License: MIT](https://img.shields.io/github/license/Braweria/Spectrum?style=for-the-badge)](https://github.com/Braweria/Spectrum/blob/master/LICENSE)
@@ -11,7 +11,7 @@
 
 - 🏠 [My Homepage](https://braweria.de)
 
-- ✨ [Forum Thread with Changelogs](https://forum.obsidian.md/t/spectrum-an-obsidian-theme-new-feat-floating-images/12688https://forum.obsidian.md/t/12688)
+- ✨ [Forum Thread with Changelogs](https://forum.obsidian.md/t/12688)
 
 ## Content
 
@@ -26,6 +26,8 @@
   - [Kanban](#Kanban)
   - [Floating Images](#Floating-Images)
   - [Eisenhower Matrix](#Eisenhower-Matrix)
+  - [Mermaid Overflow](#Mermaid-Overflow)
+- [Places where Spectrum was mentioned](#Places-where-Spectrum-was-mentioned)
 
 ## 🤝 Contributing
 
@@ -49,7 +51,7 @@ npm run scss
 
 ## Author
 
-👤 **Wiktoria Mielcarek**
+👩‍💻 **Wiktoria Mielcarek**
 
 * Website: https://braweria.de/
 * Twitter: [@braweria](https://twitter.com/braweria)
@@ -59,7 +61,7 @@ npm run scss
 
 ## Show your support
 
-Give a ⭐️ if this project helped you!
+Give a ⭐️ when you like this theme!
 
 
 ## 📝 License
