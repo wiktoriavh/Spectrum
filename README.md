@@ -1,5 +1,5 @@
 # Welcome to Spectrum Obsidian Theme 👋
-![Last Commit](https://img.shields.io/github/last-commit/braweria/Spectrum?style=for-the-badge)  
+![Last Commit](https://img.shields.io/github/last-commit/braweria/Spectrum?style=for-the-badge) ![visitors](https://visitor-badge.laobi.icu/badge?page_id=braweria)  
 
 ![Version](https://img.shields.io/badge/version-0.16.6-blue?style=for-the-badge)
 [![Documentation](https://img.shields.io/badge/documentation-yes-brightgreen?style=for-the-badge)](https://github.com/Braweria/Spectrum#readme)
