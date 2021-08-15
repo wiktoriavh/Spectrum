@@ -8,7 +8,8 @@
   "homepage": "https://braweria.de",
   "main": "index.js",
   "scripts": {
-    "scss": "npx node-sass --output-style expanded SCSS/Spectrum.scss > obsidian.css"
+    "scss": "npx node-sass --output-style expanded SCSS/Spectrum.scss > obsidian.css",
+    "scss:dev": "npx node-sass --output-style expanded SCSS/Spectrum.scss > development/obsidian.css"
   },
   "repository": {
     "type": "git",
