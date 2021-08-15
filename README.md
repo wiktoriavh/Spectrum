@@ -1,5 +1,5 @@
 # Welcome to Spectrum Obsidian Theme 👋
-![Last Commit](https://img.shields.io/github/last-commit/braweria/Spectrum?style=for-the-badge)  
+![Last Commit](https://img.shields.io/github/last-commit/braweria/Spectrum?style=for-the-badge) ![visitors](https://visitor-badge.laobi.icu/badge?page_id=braweria.Spectrum)  
 
 ![Version](https://img.shields.io/badge/version-0.17.0-blue?style=for-the-badge)
 [![Documentation](https://img.shields.io/badge/documentation-yes-brightgreen?style=for-the-badge)](https://github.com/Braweria/Spectrum#readme)
@@ -8,8 +8,6 @@
 [![Twitter: braweria](https://img.shields.io/twitter/follow/braweria.svg?style=social)](https://twitter.com/braweria)
 
 > Spectrum is a dark and light theme for Obsidian.md, a note taking app. Spectrum is meant to be easy on the eyes and boost productivity, but also to not bore your mind by using colours here and there.
-
-- 🏠 [My Homepage](https://braweria.de)
 
 - ✨ [Forum Thread with Changelogs](https://forum.obsidian.md/t/12688)
 
