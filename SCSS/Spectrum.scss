@@ -45,6 +45,7 @@
 *............14. Kanban
 *............15. Floating Images
 *............16. Eisenhower Matrix
+*............17. Math
 
 *............100. Other People's Plugins
 *................. Daily Planner
@@ -133,6 +134,10 @@
 /*
 *..........................16. Eisenhower Matrix */
 @import '_blocks/eisenhower';
+
+/*
+*..........................17. Math */
+@import '_blocks/_math/inline-math';
 
 /*
 *..........................100. Other People's Plugins */
