@@ -33,6 +33,10 @@ Contributions, issues and feature requests are welcome!
 
 Feel free to check [issues page](https://github.com/Braweria/Spectrum/issues). You can also take a look at the [forum thread](https://forum.obsidian.md/t/12688).
 
+You want to contribute financially? Sure! You can tip me whatever amount onf Ko-Fi:  
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/D1D85QWKJ)
+
 ### Get started 
 
 ```sh
