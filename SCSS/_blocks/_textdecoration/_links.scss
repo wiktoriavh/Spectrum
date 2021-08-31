@@ -1,7 +1,3 @@
-a {
-  color: var(--main-node);
-}
-
 .cm-s-obsidian span.cm-hmd-internal-link.cm-overlay {
   color: var(--main-node);
   font-weight: 900;
@@ -26,8 +22,4 @@ span.cm-formatting.cm-url + span.cm-url {
 .cm-s-obsidian span.cm-formatting.cm-url,
 .external-link {
   color: var(--external-link);
-}
-
-a:hover {
-  color: var(--main-node-hover);
 }
