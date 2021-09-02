@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*
 * Tested with Obsidian v0.12.7
 *
@@ -76,8 +75,15 @@
   --font-monospace: var(--default-font);
   --text-normal: #c9c9c9;
   --text-accent: var(--main-node);
+  --text-accent-hover: var(--main-node-hover);
   --background-primary: var(--main-background);
   --background-secondary: var(--secondary-background);
+  --interactive-accent: var(--main-node);
+  --interactive-accent-hover: var(--main-node-hover);
+  --text-on-accent: black;
+  --background-modifier-error: #cf2d2d;
+  --background-modifier-error-hover: #a72020;
+  --text-highlight-bg: #e9b35f;
 }
 
 :root,
@@ -98,6 +104,11 @@
 .cm-s-obsidian,
 body {
   line-height: 1.7rem;
+}
+
+*::selection {
+  background: var(--main-node);
+  color: var(--main-background);
 }
 
 .markdown-preview-view div p {
@@ -147,8 +158,6 @@ em {
 .cm-s-obsidian span.cm-formatting-highlight,
 .cm-s-obsidian span.cm-highlight,
 .markdown-preview-view mark {
-  background: #e672cc;
-  background: #f5a1e3;
   color: var(--background-primary);
   font-weight: 600;
 }
@@ -159,7 +168,6 @@ em {
 
 mark .cm-s-obsidian .cm-strong,
 mark strong {
-  color: var(--background-primary);
   color: #3d0731;
   font-weight: 900;
 }
@@ -167,10 +175,6 @@ mark strong {
 mark .cm-em,
 mark em {
   color: #8a1370;
-}
-
-a {
-  color: var(--main-node);
 }
 
 .cm-s-obsidian span.cm-hmd-internal-link.cm-overlay {
@@ -197,10 +201,6 @@ span.cm-formatting.cm-url + span.cm-url {
 .cm-s-obsidian span.cm-formatting.cm-url,
 .external-link {
   color: var(--external-link);
-}
-
-a:hover {
-  color: var(--main-node-hover);
 }
 
 a.external-link[href*='youtube.com'] {
@@ -735,6 +735,10 @@ path {
   height: 13px;
 }
 
+.dropdown {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 15.64 9'%3E%3Cpath d='M1.19,0H14.45a1.19,1.19,0,0,1,.84,2L8.66,8.65A1.17,1.17,0,0,1,7,8.65L.35,2A1.19,1.19,0,0,1,1.19,0Z' style='fill:%23ffbe00'/%3E%3C/svg%3E");
+}
+
 /*
 *..........................5. Tables */
 .CodeMirror table {
@@ -890,13 +894,13 @@ ul li::marker {
 }
 
 .markdown-preview-view .task-list-item-checkbox {
-  -webkit-appearance: none;
+  appearance: none;
   box-sizing: border-box;
   border: 1px solid var(--text-muted);
   border-radius: 2px;
   position: relative;
-  width: 1.3em;
-  height: 1.3em;
+  width: 1.5em;
+  height: 1.5em;
   margin: 0;
   outline: none;
   margin-right: 4px;
@@ -907,45 +911,84 @@ ul li::marker {
   filter: none;
 }
 
+.markdown-preview-view .task-list-item-checkbox:checked {
+  border: none;
+  background-color: var(--main-node);
+}
+
 .markdown-preview-view li .task-list-item-checkbox:checked::before {
-  content: '✔';
+  content: '';
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 150%;
-  height: 160%;
+  width: 100%;
+  height: 100%;
   line-height: 0;
   font-size: 1.5rem;
-  color: var(--main-node);
+  color: black;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M7.74,15.63a1.45,1.45,0,0,1-1.06-.44L2.94,11.46A1.5,1.5,0,0,1,5.06,9.34L7.74,12l7.2-7.2a1.5,1.5,0,1,1,2.12,2.12L8.8,15.19A1.48,1.48,0,0,1,7.74,15.63Z' style='fill:%230c0c0c'/%3E%3C/svg%3E");
 }
 
-.markdown-preview-view li li .task-list-item-checkbox:checked::before {
-  color: var(--accent-1);
+.markdown-preview-view li li .task-list-item-checkbox:checked {
+  background-color: var(--accent-1);
 }
 
-.markdown-preview-view li li li .task-list-item-checkbox:checked::before {
-  color: var(--accent-2);
+.markdown-preview-view li li li .task-list-item-checkbox:checked {
+  background-color: var(--accent-2);
 }
 
-.markdown-preview-view li li li li .task-list-item-checkbox:checked::before {
-  color: var(--accent-3);
+.markdown-preview-view li li li li .task-list-item-checkbox:checked {
+  background-color: var(--accent-3);
 }
 
-.markdown-preview-view li li li li li .task-list-item-checkbox:checked::before {
-  color: var(--accent-4);
+.markdown-preview-view li li li li li .task-list-item-checkbox:checked {
+  background-color: var(--accent-4);
 }
 
-.markdown-preview-view li li li li li li .task-list-item-checkbox:checked::before {
-  color: var(--accent-5);
+.markdown-preview-view li li li li li li .task-list-item-checkbox:checked {
+  background-color: var(--accent-5);
 }
 
-.markdown-preview-view li li li li li li li .task-list-item-checkbox:checked::before {
-  color: var(--accent-6);
+.markdown-preview-view li li li li li li li .task-list-item-checkbox:checked {
+  background-color: var(--accent-6);
 }
 
+.markdown-preview-view
+li[data-task='!']
+.task-list-item-checkbox:checked::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M10,2.5A1.54,1.54,0,0,0,8.45,4.05v7.49a1.55,1.55,0,1,0,3.1,0V4.05A1.54,1.54,0,0,0,10,2.5Z' style='fill:%230c0c0c'/%3E%3Ccircle cx='10' cy='15.95' r='1.55' style='fill:%230c0c0c'/%3E%3C/svg%3E");
+}
+
+.markdown-preview-view
+li[data-task='?']
+.task-list-item-checkbox:checked::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Ccircle cx='8.68' cy='15.95' r='1.55' style='fill:%230c0c0c'/%3E%3Cpath d='M10.41,2.5H7.13a1.55,1.55,0,0,0,0,3.1h3.28a.91.91,0,1,1,0,1.81H8.68A1.56,1.56,0,0,0,7.13,9v2.57a1.56,1.56,0,1,0,3.11,0v-1h.17a4,4,0,0,0,0-8Z' style='fill:%230c0c0c'/%3E%3C/svg%3E");
+}
+
+.markdown-preview-view
+li[data-task='>']
+.task-list-item-checkbox:checked::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M14.06,8.94l-6-6A1.5,1.5,0,0,0,5.94,5.06L10.88,10,5.94,14.94a1.49,1.49,0,0,0,0,2.12,1.5,1.5,0,0,0,2.12,0l6-6A1.49,1.49,0,0,0,14.06,8.94Z' style='fill:%230c0c0c'/%3E%3C/svg%3E");
+}
+
+.markdown-preview-view
+li[data-task='+']
+.task-list-item-checkbox:checked::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M15.84,8.5H11.5V4.16a1.5,1.5,0,0,0-3,0V8.5H4.16a1.5,1.5,0,0,0,0,3H8.5v4.34a1.5,1.5,0,0,0,3,0V11.5h4.34a1.5,1.5,0,0,0,0-3Z' style='fill:%230c0c0c'/%3E%3C/svg%3E");
+}
+
+.markdown-preview-view
+li[data-task='-']
+.task-list-item-checkbox:checked::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M15.84,11.5H4.16a1.5,1.5,0,0,1,0-3H15.84a1.5,1.5,0,0,1,0,3Z' style='fill:%230c0c0c'/%3E%3C/svg%3E");
+}
+
+/* Cross item for later
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M12.12,10l3.07-3.07a1.5,1.5,0,0,0-2.12-2.12L10,7.88,6.93,4.81A1.5,1.5,0,1,0,4.81,6.93L7.88,10,4.81,13.07a1.49,1.49,0,0,0,0,2.12,1.45,1.45,0,0,0,1.06.44,1.47,1.47,0,0,0,1.06-.44L10,12.12l3.07,3.07a1.47,1.47,0,0,0,1.06.44,1.45,1.45,0,0,0,1.06-.44,1.49,1.49,0,0,0,0-2.12Z' style='fill:%230c0c0c'/%3E%3C/svg%3E");
+*/
 /*
 *..........................11. Graph */
 .view-content iframe {
@@ -1001,7 +1044,7 @@ ul li::marker {
 /*
 *..........................13. Blockquotes */
 .markdown-preview-view blockquote {
-  border-color: #8f60e6;
+  border-color: var(--accent-6);
   border-width: 1px;
   border-radius: 5px;
 }
