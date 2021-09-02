@@ -2,3 +2,8 @@
 body {
   line-height: 1.7rem;
 }
+
+*::selection {
+  background: var(--main-node);
+  color: var(--main-background);
+}
