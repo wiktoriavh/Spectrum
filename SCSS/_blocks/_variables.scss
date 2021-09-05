@@ -46,4 +46,21 @@
   --accent-5: #3cad7f;
   --external-link: #307a8e;
   --external-link-hidden: #307a8e99;
+
+    /* Overriding Obsidian Variables */
+    --default-font: 'JetBrains Mono', monospace;
+    --font-monospace: var(--default-font);
+    // --text-normal: #c9c9c9;
+    --text-accent: var(--main-node);
+    --text-accent-hover: var(--main-node-hover);
+  
+    --background-primary: var(--main-background);
+    --background-secondary: var(--secondary-background);
+    --interactive-accent: var(--main-node);
+    --interactive-accent-hover: var(--main-node-hover);
+    // --text-on-accent: black;
+  
+    --background-modifier-error: #cf2d2d;
+    --background-modifier-error-hover: #a72020;
+    --text-highlight-bg: #e9b35f;
 }
