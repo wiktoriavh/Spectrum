@@ -1,0 +1,55 @@
+img {
+  margin-top: 1rem;
+
+  &[alt~='float-right'] {
+    float: right;
+    margin-left: 1rem;
+  }
+  &[alt~='float-left'] {
+    float: left;
+    margin-right: 1rem;
+  }
+  &[alt~='float-center'] {
+    display: block;
+    margin: auto;
+  }
+  &[alt~='float-clear'] {
+    clear: both;
+  }
+  &[alt~='type-banner'] {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+  &[alt~='type-profile'] {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+  &[alt~='type-portrait'] {
+    width: 281px;
+    height: 500px;
+    object-fit: cover;
+  }
+  &[alt~='radius-small'] {
+    border-radius: 15px;
+  }
+  &[alt~='radius-medium'] {
+    border-radius: 30px;
+  }
+  &[alt~='radius-large'] {
+    border-radius: 60px;
+  }
+  &[alt~='radius-circle'] {
+    border-radius: 50%;
+  }
+  &[alt~='border-small'] {
+    border: 2px solid var(--main-node);
+  }
+  &[alt~='border-medium'] {
+    border: 5px solid var(--main-node);
+  }
+  &[alt~='border-large'] {
+    border: 10px solid var(--main-node);
+  }
+}
