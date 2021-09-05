@@ -1,4 +1,4 @@
-.CodeMirror table {
+table {
   width: 100%;
   min-width: 750px;
 
@@ -19,4 +19,8 @@
 
 .theme-light table tbody tr:hover {
   background: white;
+}
+
+#calendar-container table {
+  width: 100%;
 }
