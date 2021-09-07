@@ -2,3 +2,9 @@
   width: 2px;
   background-color: var(--main-background);
 }
+
+.workspace-split.mod-vertical.mod-root::-webkit-schollbar,
+::-webkit-schollbar {
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
