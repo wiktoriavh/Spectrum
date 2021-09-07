@@ -9,7 +9,7 @@
   "main": "index.js",
   "scripts": {
     "scss": "npx node-sass --output-style expanded SCSS/Spectrum.scss > obsidian.css",
-    "scss:dev": "npx node-sass --output-style expanded SCSS/Spectrum.scss > development/obsidian.css"
+    "scss:dev": "npx node-sass --output-style expanded SCSS/Spectrum.scss > development/spectrum-testing.css"
   },
   "repository": {
     "type": "git",
