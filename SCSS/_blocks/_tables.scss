@@ -21,12 +21,45 @@ table {
 
 .table-lr table tbody {
   tr:nth-last-child(1) {
-    background-color: #ffbe0030;
+    background-color: rgba(var(--main-node-rgb), 0.2);
 
     td {
       padding: 1rem;
       font-weight: 700;
     }
+  }
+}
+
+.table-lc table {
+  tr td:nth-last-child(1) {
+    background-color: rgba(var(--main-node-rgb), 0.2);
+    font-weight: 700;
+  }
+  tr th:nth-last-child(1) {
+    background-color: rgba(var(--main-node-rgb), 0.2);
+    font-weight: 700;
+  }
+}
+
+.table-fc table {
+  tr td:nth-child(1) {
+    background-color: rgba(var(--main-node-rgb), 0.2);
+    font-weight: 700;
+  }
+  tr th:nth-child(1) {
+    background-color: rgba(var(--main-node-rgb), 0.2);
+    font-weight: 700;
+  }
+}
+
+.table-alt table {
+  tr td:nth-child(even) {
+    background-color: rgba(var(--main-node-rgb), 0.2);
+    font-weight: 700;
+  }
+  tr th:nth-child(even) {
+    background-color: rgba(var(--main-node-rgb), 0.2);
+    font-weight: 700;
   }
 }
 
