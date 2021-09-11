@@ -39,6 +39,8 @@
 *............10. Listings
 *................. List
 *................. Task List
+*................. Subway
+*................. Indent Color
 *............11. Graph
 *............12. Query
 *............13. Blockquotes
@@ -112,6 +114,8 @@
 *..........................10. Listings */
 @import '_blocks/_listings/list';
 @import '_blocks/_listings/task-list';
+@import '_blocks/_listings/subway';
+@import '_blocks/_listings/indent-color';
 
 /*
 *..........................11. Graph */
