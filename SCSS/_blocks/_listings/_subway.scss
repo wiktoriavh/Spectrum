@@ -1,0 +1,94 @@
+/*
+Credit to github.com/nothingislost for the inspiration of the "subway line list"
+*/
+.list-subway {
+  ul li::before {
+    position: absolute;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-color: var(--main-node);
+    content: '';
+    top: 1.15rem;
+    left: -3.6rem;
+    width: var(--list-padding);
+    height: calc(100% + 10px);
+  }
+
+  ul li li {
+    &:nth-child(1)::before {
+      border-top-width: 1px;
+      border-top-style: solid;
+    }
+  }
+
+  ul li {
+    &:nth-last-child(1)::before {
+      border-right-width: 0;
+    }
+    li:nth-last-child(1)::before {
+      border-top-width: 1px;
+      border-top-style: solid;
+    }
+  }
+
+  ul {
+    ul {
+      li::marker {
+        color: var(--accent-1);
+      }
+      li::before {
+        border-top-color: var(--accent-1);
+        border-right-color: var(--accent-1);
+      }
+      ul {
+        li::marker {
+          color: var(--accent-2);
+        }
+
+        li::before {
+          border-top-color: var(--accent-2);
+          border-right-color: var(--accent-2);
+        }
+        ul {
+          li::marker {
+            color: var(--accent-3);
+          }
+
+          li::before {
+            border-top-color: var(--accent-3);
+            border-right-color: var(--accent-3);
+          }
+          ul {
+            li::marker {
+              color: var(--accent-4);
+            }
+            li::before {
+              border-top-color: var(--accent-4);
+              border-right-color: var(--accent-4);
+            }
+
+            ul {
+              li::marker {
+                color: var(--accent-5);
+              }
+              li::before {
+                border-top-color: var(--accent-5);
+                border-right-color: var(--accent-5);
+              }
+
+              ul {
+                li::marker {
+                  color: var(--accent-6);
+                }
+                li::before {
+                  border-top-color: var(--accent-6);
+                  border-right-color: var(--accent-6);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

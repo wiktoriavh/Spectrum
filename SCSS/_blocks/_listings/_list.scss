@@ -1,109 +1,25 @@
+:root {
+  --list-padding: 2.5rem;
+}
+
 .cm-hmd-list-indent .cm-tab,
-ul ul,
-ol ol,
-ol ul,
-ul ol {
+ol,
+ul {
   position: relative;
 }
 
-/*
-Credit to github.com/nothingislost for the inspiration of the "subway line list"
-*/
+ul,
+ol {
+  padding-left: var(--list-padding);
+}
 
-li::before {
+ol::before {
   position: absolute;
-  border-right-width: 1px;
-  border-right-style: solid;
-  border-color: var(--main-node);
+  display: block;
   content: '';
-  top: 1.15rem;
-  left: -3.6rem;
-  width: 2.5rem;
-  height: calc(100% + 10px);
-}
-
-li li {
-  &:nth-child(1)::before {
-    border-top-width: 1px;
-    border-top-style: solid;
-  }
-}
-
-li {
-  &:nth-last-child(1)::before {
-    border-right-width: 0;
-  }
-  li:nth-last-child(1)::before {
-    border-top-width: 1px;
-    border-top-style: solid;
-  }
-}
-
-ul ul,
-ol ol,
-ol ul,
-ul ol {
-  li::marker {
-    color: var(--accent-1);
-  }
-  li::before {
-    border-top-color: var(--accent-1);
-    border-right-color: var(--accent-1);
-  }
-  ul,
-  ol {
-    li::marker {
-      color: var(--accent-2);
-    }
-
-    li::before {
-      border-top-color: var(--accent-2);
-      border-right-color: var(--accent-2);
-    }
-    ul,
-    ol {
-      li::marker {
-        color: var(--accent-3);
-      }
-
-      li::before {
-        border-top-color: var(--accent-3);
-        border-right-color: var(--accent-3);
-      }
-      ul,
-      ol {
-        li::marker {
-          color: var(--accent-4);
-        }
-        li::before {
-          border-top-color: var(--accent-4);
-          border-right-color: var(--accent-4);
-        }
-
-        ul,
-        ol {
-          li::marker {
-            color: var(--accent-5);
-          }
-          li::before {
-            border-top-color: var(--accent-5);
-            border-right-color: var(--accent-5);
-          }
-
-          ul,
-          ol {
-            li::marker {
-              color: var(--accent-6);
-            }
-            li::before {
-              border-top-color: var(--accent-6);
-              border-right-color: var(--accent-6);
-            }
-          }
-        }
-      }
-    }
-  }
+  width: var(--list-padding);
+  left: 0;
+  height: 100%;
 }
 
 ul li,
@@ -112,11 +28,14 @@ ol li {
   position: relative;
 }
 
-ul li::marker {
+li::marker {
   color: var(--main-node);
+}
+
+ul li::marker {
   font-size: 1.5rem;
 }
 
-.theme-light ul li::marker {
+.theme-light li::marker {
   color: black;
 }
