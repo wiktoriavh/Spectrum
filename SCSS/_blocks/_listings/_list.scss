@@ -1,11 +1,21 @@
 :root {
+  --list-padding-num: 2.5;
   --list-padding: 2.5rem;
+  --list-marker-num: 1.5;
+  --list-marker: 1.5rem;
 }
 
 .cm-hmd-list-indent .cm-tab,
 ol,
 ul {
   position: relative;
+}
+
+ul {
+  padding-left: var(--list-padding);
+  list-style-position: inside;
+  list-style-type: '•' !important;
+  box-sizing: border-box;
 }
 
 ul,
@@ -33,7 +43,7 @@ li::marker {
 }
 
 ul li::marker {
-  font-size: 1.5rem;
+  font-size: var(--list-marker);
 }
 
 .theme-light li::marker {
