@@ -1,0 +1,73 @@
+.list-lines {
+  ul ul::before {
+    display: block;
+    content: '';
+    position: absolute;
+    left: 0;
+    border-right: 2px solid red;
+    height: calc(100% - (1.5 * var(--editor-font-size)) / 2 - 10px);
+    box-sizing: border-box;
+    top: calc((1.5 * var(--editor-font-size)) / 2);
+  }
+
+  ul {
+    ul {
+      &::before {
+        border-color: var(--main-node);
+      }
+      ul {
+        &::before {
+          border-color: var(--accent-1);
+        }
+        li::marker {
+          color: var(--accent-1);
+        }
+
+        ul {
+          &::before {
+            border-color: var(--accent-2);
+          }
+          li::marker {
+            color: var(--accent-2);
+          }
+
+          ul {
+            &::before {
+              border-color: var(--accent-3);
+            }
+            li::marker {
+              color: var(--accent-3);
+            }
+
+            ul {
+              &::before {
+                border-color: var(--accent-4);
+              }
+              li::marker {
+                color: var(--accent-4);
+              }
+
+              ul {
+                &::before {
+                  border-color: var(--accent-5);
+                }
+                li::marker {
+                  color: var(--accent-5);
+                }
+
+                ul {
+                  &::before {
+                    border-color: var(--accent-6);
+                  }
+                  li::marker {
+                    color: var(--accent-6);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
