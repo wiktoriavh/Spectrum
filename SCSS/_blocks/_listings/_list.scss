@@ -42,10 +42,6 @@ li::marker {
   font-size: var(--editor-font-size);
 }
 
-ul li::marker {
-  font-size: 1.5em;
-}
-
 .theme-light li::marker {
   color: black;
 }
