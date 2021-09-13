@@ -35,6 +35,10 @@
   height: auto;
 }
 
+.workspace-tabs {
+  background-color: var(--background-secondary);
+}
+
 .workspace-tab-header.is-active
   .workspace-tab-header-inner
   .workspace-tab-header-inner-icon
@@ -57,4 +61,4 @@
 
 .titlebar-text {
   display: none;
- }
+}
