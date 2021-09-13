@@ -6,45 +6,57 @@ Credit to github.com/nothingislost for the inspiration of the "subway line list"
     display: block;
     content: '';
     position: absolute;
-    left: 0rem;
-    top: 1rem;
+    left: 0;
     border-right: 2px solid red;
-    height: calc(100% - 2rem - 2px);
-    width: calc(
-      var(--list-padding) - 1px + ((var(--list-padding-num) * 5.61px) / 2)
-    );
+    height: calc(100% - (1.5 * var(--editor-font-size)) / 2 - 10px);
+    box-sizing: border-box;
+    top: calc((1.5 * var(--editor-font-size)) / 2);
+  }
+
+  ul li::after {
+    content: '•';
+    position: absolute;
+    display: block;
+    left: calc(0px - 0.28em - var(--list-padding));
+    top: calc(0px - (0.325 * 1em));
+    font-size: 2em;
+    line-height: 1.5;
+    color: var(--main-node);
   }
 
   ul ul li::before {
     display: block;
     content: '';
     position: absolute;
-    left: calc(((var(--list-padding-num) * 5.61px) / 2) - var(--list-padding));
-    top: calc(2px + (var(--list-marker-num) * 19px) / 2);
+    left: calc(0px - (2 * var(--list-padding)));
     border-top: 2px solid red;
-    height: calc((var(--list-marker-num) * 19px));
+    height: calc(1.5 * 17.33px);
     width: var(--list-padding);
+    top: calc((1.5 * var(--editor-font-size)) / 2);
   }
 
   ul {
+    list-style: none;
     &::before {
       border-color: var(--main-node);
     }
     ul {
+      list-style: none;
       &::before {
         border-color: var(--accent-1);
       }
-      li::marker {
+      li::after {
         color: var(--accent-1);
       }
       li::before {
         border-color: var(--accent-1);
       }
       ul {
+        list-style: none;
         &::before {
           border-color: var(--accent-2);
         }
-        li::marker {
+        li::after {
           color: var(--accent-2);
         }
 
@@ -52,10 +64,11 @@ Credit to github.com/nothingislost for the inspiration of the "subway line list"
           border-color: var(--accent-2);
         }
         ul {
+          list-style: none;
           &::before {
             border-color: var(--accent-3);
           }
-          li::marker {
+          li::after {
             color: var(--accent-3);
           }
 
@@ -63,10 +76,11 @@ Credit to github.com/nothingislost for the inspiration of the "subway line list"
             border-color: var(--accent-3);
           }
           ul {
+            list-style: none;
             &::before {
               border-color: var(--accent-4);
             }
-            li::marker {
+            li::after {
               color: var(--accent-4);
             }
             li::before {
@@ -74,10 +88,11 @@ Credit to github.com/nothingislost for the inspiration of the "subway line list"
             }
 
             ul {
+              list-style: none;
               &::before {
                 border-color: var(--accent-5);
               }
-              li::marker {
+              li::after {
                 color: var(--accent-5);
               }
               li::before {
@@ -85,10 +100,11 @@ Credit to github.com/nothingislost for the inspiration of the "subway line list"
               }
 
               ul {
+                list-style: none;
                 &::before {
                   border-color: var(--accent-6);
                 }
-                li::marker {
+                li::after {
                   color: var(--accent-6);
                 }
                 li::before {

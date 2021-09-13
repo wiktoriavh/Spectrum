@@ -1,6 +1,6 @@
 :root {
   --list-padding-num: 2.5;
-  --list-padding: 2.5rem;
+  --list-padding: 24px;
   --list-marker-num: 1.5;
   --list-marker: 1.5rem;
 }
@@ -14,7 +14,6 @@ ul {
 ul {
   padding-left: var(--list-padding);
   list-style-position: inside;
-  list-style-type: '•' !important;
   box-sizing: border-box;
 }
 
@@ -40,10 +39,11 @@ ol li {
 
 li::marker {
   color: var(--main-node);
+  font-size: var(--editor-font-size);
 }
 
 ul li::marker {
-  font-size: var(--list-marker);
+  font-size: 1.5em;
 }
 
 .theme-light li::marker {
