@@ -11,13 +11,6 @@
   border-radius: 0;
 }
 
-.workspace-split.mod-root
-  > .workspace-leaf:first-of-type:last-of-type
-  .view-header,
-.view-header {
-  border-bottom: 0px;
-}
-
 .workspace-tab-header-container,
 .workspace-tab-container-before.is-before-active,
 .workspace-tab-container-after.is-after-active,
@@ -51,7 +44,7 @@
   border-top-left-radius: 0;
 }
 
-.workspace-leaf.mod-active .view-header {
+.workspace-split.mod-root > .workspace-leaf:first-of-type:last-of-type .view-header {
   border-bottom: 2px solid var(--main-node);
 }
 
