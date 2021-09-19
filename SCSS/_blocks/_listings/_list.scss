@@ -13,7 +13,6 @@ ul {
 
 ul {
   padding-left: var(--list-padding);
-  list-style-position: inside;
   box-sizing: border-box;
 }
 
@@ -44,4 +43,8 @@ li::marker {
 
 .theme-light li::marker {
   color: black;
+}
+
+.markdown-preview-view div li p {
+  margin: 0;
 }

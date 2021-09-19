@@ -2,6 +2,11 @@
 Credit to github.com/nothingislost for the inspiration of the "subway line list"
 */
 .list-subway {
+  .list-collapse-indicator {
+    position: relative;
+    left: 22px;
+  }
+
   ul::before {
     display: block;
     content: '';
@@ -11,6 +16,10 @@ Credit to github.com/nothingislost for the inspiration of the "subway line list"
     height: calc(100% - (1.5 * var(--editor-font-size)) / 2 - 10px);
     box-sizing: border-box;
     top: calc((1.5 * var(--editor-font-size)) / 2);
+  }
+
+  .collapse-indicator svg {
+    color: var(--main-node);
   }
 
   ul li::after {
@@ -45,6 +54,11 @@ Credit to github.com/nothingislost for the inspiration of the "subway line list"
       &::before {
         border-color: var(--accent-1);
       }
+
+      .collapse-indicator svg {
+        color: var(--accent-1);
+      }
+
       li::after {
         color: var(--accent-1);
       }
@@ -56,6 +70,11 @@ Credit to github.com/nothingislost for the inspiration of the "subway line list"
         &::before {
           border-color: var(--accent-2);
         }
+
+        .collapse-indicator svg {
+          color: var(--accent-2);
+        }
+
         li::after {
           color: var(--accent-2);
         }
@@ -68,6 +87,11 @@ Credit to github.com/nothingislost for the inspiration of the "subway line list"
           &::before {
             border-color: var(--accent-3);
           }
+
+          .collapse-indicator svg {
+            color: var(--accent-3);
+          }
+
           li::after {
             color: var(--accent-3);
           }
@@ -80,6 +104,11 @@ Credit to github.com/nothingislost for the inspiration of the "subway line list"
             &::before {
               border-color: var(--accent-4);
             }
+
+            .collapse-indicator svg {
+              color: var(--accent-4);
+            }
+
             li::after {
               color: var(--accent-4);
             }
@@ -92,6 +121,11 @@ Credit to github.com/nothingislost for the inspiration of the "subway line list"
               &::before {
                 border-color: var(--accent-5);
               }
+
+              .collapse-indicator svg {
+                color: var(--accent-5);
+              }
+
               li::after {
                 color: var(--accent-5);
               }
@@ -104,6 +138,11 @@ Credit to github.com/nothingislost for the inspiration of the "subway line list"
                 &::before {
                   border-color: var(--accent-6);
                 }
+
+                .collapse-indicator svg {
+                  color: var(--accent-6);
+                }
+
                 li::after {
                   color: var(--accent-6);
                 }
