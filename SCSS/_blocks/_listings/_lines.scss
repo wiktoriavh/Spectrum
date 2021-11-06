@@ -1,4 +1,15 @@
 .list-lines {
+  ul li::after {
+    content: '•';
+    position: absolute;
+    display: block;
+    left: calc(0px - 0.28em - var(--list-padding));
+    top: calc(0px - (0.325 * 1em));
+    font-size: 2em;
+    line-height: 1.5;
+    color: var(--main-node);
+  }
+
   ul ul::before {
     display: block;
     content: '';
@@ -11,55 +22,63 @@
   }
 
   ul {
+    list-style: none;
     ul {
+      list-style: none;
       &::before {
         border-color: var(--main-node);
       }
       ul {
+        list-style: none;
         &::before {
           border-color: var(--accent-1);
         }
-        li::marker {
+        li::after {
           color: var(--accent-1);
         }
 
         ul {
+          list-style: none;
           &::before {
             border-color: var(--accent-2);
           }
-          li::marker {
+          li::after {
             color: var(--accent-2);
           }
 
           ul {
+            list-style: none;
             &::before {
               border-color: var(--accent-3);
             }
-            li::marker {
+            li::after {
               color: var(--accent-3);
             }
 
             ul {
+              list-style: none;
               &::before {
                 border-color: var(--accent-4);
               }
-              li::marker {
+              li::after {
                 color: var(--accent-4);
               }
 
               ul {
+                list-style: none;
                 &::before {
                   border-color: var(--accent-5);
                 }
-                li::marker {
+                li::after {
                   color: var(--accent-5);
                 }
 
                 ul {
+                  list-style: none;
                   &::before {
                     border-color: var(--accent-6);
                   }
-                  li::marker {
+                  li::after {
                     color: var(--accent-6);
                   }
                 }
