@@ -8,9 +8,9 @@
   "homepage": "https://braweria.de",
   "main": "index.js",
   "scripts": {
-    "scss": "npx node-sass --output-style expanded SCSS/Spectrum.scss > obsidian.css",
-    "scss:dev": "npx node-sass --output-style expanded SCSS/Spectrum.scss > development/spectrum-testing.css",
-    "scss:snippet": "sass SCSS/snippets:snippets"
+    "build": "npx node-sass --output-style expanded SCSS/Spectrum.scss > obsidian.css",
+    "dev": "npx node-sass --output-style expanded SCSS/Spectrum.scss > development/spectrum-testing.css",
+    "snippet": "sass SCSS/snippets:snippets"
   },
   "repository": {
     "type": "git",
