@@ -13,15 +13,21 @@
 
 ## Content
 
+- [Usage](#Usage)
 - [Contributing](#-Contributing)
   - [Get Started](#Get-Started)
   - [How to compile](#How-to-compile)
 - [Author](#Author)
 - [Show your support](#Show-your-support)
 - [License](#-License)
-- [Usage](#Usage)
 - [Places where Spectrum was mentioned](#Places-where-Spectrum-was-mentioned)
 
+
+## Usage
+
+Go check out the Wiki to see what features this theme has.  
+
+--> https://github.com/Braweria/Spectrum/wiki
 ## 🤝 Contributing
 
 Contributions, issues and feature requests are welcome!
@@ -42,8 +48,16 @@ npm install
 
 ### How to compile
 
+For development:
+
 ```sh
-npm run scss
+yarn dev
+```
+
+For building:
+
+```sh
+yarn build
 ```
 
 ## Author
@@ -66,12 +80,6 @@ Give a ⭐️ when you like this theme!
 Copyright © 2021 [Wiktoria Mielcarek](https://github.com/Braweria).
 
 This project is [MIT](https://github.com/Braweria/Spectrum/blob/master/LICENSE) licensed.
-
-## Usage
-
-Go check out the Wiki to see what features this theme has.  
-
---> https://github.com/Braweria/Spectrum/wiki
 
 ## Places where Spectrum was mentioned
 
