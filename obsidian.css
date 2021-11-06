@@ -1,11 +1,12 @@
+@charset "UTF-8";
 /*
-* Tested with Obsidian v0.12.7
+* Tested with Obsidian v0.12.19
 *
 * Author: Wiktoria Mielcarek (Braweria) 
 * Name: Spectrum 
 * Licence: MIT 
 * GitHub Repo: https://github.com/Braweria/Spectrum 
-* Version: 0.17.0
+* Version: 1.0.0
 
 ! CONTENT
 *.............1. Variables
@@ -39,13 +40,17 @@
 *............10. Listings
 *................. List
 *................. Task List
+*................. Subway
+*................. Indent Color
+*................. List Line
 *............11. Graph
 *............12. Query
 *............13. Blockquotes
 *............14. Kanban
-*............15. Floating Images
+*............15. Images
 *............16. Eisenhower Matrix
 *............17. Math
+*............18. Keyboard Key Symbol
 
 *............100. Other People's Plugins
 *................. Daily Planner
@@ -55,25 +60,42 @@
 *..........................1. Variables */
 :root,
 .theme-dark {
-  --main-node: #ffbe00;
-  --main-node-hover: #fe6a26;
-  --tags: #f19eee;
-  --external-link: #82d2e8;
-  --external-link-hidden: rgba(131, 197, 235, 0.3);
-  --main-background: #242424;
-  --secondary-background: #1b1b1b;
-  --secondary-background-low-opacity: #1b1b1b54;
-  --attachments: #69bceb;
-  --accent-1: #f5704c;
-  --accent-2: #f5a14c;
-  --accent-3: #ede482;
-  --accent-4: #aade62;
-  --accent-5: #62deac;
-  --accent-6: #62b7de;
+  --main-node-rgb: 255, 190, 0;
+  --main-node: rgb(var(--main-node-rgb));
+  --main-node-hover-rgb: 254, 106, 38;
+  --main-node-hover: rgb(var(--main-node-hover-rgb));
+  --tags-rgb: 241, 158, 238;
+  --tags: rgb(var(--tags-rgb));
+  --external-link-rgb: 130, 210, 232;
+  --external-link: rgb(var(--external-link-rgb));
+  --external-link-hidden-rgb: 131, 197, 235;
+  --external-link-hidden: rgba(var(--external-link-hidden-rgb), 0.3);
+  --main-background-rgb: 36, 36, 36;
+  --main-background: rgb(var(--main-background-rgb));
+  --secondary-background-rgb: 27, 27, 27;
+  --secondary-background: rgb(var(--secondary-background-rgb));
+  --secondary-background-low-opacity: rgba(
+    var(--secondary-background-rgb),
+    0.329
+  );
+  --attachments-rgb: 105, 188, 235;
+  --attachments: rgb(var(--attachments-rgb));
+  --accent-1-rgb: 245, 112, 76;
+  --accent-2-rgb: 245, 161, 76;
+  --accent-3-rgb: 237, 228, 130;
+  --accent-4-rgb: 170, 222, 98;
+  --accent-5-rgb: 98, 222, 172;
+  --accent-6-rgb: 98, 183, 222;
+  --accent-1: rgb(var(--accent-1-rgb));
+  --accent-2: rgb(var(--accent-2-rgb));
+  --accent-3: rgb(var(--accent-3-rgb));
+  --accent-4: rgb(var(--accent-4-rgb));
+  --accent-5: rgb(var(--accent-5-rgb));
+  --accent-6: rgb(var(--accent-6-rgb));
   /* Overriding Obsidian Variables */
   --default-font: 'JetBrains Mono', monospace;
   --font-monospace: var(--default-font);
-  --text-normal: #c9c9c9;
+  --text-normal: rgb(201, 201, 201);
   --text-accent: var(--main-node);
   --text-accent-hover: var(--main-node-hover);
   --background-primary: var(--main-background);
@@ -97,6 +119,33 @@
   --accent-5: #3cad7f;
   --external-link: #307a8e;
   --external-link-hidden: #307a8e99;
+  /* Overriding Obsidian Variables */
+  --default-font: 'JetBrains Mono', monospace;
+  --font-monospace: var(--default-font);
+  --text-accent: var(--main-node);
+  --text-accent-hover: var(--main-node-hover);
+  --background-primary: var(--main-background);
+  --background-secondary: var(--secondary-background);
+  --interactive-accent: var(--main-node);
+  --interactive-accent-hover: var(--main-node-hover);
+  --background-modifier-error: #cf2d2d;
+  --background-modifier-error-hover: #a72020;
+  --text-highlight-bg: #e9b35f;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url("https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/fonts/webfonts/JetBrainsMono-Regular.woff2") format("woff2"), url("https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/fonts/ttf/JetBrainsMono-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  -webkit-font-feature-settings: 'liga' on, 'calt' on;
+  font-feature-settings: 'liga' on, 'calt' on;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: 'JetBrains Mono';
 }
 
 /*
@@ -123,19 +172,20 @@ body {
   max-width: 100%;
 }
 
-.markdown-preview-view.is-readable-line-width .markdown-preview-sizer > div {
+.markdown-preview-view.is-readable-line-width .markdown-preview-sizer > div:not(.breadcrumbs-trail-grid) {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.markdown-preview-view.is-readable-line-width .markdown-preview-sizer > div > *:not(iframe) {
+.markdown-preview-view.is-readable-line-width .markdown-preview-sizer > div:not(.breadcrumbs-trail-grid) > *:not(iframe) {
   max-width: 750px;
   width: 100%;
 }
 
-.markdown-preview-view.is-readable-line-width .markdown-preview-sizer > div > table,
-.markdown-preview-view.is-readable-line-width .markdown-preview-sizer > div > .mermaid {
+.markdown-preview-view.is-readable-line-width .markdown-preview-sizer > div:not(.breadcrumbs-trail-grid) > table,
+.markdown-preview-view.is-readable-line-width .markdown-preview-sizer > div:not(.breadcrumbs-trail-grid) > .mermaid,
+.markdown-preview-view.is-readable-line-width .markdown-preview-sizer > div:not(.breadcrumbs-trail-grid) > div {
   max-width: fit-content;
   min-width: 750px;
 }
@@ -666,13 +716,6 @@ h5 {
   border-radius: 0;
 }
 
-.workspace-split.mod-root
-> .workspace-leaf:first-of-type:last-of-type
-.view-header,
-.view-header {
-  border-bottom: 0px;
-}
-
 .workspace-tab-header-container,
 .workspace-tab-container-before.is-before-active,
 .workspace-tab-container-after.is-after-active,
@@ -690,6 +733,10 @@ h5 {
   height: auto;
 }
 
+.workspace-tabs {
+  background-color: var(--background-secondary);
+}
+
 .workspace-tab-header.is-active
 .workspace-tab-header-inner
 .workspace-tab-header-inner-icon
@@ -702,13 +749,27 @@ path {
   border-top-left-radius: 0;
 }
 
-.workspace-leaf.mod-active .view-header {
+.workspace-split.mod-root > .workspace-leaf:first-of-type:last-of-type .view-header {
   border-bottom: 2px solid var(--main-node);
+}
+
+.titlebar-inner {
+  color: var(--main-node);
+}
+
+.titlebar-text {
+  display: none;
 }
 
 ::-webkit-scrollbar {
   width: 2px;
   background-color: var(--main-background);
+}
+
+.workspace-split.mod-vertical.mod-root::-webkit-schollbar,
+::-webkit-schollbar {
+  -webkit-border-radius: 0;
+  border-radius: 0;
 }
 
 .nav-folder.is-collapsed .nav-folder-title .nav-folder-title-content {
@@ -741,25 +802,69 @@ path {
 
 /*
 *..........................5. Tables */
-.CodeMirror table {
+@use "sass:color";
+table {
   width: 100%;
   min-width: 750px;
 }
 
-.CodeMirror table thead tr {
+table thead tr {
   background: #00000034;
 }
 
-.CodeMirror table tbody tr:nth-child(even) {
+table tbody tr:nth-child(even) {
   background: #00000034;
 }
 
-.CodeMirror table tbody tr:hover {
+table tbody tr:hover {
   background: #afafaf10;
+}
+
+.table-lr table tbody tr:nth-last-child(1) {
+  background-color: rgba(var(--main-node-rgb), 0.2);
+}
+
+.table-lr table tbody tr:nth-last-child(1) td {
+  padding: 1rem;
+  font-weight: 700;
+}
+
+.table-lc table tr td:nth-last-child(1) {
+  background-color: rgba(var(--main-node-rgb), 0.2);
+  font-weight: 700;
+}
+
+.table-lc table tr th:nth-last-child(1) {
+  background-color: rgba(var(--main-node-rgb), 0.2);
+  font-weight: 700;
+}
+
+.table-fc table tr td:nth-child(1) {
+  background-color: rgba(var(--main-node-rgb), 0.2);
+  font-weight: 700;
+}
+
+.table-fc table tr th:nth-child(1) {
+  background-color: rgba(var(--main-node-rgb), 0.2);
+  font-weight: 700;
+}
+
+.table-alt table tr td:nth-child(even) {
+  background-color: rgba(var(--main-node-rgb), 0.2);
+  font-weight: 700;
+}
+
+.table-alt table tr th:nth-child(even) {
+  background-color: rgba(var(--main-node-rgb), 0.2);
+  font-weight: 700;
 }
 
 .theme-light table tbody tr:hover {
   background: white;
+}
+
+#calendar-container table {
+  min-width: 100%;
 }
 
 /*
@@ -855,38 +960,55 @@ path {
 
 /*
 *..........................10. Listings */
+:root {
+  --list-padding-num: 2.5;
+  --list-padding: 24px;
+  --list-marker-num: 1.5;
+  --list-marker: 1.5rem;
+}
+
 .cm-hmd-list-indent .cm-tab,
-ul ul,
-ol ol,
-ol ul,
-ul ol {
+ol,
+ul {
   position: relative;
 }
 
-.cm-hmd-list-indent .cm-tab::before,
-ul ul::before,
-ol ol::before,
-ol ul::before,
-ul ol::before {
-  content: '';
-  border-left: 1px solid var(--main-node);
+ul {
+  padding-left: var(--list-padding);
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  padding-left: var(--list-padding);
+}
+
+ol::before {
   position: absolute;
-  left: -15px;
-  top: 0;
-  bottom: 0;
+  display: block;
+  content: '';
+  width: var(--list-padding);
+  left: 0;
+  height: 100%;
 }
 
 ul li,
 ol li {
   margin-bottom: 10px;
+  position: relative;
 }
 
-ul li::marker {
-  color: white;
+li::marker {
+  color: var(--main-node);
+  font-size: var(--editor-font-size);
 }
 
-.theme-light ul li::marker {
+.theme-light li::marker {
   color: black;
+}
+
+.markdown-preview-view div li p {
+  margin: 0;
 }
 
 .markdown-preview-view ul > li.task-list-item.is-checked {
@@ -907,8 +1029,9 @@ ul li::marker {
   margin-bottom: 2px;
   cursor: pointer;
   vertical-align: baseline;
-  margin-right: 1rem;
   filter: none;
+  top: 6px;
+  left: -0.5rem;
 }
 
 .markdown-preview-view .task-list-item-checkbox:checked {
@@ -989,6 +1112,337 @@ li[data-task='-']
 /* Cross item for later
 background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M12.12,10l3.07-3.07a1.5,1.5,0,0,0-2.12-2.12L10,7.88,6.93,4.81A1.5,1.5,0,1,0,4.81,6.93L7.88,10,4.81,13.07a1.49,1.49,0,0,0,0,2.12,1.45,1.45,0,0,0,1.06.44,1.47,1.47,0,0,0,1.06-.44L10,12.12l3.07,3.07a1.47,1.47,0,0,0,1.06.44,1.45,1.45,0,0,0,1.06-.44,1.49,1.49,0,0,0,0-2.12Z' style='fill:%230c0c0c'/%3E%3C/svg%3E");
 */
+/*
+Credit to github.com/nothingislost for the inspiration of the "subway line list"
+*/
+.list-subway .list-collapse-indicator {
+  position: relative;
+  left: 22px;
+}
+
+.list-subway ul::before {
+  display: block;
+  content: '';
+  position: absolute;
+  left: 0;
+  border-right: 2px solid red;
+  height: calc(100% - (1.5 * var(--editor-font-size)) / 2 - 10px);
+  box-sizing: border-box;
+  top: calc((1.5 * var(--editor-font-size)) / 2);
+}
+
+.list-subway .collapse-indicator svg {
+  color: var(--main-node);
+}
+
+.list-subway ul li::after {
+  content: '•';
+  position: absolute;
+  display: block;
+  left: calc(0px - 0.28em - var(--list-padding));
+  top: calc(0px - (0.325 * 1em));
+  font-size: 2em;
+  line-height: 1.5;
+  color: var(--main-node);
+}
+
+.list-subway ul ul li::before {
+  display: block;
+  content: '';
+  position: absolute;
+  left: calc(0px - (2 * var(--list-padding)));
+  border-top: 2px solid red;
+  height: calc(1.5 * 17.33px);
+  width: var(--list-padding);
+  top: calc((1.5 * var(--editor-font-size)) / 2);
+}
+
+.list-subway ul {
+  list-style: none;
+}
+
+.list-subway ul::before {
+  border-color: var(--main-node);
+}
+
+.list-subway ul ul {
+  list-style: none;
+}
+
+.list-subway ul ul::before {
+  border-color: var(--accent-1);
+}
+
+.list-subway ul ul .collapse-indicator svg {
+  color: var(--accent-1);
+}
+
+.list-subway ul ul li::after {
+  color: var(--accent-1);
+}
+
+.list-subway ul ul li::before {
+  border-color: var(--accent-1);
+}
+
+.list-subway ul ul ul {
+  list-style: none;
+}
+
+.list-subway ul ul ul::before {
+  border-color: var(--accent-2);
+}
+
+.list-subway ul ul ul .collapse-indicator svg {
+  color: var(--accent-2);
+}
+
+.list-subway ul ul ul li::after {
+  color: var(--accent-2);
+}
+
+.list-subway ul ul ul li::before {
+  border-color: var(--accent-2);
+}
+
+.list-subway ul ul ul ul {
+  list-style: none;
+}
+
+.list-subway ul ul ul ul::before {
+  border-color: var(--accent-3);
+}
+
+.list-subway ul ul ul ul .collapse-indicator svg {
+  color: var(--accent-3);
+}
+
+.list-subway ul ul ul ul li::after {
+  color: var(--accent-3);
+}
+
+.list-subway ul ul ul ul li::before {
+  border-color: var(--accent-3);
+}
+
+.list-subway ul ul ul ul ul {
+  list-style: none;
+}
+
+.list-subway ul ul ul ul ul::before {
+  border-color: var(--accent-4);
+}
+
+.list-subway ul ul ul ul ul .collapse-indicator svg {
+  color: var(--accent-4);
+}
+
+.list-subway ul ul ul ul ul li::after {
+  color: var(--accent-4);
+}
+
+.list-subway ul ul ul ul ul li::before {
+  border-color: var(--accent-4);
+}
+
+.list-subway ul ul ul ul ul ul {
+  list-style: none;
+}
+
+.list-subway ul ul ul ul ul ul::before {
+  border-color: var(--accent-5);
+}
+
+.list-subway ul ul ul ul ul ul .collapse-indicator svg {
+  color: var(--accent-5);
+}
+
+.list-subway ul ul ul ul ul ul li::after {
+  color: var(--accent-5);
+}
+
+.list-subway ul ul ul ul ul ul li::before {
+  border-color: var(--accent-5);
+}
+
+.list-subway ul ul ul ul ul ul ul {
+  list-style: none;
+}
+
+.list-subway ul ul ul ul ul ul ul::before {
+  border-color: var(--accent-6);
+}
+
+.list-subway ul ul ul ul ul ul ul .collapse-indicator svg {
+  color: var(--accent-6);
+}
+
+.list-subway ul ul ul ul ul ul ul li::after {
+  color: var(--accent-6);
+}
+
+.list-subway ul ul ul ul ul ul ul li::before {
+  border-color: var(--accent-6);
+}
+
+.list-indent-color ol::before {
+  background-color: rgba(var(--main-node-rgb), 0.075);
+}
+
+.list-indent-color ol ol::before {
+  background-color: rgba(var(--accent-1-rgb), 0.075);
+}
+
+.list-indent-color ol ol li::marker {
+  color: var(--accent-1);
+}
+
+.list-indent-color ol ol ol::before {
+  background-color: rgba(var(--accent-2-rgb), 0.075);
+}
+
+.list-indent-color ol ol ol li::marker {
+  color: var(--accent-2);
+}
+
+.list-indent-color ol ol ol ol::before {
+  background-color: rgba(var(--accent-3-rgb), 0.075);
+}
+
+.list-indent-color ol ol ol ol li::marker {
+  color: var(--accent-3);
+}
+
+.list-indent-color ol ol ol ol ol::before {
+  background-color: rgba(var(--accent-4-rgb), 0.075);
+}
+
+.list-indent-color ol ol ol ol ol li::marker {
+  color: var(--accent-4);
+}
+
+.list-indent-color ol ol ol ol ol ol::before {
+  background-color: rgba(var(--accent-5-rgb), 0.075);
+}
+
+.list-indent-color ol ol ol ol ol ol li::marker {
+  color: var(--accent-5);
+}
+
+.list-indent-color ol ol ol ol ol ol ol::before {
+  background-color: rgba(var(--accent-6-rgb), 0.075);
+}
+
+.list-indent-color ol ol ol ol ol ol ol li::marker {
+  color: var(--accent-6);
+}
+
+.list-lines ul li::after {
+  content: '•';
+  position: absolute;
+  display: block;
+  left: calc(0px - 0.28em - var(--list-padding));
+  top: calc(0px - (0.325 * 1em));
+  font-size: 2em;
+  line-height: 1.5;
+  color: var(--main-node);
+}
+
+.list-lines ul ul::before {
+  display: block;
+  content: '';
+  position: absolute;
+  left: 0;
+  border-right: 2px solid red;
+  height: calc(100% - (1.5 * var(--editor-font-size)) / 2 - 10px);
+  box-sizing: border-box;
+  top: calc((1.5 * var(--editor-font-size)) / 2);
+}
+
+.list-lines ul {
+  list-style: none;
+}
+
+.list-lines ul ul {
+  list-style: none;
+}
+
+.list-lines ul ul::before {
+  border-color: var(--main-node);
+}
+
+.list-lines ul ul ul {
+  list-style: none;
+}
+
+.list-lines ul ul ul::before {
+  border-color: var(--accent-1);
+}
+
+.list-lines ul ul ul li::after {
+  color: var(--accent-1);
+}
+
+.list-lines ul ul ul ul {
+  list-style: none;
+}
+
+.list-lines ul ul ul ul::before {
+  border-color: var(--accent-2);
+}
+
+.list-lines ul ul ul ul li::after {
+  color: var(--accent-2);
+}
+
+.list-lines ul ul ul ul ul {
+  list-style: none;
+}
+
+.list-lines ul ul ul ul ul::before {
+  border-color: var(--accent-3);
+}
+
+.list-lines ul ul ul ul ul li::after {
+  color: var(--accent-3);
+}
+
+.list-lines ul ul ul ul ul ul {
+  list-style: none;
+}
+
+.list-lines ul ul ul ul ul ul::before {
+  border-color: var(--accent-4);
+}
+
+.list-lines ul ul ul ul ul ul li::after {
+  color: var(--accent-4);
+}
+
+.list-lines ul ul ul ul ul ul ul {
+  list-style: none;
+}
+
+.list-lines ul ul ul ul ul ul ul::before {
+  border-color: var(--accent-5);
+}
+
+.list-lines ul ul ul ul ul ul ul li::after {
+  color: var(--accent-5);
+}
+
+.list-lines ul ul ul ul ul ul ul ul {
+  list-style: none;
+}
+
+.list-lines ul ul ul ul ul ul ul ul::before {
+  border-color: var(--accent-6);
+}
+
+.list-lines ul ul ul ul ul ul ul ul li::after {
+  color: var(--accent-6);
+}
+
 /*
 *..........................11. Graph */
 .view-content iframe {
@@ -1124,19 +1578,74 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 }
 
 /*
-*..........................15. Floating Images */
-img[alt~='float-right'],
-div[alt~='float-right'] {
-  float: right;
-  margin-left: 1rem;
+*..........................15. Images */
+img {
   margin-top: 1rem;
 }
 
-img[alt~='float-left'],
-div[alt~='float-left'] {
+img[alt~='float-right'] {
+  float: right;
+  margin-left: 1rem;
+}
+
+img[alt~='float-left'] {
   float: left;
   margin-right: 1rem;
-  margin-top: 1rem;
+}
+
+img[alt~='float-center'] {
+  display: block;
+  margin: auto;
+}
+
+img[alt~='float-clear'] {
+  clear: both;
+}
+
+img[alt~='type-banner'] {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+img[alt~='type-profile'] {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+img[alt~='type-portrait'] {
+  width: 281px;
+  height: 500px;
+  object-fit: cover;
+}
+
+img[alt~='radius-small'] {
+  border-radius: 15px;
+}
+
+img[alt~='radius-medium'] {
+  border-radius: 30px;
+}
+
+img[alt~='radius-large'] {
+  border-radius: 60px;
+}
+
+img[alt~='radius-circle'] {
+  border-radius: 50%;
+}
+
+img[alt~='border-small'] {
+  border: 2px solid var(--main-node);
+}
+
+img[alt~='border-medium'] {
+  border: 5px solid var(--main-node);
+}
+
+img[alt~='border-large'] {
+  border: 10px solid var(--main-node);
 }
 
 /*
@@ -1207,6 +1716,18 @@ div[alt~='float-left'] {
 .theme-light .MJX-TEX,
 .theme-light .cm-s-obsidian .cm-math {
   color: #024ea2;
+}
+
+/*
+*..........................18. Keyboard Key Symbol */
+kbd {
+  box-shadow: 0 1px 1px black;
+  border: 1px solid black;
+}
+
+.theme-light kbd {
+  box-shadow: 0 1px 1px #cacaca;
+  border: 1px solid #cacaca;
 }
 
 /*
