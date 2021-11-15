@@ -1,6 +1,6 @@
 {
   "name": "spectrumobsidianstylesheet",
-  "version": "0.13.0",
+  "version": "1.0.0",
   "private": true,
   "description": "An Obsidian Theme",
   "author": "Wiktoria Mielcarek",
@@ -10,7 +10,7 @@
   "scripts": {
     "build": "npx node-sass --output-style expanded SCSS/Spectrum.scss > obsidian.css",
     "dev": "npx node-sass --output-style expanded SCSS/Spectrum.scss > development/spectrum-testing.css",
-    "snippet": "sass SCSS/snippets:snippets"
+    "snippet": "npx node-sass SCSS/snippets --output-style expanded --output snippets"
   },
   "repository": {
     "type": "git",
