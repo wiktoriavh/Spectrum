@@ -1,0 +1,58 @@
+ol {
+  &::before {
+    background-color: rgba(var(--main-node-rgb), 0.075);
+  }
+  ol {
+    &::before {
+      background-color: rgba(var(--accent-1-rgb), 0.075);
+    }
+    li::marker {
+      color: var(--accent-1);
+    }
+
+    ol {
+      &::before {
+        background-color: rgba(var(--accent-2-rgb), 0.075);
+      }
+      li::marker {
+        color: var(--accent-2);
+      }
+
+      ol {
+        &::before {
+          background-color: rgba(var(--accent-3-rgb), 0.075);
+        }
+        li::marker {
+          color: var(--accent-3);
+        }
+
+        ol {
+          &::before {
+            background-color: rgba(var(--accent-4-rgb), 0.075);
+          }
+          li::marker {
+            color: var(--accent-4);
+          }
+
+          ol {
+            &::before {
+              background-color: rgba(var(--accent-5-rgb), 0.075);
+            }
+            li::marker {
+              color: var(--accent-5);
+            }
+
+            ol {
+              &::before {
+                background-color: rgba(var(--accent-6-rgb), 0.075);
+              }
+              li::marker {
+                color: var(--accent-6);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

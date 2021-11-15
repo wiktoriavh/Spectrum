@@ -1,0 +1,106 @@
+@charset "UTF-8";
+ul li::after {
+  content: '•';
+  position: absolute;
+  display: block;
+  left: calc(0px - 0.28em - var(--list-padding));
+  top: calc(0px - (0.325 * 1em));
+  font-size: 2em;
+  line-height: 1.5;
+  color: var(--main-node);
+}
+
+ul ul::before {
+  display: block;
+  content: '';
+  position: absolute;
+  left: 0;
+  border-right: 2px solid red;
+  height: calc(100% - (1.5 * var(--editor-font-size)) / 2 - 10px);
+  box-sizing: border-box;
+  top: calc((1.5 * var(--editor-font-size)) / 2);
+}
+
+ul {
+  list-style: none;
+}
+
+ul ul {
+  list-style: none;
+}
+
+ul ul::before {
+  border-color: var(--main-node);
+}
+
+ul ul ul {
+  list-style: none;
+}
+
+ul ul ul::before {
+  border-color: var(--accent-1);
+}
+
+ul ul ul li::after {
+  color: var(--accent-1);
+}
+
+ul ul ul ul {
+  list-style: none;
+}
+
+ul ul ul ul::before {
+  border-color: var(--accent-2);
+}
+
+ul ul ul ul li::after {
+  color: var(--accent-2);
+}
+
+ul ul ul ul ul {
+  list-style: none;
+}
+
+ul ul ul ul ul::before {
+  border-color: var(--accent-3);
+}
+
+ul ul ul ul ul li::after {
+  color: var(--accent-3);
+}
+
+ul ul ul ul ul ul {
+  list-style: none;
+}
+
+ul ul ul ul ul ul::before {
+  border-color: var(--accent-4);
+}
+
+ul ul ul ul ul ul li::after {
+  color: var(--accent-4);
+}
+
+ul ul ul ul ul ul ul {
+  list-style: none;
+}
+
+ul ul ul ul ul ul ul::before {
+  border-color: var(--accent-5);
+}
+
+ul ul ul ul ul ul ul li::after {
+  color: var(--accent-5);
+}
+
+ul ul ul ul ul ul ul ul {
+  list-style: none;
+}
+
+ul ul ul ul ul ul ul ul::before {
+  border-color: var(--accent-6);
+}
+
+ul ul ul ul ul ul ul ul li::after {
+  color: var(--accent-6);
+}
