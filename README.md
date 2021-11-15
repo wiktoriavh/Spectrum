@@ -27,7 +27,7 @@
 
 Go check out the Wiki to see what features this theme has.  
 
---> https://github.com/Braweria/Spectrum/wiki
+➡️ https://github.com/Braweria/Spectrum/wiki
 ## 🤝 Contributing
 
 Contributions, issues and feature requests are welcome!
@@ -86,3 +86,4 @@ This project is [MIT](https://github.com/Braweria/Spectrum/blob/master/LICENSE) 
 Spectrum is slowly starting to become a theme liked by many users of Obsidian. Here are some online places, where Spectrum was being mentioned:
 
 - [Top 8 Beautiful Obsidian Themes](https://www.youtube.com/watch?v=JgtyQeWkXxE) by Filipe Donadio
+- [Obsidian Roundup 2021-11-13](https://www.obsidianroundup.org/2021-11-13-wysiwyg-called-live-preview-is-here/)
