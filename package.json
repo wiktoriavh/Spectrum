@@ -20,7 +20,7 @@
     "url": "https://github.com/Braweria/Spectrum/issues"
   },
   "dependencies": {
-    "node-sass": "^5.0.0",
-    "prettier": "^2.2.1"
+    "node-sass": "^6.0.1",
+    "prettier": "^2.4.1"
   }
 }
