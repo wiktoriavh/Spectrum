@@ -31,3 +31,7 @@
   resize: horizontal;
   max-width: none;
 }
+
+.graph-view.color-fill-focused {
+  color: var(--accent-5);
+}
