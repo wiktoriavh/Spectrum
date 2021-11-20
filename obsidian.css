@@ -6,7 +6,7 @@
 * Name: Spectrum 
 * Licence: MIT 
 * GitHub Repo: https://github.com/Braweria/Spectrum 
-* Version: 1.0.1
+* Version: 1.0.2
 
 ! CONTENT
 *.............1. Variables
@@ -1478,6 +1478,10 @@ Credit to github.com/nothingislost for the inspiration of the "subway line list"
 .graph-controls {
   resize: horizontal;
   max-width: none;
+}
+
+.graph-view.color-fill-focused {
+  color: var(--accent-5);
 }
 
 /*
