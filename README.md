@@ -17,7 +17,6 @@
   - [Get Started](#Get-Started)
   - [How to compile](#How-to-compile)
 - [Author](#Author)
-- [Show your support](#Show-your-support)
 - [License](#-License)
 - [Places where Spectrum was mentioned](#Places-where-Spectrum-was-mentioned)
 
@@ -85,5 +84,6 @@ This project is [MIT](https://github.com/Braweria/Spectrum/blob/master/LICENSE) 
 Spectrum is slowly starting to become a theme liked by many users of Obsidian. Here are some online places, where Spectrum was being mentioned:
 
 - [Top 8 Beautiful Obsidian Themes](https://www.youtube.com/watch?v=JgtyQeWkXxE) by Filipe Donadio
-- [Obsidian Roundup 2021-11-13](https://www.obsidianroundup.org/2021-11-13-wysiwyg-called-live-preview-is-here/)
-- [Obsidian Roundup 2021-11-20](https://www.obsidianroundup.org/2021-11-20/)
+- [Obsidian Roundup 2021-11-13](https://www.obsidianroundup.org/2021-11-13-wysiwyg-called-live-preview-is-here/) by Eleanor Konik
+- [Obsidian Roundup 2021-11-20](https://www.obsidianroundup.org/2021-11-20/) by Eleanor Konik
+- [All the Obsidian themes and CSS explained](https://youtu.be/W7OUgdvXh0o?t=5223) by Danny Hatcher
