@@ -37,23 +37,28 @@ You want to contribute financially? Sure! You can tip me whatever amount onf Ko-
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/D1D85QWKJ)
 
+Give a ⭐️ when you like this theme!
 ### Get started 
 
 ```sh
 git clone https://github.com/Braweria/Spectrum.git
 cd Spectrum
-npm install
+yarn
 ```
 
 ### How to compile
 
-For development:
+**For development**
+
+This will build the CSS file into the `/development/spectrum-testing.css`, which is ignore by git.
 
 ```sh
 yarn dev
 ```
 
-For building:
+**For building**
+
+When you're done working, start building it and it will be in the root of the project named `obsidian.css`.
 
 ```sh
 yarn build
@@ -69,11 +74,6 @@ yarn build
 * LinkedIn: [Wiktoria Mielcarek](https://linkedin.com/in/wiktoria-mielcarek)
 
 
-## Show your support
-
-Give a ⭐️ when you like this theme!
-
-
 ## 📝 License
 
 Copyright © 2021 [Wiktoria Mielcarek](https://github.com/Braweria).
@@ -86,3 +86,4 @@ Spectrum is slowly starting to become a theme liked by many users of Obsidian. H
 
 - [Top 8 Beautiful Obsidian Themes](https://www.youtube.com/watch?v=JgtyQeWkXxE) by Filipe Donadio
 - [Obsidian Roundup 2021-11-13](https://www.obsidianroundup.org/2021-11-13-wysiwyg-called-live-preview-is-here/)
+- [Obsidian Roundup 2021-11-20](https://www.obsidianroundup.org/2021-11-20/)
