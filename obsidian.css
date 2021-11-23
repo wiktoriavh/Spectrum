@@ -6,7 +6,7 @@
 * Name: Spectrum 
 * Licence: MIT 
 * GitHub Repo: https://github.com/Braweria/Spectrum 
-* Version: 1.0.2
+* Version: 1.0.3
 
 ! CONTENT
 *.............1. Variables
@@ -1725,6 +1725,19 @@ img[alt~='border-large'] {
 .theme-light .MJX-TEX,
 .theme-light .cm-s-obsidian .cm-math {
   color: #024ea2;
+}
+
+span.math {
+  font-family: MJXZERO, 'MJXTEX-I';
+  font-size: 1.1em;
+}
+
+.MJX-TEX {
+  font-family: MJXZERO, MJXTEX;
+}
+
+.MJX-TEX * {
+  font-family: MJXZERO, MJXTEX;
 }
 
 /*
