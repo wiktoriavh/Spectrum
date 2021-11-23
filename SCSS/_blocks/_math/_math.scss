@@ -1,0 +1,12 @@
+span.math {
+  font-family: MJXZERO, 'MJXTEX-I';
+  font-size: 1.1em;
+}
+
+.MJX-TEX {
+  font-family: MJXZERO, MJXTEX;
+
+  & * {
+    font-family: MJXZERO, MJXTEX;
+  }
+}
