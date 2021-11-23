@@ -8,6 +8,8 @@
 
 > Spectrum is a dark and light theme for Obsidian.md, a note taking app. Spectrum is meant to be easy on the eyes and boost productivity, but also to not bore your mind by using colours here and there.
 
+![](./SpectrumPreview.png)
+
 - ✨ [Forum Thread with Changelogs](https://forum.obsidian.md/t/12688)
 
 ## Content
