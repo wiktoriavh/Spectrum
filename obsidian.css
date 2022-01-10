@@ -6,7 +6,7 @@
 * Name: Spectrum 
 * Licence: MIT 
 * GitHub Repo: https://github.com/Braweria/Spectrum 
-* Version: 1.1.0
+* Version: 1.1.1
 
 ! CONTENT
 *.............1. Variables
@@ -180,7 +180,8 @@ body {
 }
 
 .markdown-preview-view.is-readable-line-width .markdown-preview-sizer > div:not(.breadcrumbs-trail-grid) > *:not(iframe),
-.markdown-preview-view.is-readable-line-width .markdown-preview-sizer > div:not(.breadcrumbs-trail-grid) .frontmatter-container {
+.markdown-preview-view.is-readable-line-width .markdown-preview-sizer > div:not(.breadcrumbs-trail-grid) .frontmatter-container,
+.markdown-preview-view.is-readable-line-width .markdown-preview-sizer > div:not(.breadcrumbs-trail-grid) .block-language-tasks {
   max-width: 750px;
   width: 100%;
   min-width: 300px;
