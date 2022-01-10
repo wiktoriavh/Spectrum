@@ -6,7 +6,7 @@
 * Name: Spectrum 
 * Licence: MIT 
 * GitHub Repo: https://github.com/Braweria/Spectrum 
-* Version: 1.0.3
+* Version: 1.1.0
 
 ! CONTENT
 *.............1. Variables
@@ -51,6 +51,7 @@
 *............16. Eisenhower Matrix
 *............17. Math
 *............18. Keyboard Key Symbol
+*............19. Notice
 
 *............100. Other People's Plugins
 *................. Daily Planner
@@ -178,9 +179,11 @@ body {
   align-items: center;
 }
 
-.markdown-preview-view.is-readable-line-width .markdown-preview-sizer > div:not(.breadcrumbs-trail-grid) > *:not(iframe) {
+.markdown-preview-view.is-readable-line-width .markdown-preview-sizer > div:not(.breadcrumbs-trail-grid) > *:not(iframe),
+.markdown-preview-view.is-readable-line-width .markdown-preview-sizer > div:not(.breadcrumbs-trail-grid) .frontmatter-container {
   max-width: 750px;
   width: 100%;
+  min-width: 300px;
 }
 
 .markdown-preview-view.is-readable-line-width .markdown-preview-sizer > div:not(.breadcrumbs-trail-grid) > table,
@@ -247,7 +250,6 @@ span.cm-formatting.cm-url + span.cm-url {
 }
 
 .cm-s-obsidian span.cm-link,
-.cm-s-obsidian span.cm-hmd-internal-link,
 .cm-s-obsidian span.cm-formatting.cm-url,
 .external-link {
   color: var(--external-link);
@@ -1750,6 +1752,12 @@ kbd {
 .theme-light kbd {
   box-shadow: 0 1px 1px #cacaca;
   border: 1px solid #cacaca;
+}
+
+/*
+*..........................19. Notice */
+.is-mobile .notice {
+  background-color: var(--interactive-accent);
 }
 
 /*

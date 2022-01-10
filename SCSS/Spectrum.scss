@@ -5,7 +5,7 @@
 * Name: Spectrum 
 * Licence: MIT 
 * GitHub Repo: https://github.com/Braweria/Spectrum 
-* Version: 1.0.4
+* Version: 1.1.0
 
 ! CONTENT
 *.............1. Variables
@@ -50,6 +50,7 @@
 *............16. Eisenhower Matrix
 *............17. Math
 *............18. Keyboard Key Symbol
+*............19. Notice
 
 *............100. Other People's Plugins
 *................. Daily Planner
@@ -151,6 +152,10 @@
 /*
 *..........................18. Keyboard Key Symbol */
 @import '_blocks/key-symbol';
+
+/*
+*..........................19. Notice */
+@import '_blocks/notice';
 
 /*
 *..........................100. Other People's Plugins */
