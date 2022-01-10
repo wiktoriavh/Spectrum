@@ -2,8 +2,7 @@ name: CI
 
 on:
   push:
-    paths: [ ./SCSS/Spectrum.scss ]
-
+    branch: main
 
 jobs:
   build:
