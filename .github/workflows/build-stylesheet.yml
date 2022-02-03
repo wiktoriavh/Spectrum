@@ -10,8 +10,20 @@ jobs:
     steps:
         - name: Checkout source Git branch
           uses: actions/checkout@v2
-        - run: |
-            yarn
-            yarn build
-            git add .
-            git push --amend --no-edit
+          with:
+            persist-credentials: false
+            fetch-depth: 0
+        - name: Build Stylesheet
+            run: |
+              yarn
+              yarn build
+        - name: Commit Stylesheet
+          run: |
+            git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git config --local user.name "github-actions[bot]"
+            git commit -m "Build stylesheet" -a
+        - name: Push Stylesheet to Repository
+          uses: ad-m/github-push-action@master
+          with:
+            github_token: ${{ secrets.GITHUB_TOKEN }}
+            branch: ${{ github.ref }}
