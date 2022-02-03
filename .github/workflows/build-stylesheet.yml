@@ -14,9 +14,9 @@ jobs:
             persist-credentials: false
             fetch-depth: 0
         - name: Build Stylesheet
-            run: |
-              yarn
-              yarn build
+          run: |
+            yarn
+            yarn build
         - name: Commit Stylesheet
           run: |
             git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
