@@ -36,7 +36,8 @@ ol li {
   position: relative;
 }
 
-li::marker {
+li::marker,
+.cm-s-obsidian span.cm-formatting-list {
   color: var(--main-node);
   font-size: var(--editor-font-size);
 }
