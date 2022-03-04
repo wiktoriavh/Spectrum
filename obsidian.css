@@ -6,7 +6,7 @@
 * Name: Spectrum 
 * Licence: MIT 
 * GitHub Repo: https://github.com/Braweria/Spectrum 
-* Version: 1.1.1
+* Version: 1.1.2
 
 ! CONTENT
 *.............1. Variables
@@ -1001,7 +1001,8 @@ ol li {
   position: relative;
 }
 
-li::marker {
+li::marker,
+.cm-s-obsidian span.cm-formatting-list {
   color: var(--main-node);
   font-size: var(--editor-font-size);
 }
