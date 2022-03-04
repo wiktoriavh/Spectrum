@@ -1,4 +1,6 @@
-.markdown-preview-view.is-readable-line-width .markdown-preview-sizer {
+.markdown-preview-view.is-readable-line-width .markdown-preview-sizer,
+.markdown-source-view.mod-cm6.is-readable-line-width:not(.is-rtl)
+  .cm-contentContainer {
   max-width: 100%;
 
   > div:not(.breadcrumbs-trail-grid) {
