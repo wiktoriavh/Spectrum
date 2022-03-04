@@ -1,12 +1,9 @@
 @charset "UTF-8";
 /*
-* Tested with Obsidian v0.12.19
-*
 * Author: Wiktoria Mielcarek (Braweria) 
 * Name: Spectrum 
 * Licence: MIT 
 * GitHub Repo: https://github.com/Braweria/Spectrum 
-* Version: 1.1.2
 
 ! CONTENT
 *.............1. Variables
@@ -199,13 +196,10 @@ body {
 
 .markdown-preview-view.is-readable-line-width .markdown-preview-sizer > div:not(.breadcrumbs-trail-grid) > table,
 .markdown-preview-view.is-readable-line-width .markdown-preview-sizer > div:not(.breadcrumbs-trail-grid) > .mermaid,
-.markdown-preview-view.is-readable-line-width .markdown-preview-sizer > div:not(.breadcrumbs-trail-grid) > div,
 .markdown-source-view.mod-cm6.is-readable-line-width:not(.is-rtl)
 .cm-contentContainer > div:not(.breadcrumbs-trail-grid) > table,
 .markdown-source-view.mod-cm6.is-readable-line-width:not(.is-rtl)
-.cm-contentContainer > div:not(.breadcrumbs-trail-grid) > .mermaid,
-.markdown-source-view.mod-cm6.is-readable-line-width:not(.is-rtl)
-.cm-contentContainer > div:not(.breadcrumbs-trail-grid) > div {
+.cm-contentContainer > div:not(.breadcrumbs-trail-grid) > .mermaid {
   max-width: fit-content;
   min-width: 750px;
 }
