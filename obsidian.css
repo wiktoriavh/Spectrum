@@ -170,6 +170,9 @@ body {
 .markdown-source-view.mod-cm6.is-readable-line-width:not(.is-rtl)
 .cm-contentContainer {
   max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .markdown-preview-view.is-readable-line-width .markdown-preview-sizer > div:not(.breadcrumbs-trail-grid),
