@@ -175,34 +175,26 @@ body {
   align-items: center;
 }
 
-.markdown-preview-view.is-readable-line-width .markdown-preview-sizer > div:not(.breadcrumbs-trail-grid),
+.markdown-preview-view.is-readable-line-width .markdown-preview-sizer > *:not(iframe),
+.markdown-preview-view.is-readable-line-width .markdown-preview-sizer .frontmatter-container,
+.markdown-preview-view.is-readable-line-width .markdown-preview-sizer .block-language-tasks,
 .markdown-source-view.mod-cm6.is-readable-line-width:not(.is-rtl)
-.cm-contentContainer > div:not(.breadcrumbs-trail-grid) {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.markdown-preview-view.is-readable-line-width .markdown-preview-sizer > div:not(.breadcrumbs-trail-grid) > *:not(iframe),
-.markdown-preview-view.is-readable-line-width .markdown-preview-sizer > div:not(.breadcrumbs-trail-grid) .frontmatter-container,
-.markdown-preview-view.is-readable-line-width .markdown-preview-sizer > div:not(.breadcrumbs-trail-grid) .block-language-tasks,
+.cm-contentContainer > *:not(iframe),
 .markdown-source-view.mod-cm6.is-readable-line-width:not(.is-rtl)
-.cm-contentContainer > div:not(.breadcrumbs-trail-grid) > *:not(iframe),
+.cm-contentContainer .frontmatter-container,
 .markdown-source-view.mod-cm6.is-readable-line-width:not(.is-rtl)
-.cm-contentContainer > div:not(.breadcrumbs-trail-grid) .frontmatter-container,
-.markdown-source-view.mod-cm6.is-readable-line-width:not(.is-rtl)
-.cm-contentContainer > div:not(.breadcrumbs-trail-grid) .block-language-tasks {
+.cm-contentContainer .block-language-tasks {
   max-width: 750px;
   width: 100%;
   min-width: 300px;
 }
 
-.markdown-preview-view.is-readable-line-width .markdown-preview-sizer > div:not(.breadcrumbs-trail-grid) > table,
-.markdown-preview-view.is-readable-line-width .markdown-preview-sizer > div:not(.breadcrumbs-trail-grid) > .mermaid,
+.markdown-preview-view.is-readable-line-width .markdown-preview-sizer > table,
+.markdown-preview-view.is-readable-line-width .markdown-preview-sizer > .mermaid,
 .markdown-source-view.mod-cm6.is-readable-line-width:not(.is-rtl)
-.cm-contentContainer > div:not(.breadcrumbs-trail-grid) > table,
+.cm-contentContainer > table,
 .markdown-source-view.mod-cm6.is-readable-line-width:not(.is-rtl)
-.cm-contentContainer > div:not(.breadcrumbs-trail-grid) > .mermaid {
+.cm-contentContainer > .mermaid {
   max-width: fit-content;
   min-width: 750px;
 }
