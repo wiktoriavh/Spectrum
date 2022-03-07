@@ -6,23 +6,17 @@
   flex-direction: column;
   align-items: center;
 
-  > div:not(.breadcrumbs-trail-grid) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  > *:not(iframe),
+  .frontmatter-container,
+  .block-language-tasks {
+    max-width: 750px;
+    width: 100%;
+    min-width: 300px;
+  }
 
-    > *:not(iframe),
-    .frontmatter-container,
-    .block-language-tasks {
-      max-width: 750px;
-      width: 100%;
-      min-width: 300px;
-    }
-
-    > table,
-    > .mermaid {
-      max-width: fit-content;
-      min-width: 750px;
-    }
+  > table,
+  > .mermaid {
+    max-width: fit-content;
+    min-width: 750px;
   }
 }
