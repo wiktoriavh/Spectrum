@@ -1,12 +1,10 @@
 {
-  "name": "spectrumobsidianstylesheet",
-  "version": "1.0.3",
-  "private": true,
+  "name": "spectrum",
+  "version": "1.0.0",
   "description": "An Obsidian Theme",
   "author": "Wiktoria Mielcarek",
   "license": "MIT",
   "homepage": "https://braweria.de",
-  "main": "index.js",
   "scripts": {
     "build": "npx node-sass --output-style expanded SCSS/Spectrum.scss > obsidian.css",
     "dev": "npx node-sass --output-style expanded SCSS/Spectrum.scss > development/spectrum-testing.css",
