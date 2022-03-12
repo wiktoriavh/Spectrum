@@ -1,20 +1,22 @@
 # Welcome to Spectrum Obsidian Theme 👋
-![Last Commit](https://img.shields.io/github/last-commit/braweria/Spectrum?style=for-the-badge) ![visitors](https://visitor-badge.laobi.icu/badge?page_id=braweria.Spectrum)  
-
-[![Documentation](https://img.shields.io/badge/documentation-yes-brightgreen?style=for-the-badge)](https://github.com/Braweria/Spectrum/wiki)
+![visitors](https://visitor-badge.laobi.icu/badge?page_id=braweria.Spectrum)   [![Twitter: braweria](https://img.shields.io/twitter/follow/braweria.svg?style=social)](https://twitter.com/braweria)  
+![Last Commit](https://img.shields.io/github/last-commit/braweria/Spectrum?style=for-the-badge) [![Documentation](https://img.shields.io/badge/documentation-yes-brightgreen?style=for-the-badge)](https://github.com/Braweria/Spectrum/wiki)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green?style=for-the-badge)](https://github.com/Braweria/Spectrum/graphs/commit-activity)
-[![License: MIT](https://img.shields.io/github/license/Braweria/Spectrum?style=for-the-badge)](https://github.com/Braweria/Spectrum/blob/master/LICENSE)
-[![Twitter: braweria](https://img.shields.io/twitter/follow/braweria.svg?style=social)](https://twitter.com/braweria)
+[![License: MIT](https://img.shields.io/github/license/Braweria/Spectrum?style=for-the-badge)](https://github.com/Braweria/Spectrum/blob/master/LICENSE)  
 
-> Spectrum is a dark and light theme for Obsidian.md, a note taking app. Spectrum is meant to be easy on the eyes and boost productivity, but also to not bore your mind by using colours here and there.
+Spectrum is a theme for Obsidian and is designed the way to boost productivity and to improve the App to the needs I am having at the time. As such styling decision are opinionated.
+
+Spectrum is coming with a variaty of features, like different checkboxes and support for image styling. [Read more in the documentation.](https://github.com/Braweria/Spectrum/wiki)
 
 ![](./SpectrumPreview.png)
 
-- ✨ [Forum Thread with Changelogs](https://forum.obsidian.md/t/12688)
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/braweria)
+
+- [✨ Release Notes](https://github.com/Braweria/Spectrum/releases)
 
 ## Content
 
-- [Usage](#Usage)
+- [Features](#Features)
 - [Contributing](#-Contributing)
   - [Get Started](#Get-Started)
   - [How to compile](#How-to-compile)
@@ -23,7 +25,7 @@
 - [Places where Spectrum was mentioned](#Places-where-Spectrum-was-mentioned)
 
 
-## Usage
+## Features
 
 Go check out the Wiki to see what features this theme has.  
 
@@ -34,9 +36,7 @@ Contributions, issues and feature requests are welcome!
 
 Feel free to check [issues page](https://github.com/Braweria/Spectrum/issues). You can also take a look at the [forum thread](https://forum.obsidian.md/t/12688).
 
-You want to contribute financially? Sure! You can tip me whatever amount onf Ko-Fi:  
-
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/D1D85QWKJ)
+You want to contribute financially? Sure! You can [tip me whatever amount on Ko-Fi!](https://ko-fi.com/braweria)
 
 Give a ⭐️ when you like this theme!
 ### Get started 
@@ -51,7 +51,7 @@ yarn
 
 **For development**
 
-This will build the CSS file into the `/development/spectrum-testing.css`, which is ignore by git.
+This will build the CSS file into the `/development/spectrum-testing.css`, which is ignored by git.
 
 ```sh
 yarn dev
@@ -59,25 +59,19 @@ yarn dev
 
 **For building**
 
-When you're done working, start building it and it will be in the root of the project named `obsidian.css`.
-
-```sh
-yarn build
-```
+When you're done working, make a PR and if it gets accepted and merged, autiomation will kick in and build a new CSS file.
 
 ## Author
 
 👩‍💻 **Wiktoria Mielcarek**
 
-* Website: https://braweria.de/
-* Twitter: [@braweria](https://twitter.com/braweria)
-* Github: [@Braweria](https://github.com/Braweria)
-* LinkedIn: [Wiktoria Mielcarek](https://linkedin.com/in/wiktoria-mielcarek)
-
+* [Twitter](https://twitter.com/braweria)
+* [GitHub](https://github.com/Braweria)
+* [LinkedIn](https://linkedin.com/in/wiktoria-mielcarek)
 
 ## 📝 License
 
-Copyright © 2021 [Wiktoria Mielcarek](https://github.com/Braweria).
+Copyright © 2022 [Wiktoria Mielcarek](https://github.com/Braweria).
 
 This project is [MIT](https://github.com/Braweria/Spectrum/blob/master/LICENSE) licensed.
 
