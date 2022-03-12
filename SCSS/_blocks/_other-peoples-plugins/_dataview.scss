@@ -15,6 +15,7 @@
   }
 
   .dataview-result-list-root-ul {
-    padding-left: var(--size-6);
+    /* Need to use !important because Dataview originally uses !important */
+    padding-left: var(--size-6) !important;
   }
 }
