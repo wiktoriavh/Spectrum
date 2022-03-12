@@ -1,7 +1,7 @@
 .progress-bar-subline {
   position: absolute;
   background-color: var(--main-node);
-  height: 8px;
+  height: var(--size-2);
 }
 
 .progress-bar-line {
@@ -9,5 +9,5 @@
   opacity: 0.4;
   background-color: #ffbf007c;
   width: 150%;
-  height: 8px;
+  height: var(--size-2);
 }

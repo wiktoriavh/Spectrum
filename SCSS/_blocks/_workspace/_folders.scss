@@ -10,7 +10,7 @@
   background-repeat: no-repeat;
   display: inline-block;
   width: 24px;
-  height: 15px;
+  height: var(--size-3-5);
 }
 
 .nav-folder .nav-folder-title .nav-folder-title-content::before {
@@ -19,5 +19,5 @@
   background-repeat: no-repeat;
   display: inline-block;
   width: 24px;
-  height: 13px;
+  height: var(--size-3-5);
 }

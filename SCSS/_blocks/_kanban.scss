@@ -2,7 +2,7 @@
   ul {
     display: flex;
     flex-direction: row;
-    border: 2px solid var(--secondary-background);
+    border: var(--size-0-5) solid var(--secondary-background);
     background-color: var(--secondary-background-low-opacity);
     padding: 1rem;
     border-radius: 1rem;
@@ -29,7 +29,7 @@
         display: block;
         background: var(--secondary-background);
         margin-bottom: 5px;
-        padding: 10px;
+        padding: var(--size-2-5);
         border: 1px solid black;
         border-radius: 5px;
 

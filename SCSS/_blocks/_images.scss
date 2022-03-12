@@ -32,7 +32,7 @@ img {
     object-fit: cover;
   }
   &[alt~='radius-small'] {
-    border-radius: 15px;
+    border-radius: var(--size-3-5);
   }
   &[alt~='radius-medium'] {
     border-radius: 30px;
@@ -44,12 +44,12 @@ img {
     border-radius: 50%;
   }
   &[alt~='border-small'] {
-    border: 2px solid var(--main-node);
+    border: var(--size-0-5) solid var(--main-node);
   }
   &[alt~='border-medium'] {
     border: 5px solid var(--main-node);
   }
   &[alt~='border-large'] {
-    border: 10px solid var(--main-node);
+    border: var(--size-2-5) solid var(--main-node);
   }
 }

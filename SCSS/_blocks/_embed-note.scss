@@ -1,6 +1,6 @@
 .internal-embed.is-loaded:not(.image-embed) {
   border: 1px solid black;
-  border-radius: 10px;
+  border-radius: var(--size-2-5);
 }
 
 .internal-embed.is-loaded .markdown-embed {

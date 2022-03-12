@@ -24,7 +24,7 @@
 }
 
 .workspace-tab-header-container {
-  padding-top: 10px;
+  padding-top: var(--size-2-5);
   height: auto;
 }
 
@@ -44,8 +44,10 @@
   border-top-left-radius: 0;
 }
 
-.workspace-split.mod-root > .workspace-leaf:first-of-type:last-of-type .view-header {
-  border-bottom: 2px solid var(--main-node);
+.workspace-split.mod-root
+  > .workspace-leaf:first-of-type:last-of-type
+  .view-header {
+  border-bottom: var(--size-0-5) solid var(--main-node);
 }
 
 .titlebar-inner {

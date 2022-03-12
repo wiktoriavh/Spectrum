@@ -6,17 +6,17 @@
   appearance: none;
   box-sizing: border-box;
   border: 1px solid var(--text-muted);
-  border-radius: 2px;
+  border-radius: var(--size-0-5);
   position: relative;
   width: 1.5em;
   height: 1.5em;
   margin: 0;
   outline: none;
-  margin-right: 4px;
-  margin-bottom: 2px;
+  margin-right: var(--size-1);
+  margin-bottom: var(--size-0-5);
   cursor: pointer;
   filter: none;
-  top: 6px;
+  top: var(--size-1-5);
 }
 
 .markdown-source-view.mod-cm6 .task-list-item-checkbox {

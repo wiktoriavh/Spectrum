@@ -32,7 +32,7 @@ ol::before {
 
 ul li,
 ol li {
-  margin-bottom: 10px;
+  margin-bottom: var(--size-2-5);
   position: relative;
 }
 
