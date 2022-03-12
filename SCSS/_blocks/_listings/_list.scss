@@ -1,6 +1,6 @@
 :root {
   --list-padding-num: 2.5;
-  --list-padding: 24px;
+  --list-padding: var(--size-6);
   --list-marker-num: 1.5;
   --list-marker: 1.5rem;
 }
