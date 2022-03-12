@@ -1,15 +1,20 @@
+/* Dataview */
 .dataview {
-  .table-view-table > thead > tr > th {
+  &.table-view-table > thead > tr > th {
     font-size: var(--font-size-sm);
-    letter-spacing: 0.05em;
+    letter-spacing: 0.08em;
     text-indent: 0.5em;
   }
 
-  .table-view-table > tbody > tr > td {
+  &.table-view-table > tbody > tr > td {
     max-width: 18em;
     min-width: 8em;
     width: fit-content;
     padding: var(--size-2);
     font-size: var(--font-size-sm);
+  }
+
+  .dataview-result-list-root-ul {
+    padding-left: var(--size-6);
   }
 }
