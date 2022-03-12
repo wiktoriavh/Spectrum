@@ -52,6 +52,7 @@
 
 *............100. Other People's Plugins
 *................. Daily Planner
+*................. Icon Shortcode
 
 */
 /*
@@ -1797,4 +1798,8 @@ kbd {
 .day-planner .day-planner-progress-bar {
   background: var(--secondary-background);
   background: #cfcfcf;
+}
+
+img.isc-icon.isc-luc {
+  margin: 0;
 }
