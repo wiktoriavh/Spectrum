@@ -1,5 +1,4 @@
-:root,
-.theme-dark {
+:root {
   /* Sizes */
   --font-size-xs: 0.78em; /* 12px */
   --font-size-sm: 0.875em; /* 14px */
@@ -29,7 +28,10 @@
   --size-64: 16em; /* 256px */
   --size-96: 24em; /* 384px */
   --size-128: 32em; /* 512px */
+}
 
+:root,
+.theme-dark {
   /* Colors */
   --main-node-rgb: 255, 190, 0;
   --main-node: rgb(var(--main-node-rgb));
