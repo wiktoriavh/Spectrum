@@ -1,0 +1,60 @@
+/* @settings
+
+name: Spectrum Style Settings
+id: spectrum
+settings:
+  -
+    id: main-color
+    title: Main Colors
+    type: heading
+    level: 2
+  -
+    id: main-node
+    title: Main Node
+    type: variable-color
+    format: rgb
+    default: rgb(255, 190, 0)
+  -
+    id: accent-color
+    title: Accent Colors
+    type: heading
+    level: 2
+  -
+    id: accent-1
+    title: Accent 1
+    type: variable-color
+    format: rgb
+    default: rgb(245, 112, 76)
+  -
+    id: accent-2
+    title: Accent 2
+    type: variable-color
+    format: rgb
+    default: rgb(245, 161, 76)
+  -
+    id: accent-3
+    title: Accent 3
+    type: variable-color
+    format: rgb
+    default: rgb(237, 228, 130)
+  -
+    id: accent-4
+    title: Accent 4
+    type: variable-color
+    format: rgb
+    default: rgb(170, 222, 98)
+  -
+    id: accent-5
+    title: Accent 5
+    type: variable-color
+    format: rgb
+    default: rgb(98, 222, 172)
+  -
+    id: accent-6
+    title: Accent 6
+    type: variable-color
+    format: rgb
+    default: rgb(98, 183, 222)
+  -
+
+*/
