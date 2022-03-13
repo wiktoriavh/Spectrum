@@ -5,10 +5,11 @@
   "author": "Wiktoria Mielcarek",
   "license": "MIT",
   "homepage": "https://braweria.de",
+  "type": "module",
   "scripts": {
-    "build": "npx node-sass --output-style expanded SCSS/Spectrum.scss > obsidian.css",
-    "dev": "npx node-sass --output-style expanded SCSS/Spectrum.scss > development/spectrum-testing.css",
-    "snippet": "npx node-sass SCSS/snippets --output-style expanded --output snippets"
+    "build": "node esbuild.js production",
+    "dev": "node esbuild.js development",
+    "snippet": "node esbuild.js snippets"
   },
   "repository": {
     "type": "git",
@@ -18,7 +19,8 @@
     "url": "https://github.com/Braweria/Spectrum/issues"
   },
   "dependencies": {
-    "node-sass": "^6.0.1",
+    "esbuild": "^0.14.25",
+    "esbuild-sass-plugin": "^2.2.4",
     "prettier": "^2.4.1"
   }
 }
