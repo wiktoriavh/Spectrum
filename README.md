@@ -17,11 +17,11 @@ Spectrum is coming with a variaty of features, like different checkboxes and sup
 ## Content
 
 - [Features](#Features)
-- [Contributing](#-Contributing)
+- [Contributing](#Contributing)
   - [Get Started](#Get-Started)
   - [How to compile](#How-to-compile)
 - [Author](#Author)
-- [License](#-License)
+- [License](#License)
 - [Places where Spectrum was mentioned](#Places-where-Spectrum-was-mentioned)
 
 
@@ -29,8 +29,8 @@ Spectrum is coming with a variaty of features, like different checkboxes and sup
 
 Go check out the Wiki to see what features this theme has.  
 
-➡️ https://github.com/Braweria/Spectrum/wiki
-## 🤝 Contributing
+--> https://github.com/Braweria/Spectrum/wiki
+## Contributing
 
 Contributions, issues and feature requests are welcome!
 
@@ -48,6 +48,8 @@ yarn
 ```
 
 ### How to compile
+
+Spectrum uses [esbuild](https://esbuild.github.io) to build and compile all styles into a minified version, making the filesize smaller.
 
 **For development**
 
@@ -69,7 +71,7 @@ When you're done working, make a PR and if it gets accepted and merged, autiomat
 * [GitHub](https://github.com/Braweria)
 * [LinkedIn](https://linkedin.com/in/wiktoria-mielcarek)
 
-## 📝 License
+## License
 
 Copyright © 2022 [Wiktoria Mielcarek](https://github.com/Braweria).
 
