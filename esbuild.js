@@ -21,7 +21,7 @@ function createSnippetArray () {
 
 const outOptions = options.snippet ? {
   outdir: "./snippets",
-} : { outfile: "./testing.css" };
+} : { outfile: "./obsidian.css" };
 
 esbuild.build({
     entryPoints: options.snippet ? createSnippetArray() : ["./SCSS/Spectrum.scss"],
