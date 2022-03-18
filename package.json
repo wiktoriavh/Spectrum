@@ -19,6 +19,7 @@
     "url": "https://github.com/Braweria/Spectrum/issues"
   },
   "dependencies": {
+    "dotenv": "^16.0.0",
     "esbuild": "^0.14.25",
     "esbuild-sass-plugin": "^2.2.4",
     "prettier": "^2.4.1"
