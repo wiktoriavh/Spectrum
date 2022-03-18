@@ -30,3 +30,8 @@
 .workspace-ribbon.mod-left .side-dock-settings {
   order: 3;
 }
+
+.side-dock-ribbon {
+  flex: var(--spectrum-side-docks);
+  transition: flex 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+}
