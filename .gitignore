@@ -1,3 +1,4 @@
 /node_modules
 /development
 changelog.md
+.env
