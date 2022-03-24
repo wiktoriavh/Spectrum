@@ -38,5 +38,7 @@ esbuild.build({
     ...outOptions,
     minify: options.production,
     plugins: [sassPlugin()],
+    watch: options.development,
+    treeShaking: options.production,
 })
 
