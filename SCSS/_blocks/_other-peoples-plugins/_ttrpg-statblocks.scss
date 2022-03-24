@@ -1,0 +1,24 @@
+.theme-dark .statblock-plugin-parent {
+  --statblock-primary-color: hsl(10, 79%, 81%);
+  --statblock-rule-color: hsl(10, 75%, 65%);
+  --statblock-bar-color: var(--statblock-rule-color);
+  --statblock-background-color: #383530;
+}
+
+.markdown-source-view.mod-cm6 .cm-content > .statblock-plugin-parent {
+  --statblock-width: 850px;
+  width: var(--statblock-width);
+  // I have to use important here,
+  // because margin is set to important by default
+  margin-left: calc(
+    -1 * ((var(--statblock-width) - var(--max-width-text)) / 2)
+  ) !important;
+}
+
+.theme-dark .statblock-content {
+  // I have to use important here,
+  // because the plugin uses an arbitrary className
+  // which changes on each new version
+  border-color: black !important;
+  box-shadow: 0 0 1.5em rgba(0, 0, 0, 0.5) !important;
+}

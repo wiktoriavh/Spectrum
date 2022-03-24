@@ -6,10 +6,15 @@
   flex-direction: column;
   align-items: center;
 
+  .cm-content {
+    display: flex;
+    flex-direction: column;
+  }
+
   > *:not(iframe),
   .frontmatter-container,
   .block-language-tasks {
-    max-width: 750px;
+    max-width: var(--max-width-text);
     width: 100%;
     min-width: 300px;
   }
@@ -17,6 +22,6 @@
   > table,
   > .mermaid {
     max-width: fit-content;
-    min-width: 750px;
+    min-width: var(--max-width-text);
   }
 }
