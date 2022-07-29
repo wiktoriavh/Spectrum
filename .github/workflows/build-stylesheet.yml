@@ -17,6 +17,8 @@ jobs:
           run: |
             yarn
             yarn build
+          env:
+            TESTING_VAULT_PATH: "/tmp"
         - name: Commit Stylesheet
           run: |
             git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
