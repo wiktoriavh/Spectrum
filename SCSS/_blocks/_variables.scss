@@ -32,7 +32,7 @@
   --max-width-text: 750px;
 
   /* Companion */
-  --spectrum-side-docks: 0 0 30px;
+  --spectrum-side-docks: 0 0 40px;
   --spectrum-hue: 20;
   --monochrome-color: hsl(var(--spectrum-hue), 100%, 50%);
 }
@@ -90,6 +90,8 @@
   --background-modifier-error: #cf2d2d;
   --background-modifier-error-hover: #a72020;
   --text-highlight-bg: #e9b35f;
+
+  --ribbon-width: 40px;
 }
 
 :root,
@@ -121,6 +123,8 @@
   --background-modifier-error: #cf2d2d;
   --background-modifier-error-hover: #a72020;
   --text-highlight-bg: #e9b35f;
+
+  --ribbon-width: 40px;
 }
 
 @font-face {
